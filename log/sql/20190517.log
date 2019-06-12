@@ -1,0 +1,401 @@
+2019-05-17 09:09:01 | DEBUG | 1014 | 5cde09ac8ab68 | 1558055341.819 | select  scenic_spot_id,sum(num) as num from reception_num   where date between '2019-05-10' and '2019-05-15'   group by scenic_spot_id
+2019-05-17 09:09:01 | DEBUG | 1014 | 5cde09ac8ab68 | 1558055341.949 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '2' AND date between '2019-05-10' and '2019-05-15'   group by ticket_from
+2019-05-17 09:09:01 | DEBUG | 1014 | 5cde09ac8ab68 | 1558055341.976 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '1' AND ticket_of = '1' AND date between '2019-05-10' and '2019-05-15'   group by ticket_from
+2019-05-17 09:09:01 | DEBUG | 1014 | 5cde09ac8ab68 | 1558055341.977 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '1' AND ticket_of = '2' AND date between '2019-05-10' and '2019-05-15'   group by ticket_from
+2019-05-17 09:09:01 | DEBUG | 1014 | 5cde09ac8ab68 | 1558055341.980 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '3' AND ticket_of = '1' AND date between '2019-05-10' and '2019-05-15'   group by ticket_from
+2019-05-17 09:09:01 | DEBUG | 1014 | 5cde09ac8ab68 | 1558055341.981 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '3' AND ticket_of = '2' AND date between '2019-05-10' and '2019-05-15'   group by ticket_from
+2019-05-17 09:09:01 | DEBUG | 1014 | 5cde09ac8ab68 | 1558055341.982 | select  sum(ticket_num) as special from ticket_type   where scenic_spot_id = '4' AND date between '2019-05-10' and '2019-05-15'
+2019-05-17 09:25:31 | DEBUG | 1013 | 5cde0d8b13acc | 1558056331.83 | select  scenic_spot_id,num from reception_num   where date = '2019-05-17'
+2019-05-17 09:25:31 | DEBUG | 1013 | 5cde0d8b13acc | 1558056331.85 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '2' AND date = '2019-05-17'   group by ticket_from
+2019-05-17 09:25:31 | DEBUG | 1013 | 5cde0d8b13acc | 1558056331.86 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '1' AND ticket_of = '1' AND date = '2019-05-17'   group by ticket_from
+2019-05-17 09:25:31 | DEBUG | 1013 | 5cde0d8b13acc | 1558056331.86 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '1' AND ticket_of = '2' AND date = '2019-05-17'   group by ticket_from
+2019-05-17 09:25:31 | DEBUG | 1013 | 5cde0d8b13acc | 1558056331.87 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '3' AND ticket_of = '1' AND date = '2019-05-17'   group by ticket_from
+2019-05-17 09:25:31 | DEBUG | 1013 | 5cde0d8b13acc | 1558056331.87 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '3' AND ticket_of = '2' AND date = '2019-05-17'   group by ticket_from
+2019-05-17 09:25:31 | DEBUG | 1013 | 5cde0d8b13acc | 1558056331.87 | select  sum(ticket_num) as special from ticket_type   where scenic_spot_id = '4' AND date = '2019-05-17'
+2019-05-17 09:39:20 | DEBUG | 4033 | 5cde10c8066d1 | 1558057160.69 | select  travel_agency,count(id) as count from visitor_info    group by travel_agency    order by count desc
+2019-05-17 09:39:20 | DEBUG | 4033 | 5cde10c8066d1 | 1558057160.70 | select  count(id) as count from visitor_info
+2019-05-17 09:39:20 | DEBUG | 4033 | 5cde10c8066d1 | 1558057160.70 | select  travel_agency,count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-20' and '2019-05-21'   group by travel_agency    order by count desc  limit 3  offset 0
+2019-05-17 09:39:20 | DEBUG | 4033 | 5cde10c8066d1 | 1558057160.71 | select  sex,count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-20' and '2019-05-21'   group by sex
+2019-05-17 09:39:20 | DEBUG | 4033 | 5cde10c8066d1 | 1558057160.71 | select  birthday from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-20' and '2019-05-21'
+2019-05-17 09:43:27 | DEBUG | 29472 | 5cde11bfb4bb3 | 1558057407.744 | select  travel_agency,count(id) as count from visitor_info    group by travel_agency    order by count desc
+2019-05-17 09:43:27 | DEBUG | 29472 | 5cde11bfb4bb3 | 1558057407.745 | select  count(id) as count from visitor_info
+2019-05-17 09:43:27 | DEBUG | 29472 | 5cde11bfb4bb3 | 1558057407.746 | select  travel_agency,count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-20' and '2019-05-21'   group by travel_agency    order by count desc  limit 3  offset 0
+2019-05-17 09:43:27 | DEBUG | 29472 | 5cde11bfb4bb3 | 1558057407.747 | select  sex,count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-20' and '2019-05-21'   group by sex
+2019-05-17 09:43:27 | DEBUG | 29472 | 5cde11bfb4bb3 | 1558057407.748 | select  birthday from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-20' and '2019-05-21'
+2019-05-17 09:43:39 | DEBUG | 1014 | 5cde11cb674d2 | 1558057419.425 | select  travel_agency,count(id) as count from visitor_info    group by travel_agency    order by count desc
+2019-05-17 09:43:39 | DEBUG | 1014 | 5cde11cb674d2 | 1558057419.426 | select  count(id) as count from visitor_info
+2019-05-17 09:43:39 | DEBUG | 1014 | 5cde11cb674d2 | 1558057419.426 | execute error: select  travel_agency,count(id) as count from visitor_info   where province in (宁夏) AND date = '2019-05-17'   group by travel_agency    order by count desc  limit 3  offset 0
+2019-05-17 09:43:39 | DEBUG | 1014 | 5cde11cb674d2 | 1558057419.457 | execute error: select  sex,count(id) as count from visitor_info   where province in (宁夏) AND date = '2019-05-17'   group by sex
+2019-05-17 09:43:39 | DEBUG | 1014 | 5cde11cb674d2 | 1558057419.459 | execute error: select  birthday from visitor_info   where province in (宁夏) AND date = '2019-05-17'
+2019-05-17 09:51:34 | DEBUG | 29472 | 5cde13a6088e8 | 1558057894.39 | select  travel_agency,count(id) as count from visitor_info    group by travel_agency    order by count desc
+2019-05-17 09:51:34 | DEBUG | 29472 | 5cde13a6088e8 | 1558057894.40 | select  count(id) as count from visitor_info
+2019-05-17 09:51:34 | DEBUG | 29472 | 5cde13a6088e8 | 1558057894.40 | execute error: select  travel_agency,count(id) as count from visitor_info   where province in (宁夏) AND date = '2019-05-17'   group by travel_agency    order by count desc  limit 3  offset 0
+2019-05-17 09:51:34 | DEBUG | 29472 | 5cde13a6088e8 | 1558057894.40 | execute error: select  sex,count(id) as count from visitor_info   where province in (宁夏) AND date = '2019-05-17'   group by sex
+2019-05-17 09:51:34 | DEBUG | 29472 | 5cde13a6088e8 | 1558057894.41 | execute error: select  birthday from visitor_info   where province in (宁夏) AND date = '2019-05-17'
+2019-05-17 09:55:02 | DEBUG | 4033 | 5cde147664da8 | 1558058102.416 | select  travel_agency,count(id) as count from visitor_info    group by travel_agency    order by count desc
+2019-05-17 09:55:02 | DEBUG | 4033 | 5cde147664da8 | 1558058102.417 | select  count(id) as count from visitor_info
+2019-05-17 09:55:02 | DEBUG | 4033 | 5cde147664da8 | 1558058102.417 | execute error: select  travel_agency,count(id) as count from visitor_info   where province in (宁夏) AND date = '2019-05-17'   group by travel_agency    order by count desc  limit 3  offset 0
+2019-05-17 09:55:02 | DEBUG | 4033 | 5cde147664da8 | 1558058102.418 | execute error: select  sex,count(id) as count from visitor_info   where province in (宁夏) AND date = '2019-05-17'   group by sex
+2019-05-17 09:55:02 | DEBUG | 4033 | 5cde147664da8 | 1558058102.418 | execute error: select  birthday from visitor_info   where province in (宁夏) AND date = '2019-05-17'
+2019-05-17 09:56:07 | DEBUG | 29472 | 5cde14b7c8461 | 1558058167.885 | select  travel_agency,count(id) as count from visitor_info    group by travel_agency    order by count desc
+2019-05-17 09:56:07 | DEBUG | 29472 | 5cde14b7c8461 | 1558058167.886 | select  count(id) as count from visitor_info
+2019-05-17 09:56:07 | DEBUG | 29472 | 5cde14b7c8461 | 1558058167.887 | select  travel_agency,count(id) as count from visitor_info   where province in ('宁夏') AND date = '2019-05-17'   group by travel_agency    order by count desc  limit 3  offset 0
+2019-05-17 09:56:07 | DEBUG | 29472 | 5cde14b7c8461 | 1558058167.888 | select  sex,count(id) as count from visitor_info   where province in ('宁夏') AND date = '2019-05-17'   group by sex
+2019-05-17 09:56:07 | DEBUG | 29472 | 5cde14b7c8461 | 1558058167.958 | select  birthday from visitor_info   where province in ('宁夏') AND date = '2019-05-17'
+2019-05-17 09:58:38 | DEBUG | 1014 | 5cde154eec9ff | 1558058318.973 | select  travel_agency,count(id) as count from visitor_info    group by travel_agency    order by count desc
+2019-05-17 09:58:38 | DEBUG | 1014 | 5cde154eec9ff | 1558058318.974 | select  count(id) as count from visitor_info
+2019-05-17 09:58:38 | DEBUG | 1014 | 5cde154eec9ff | 1558058318.974 | execute error: select  travel_agency,count(id) as count from visitor_info   where province in (''陕西'',''宁夏'',''四川'') AND date between '2019-01-20' and '2019-05-21'   group by travel_agency    order by count desc  limit 3  offset 0
+2019-05-17 09:58:38 | DEBUG | 1014 | 5cde154eec9ff | 1558058318.974 | execute error: select  sex,count(id) as count from visitor_info   where province in (''陕西'',''宁夏'',''四川'') AND date between '2019-01-20' and '2019-05-21'   group by sex
+2019-05-17 09:58:38 | DEBUG | 1014 | 5cde154eec9ff | 1558058318.974 | execute error: select  birthday from visitor_info   where province in (''陕西'',''宁夏'',''四川'') AND date between '2019-01-20' and '2019-05-21'
+2019-05-17 09:59:45 | DEBUG | 4033 | 5cde1591184e3 | 1558058385.103 | select  travel_agency,count(id) as count from visitor_info    group by travel_agency    order by count desc
+2019-05-17 09:59:45 | DEBUG | 4033 | 5cde1591184e3 | 1558058385.104 | select  count(id) as count from visitor_info
+2019-05-17 09:59:45 | DEBUG | 4033 | 5cde1591184e3 | 1558058385.104 | execute error: select  travel_agency,count(id) as count from visitor_info   where province in (''陕西'',''宁夏'',''四川'') AND date between '2019-01-20' and '2019-05-21'   group by travel_agency    order by count desc  limit 3  offset 0
+2019-05-17 09:59:45 | DEBUG | 4033 | 5cde1591184e3 | 1558058385.104 | execute error: select  sex,count(id) as count from visitor_info   where province in (''陕西'',''宁夏'',''四川'') AND date between '2019-01-20' and '2019-05-21'   group by sex
+2019-05-17 09:59:45 | DEBUG | 4033 | 5cde1591184e3 | 1558058385.105 | execute error: select  birthday from visitor_info   where province in (''陕西'',''宁夏'',''四川'') AND date between '2019-01-20' and '2019-05-21'
+2019-05-17 10:00:09 | DEBUG | 29472 | 5cde15a9d2191 | 1558058409.862 | select  travel_agency,count(id) as count from visitor_info    group by travel_agency    order by count desc
+2019-05-17 10:00:09 | DEBUG | 29472 | 5cde15a9d2191 | 1558058409.863 | select  count(id) as count from visitor_info
+2019-05-17 10:00:09 | DEBUG | 29472 | 5cde15a9d2191 | 1558058409.864 | select  travel_agency,count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-01-20' and '2019-05-21'   group by travel_agency    order by count desc  limit 3  offset 0
+2019-05-17 10:00:09 | DEBUG | 29472 | 5cde15a9d2191 | 1558058409.864 | select  sex,count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-01-20' and '2019-05-21'   group by sex
+2019-05-17 10:00:09 | DEBUG | 29472 | 5cde15a9d2191 | 1558058409.865 | select  birthday from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-01-20' and '2019-05-21'
+2019-05-17 10:05:44 | DEBUG | 1014 | 5cde16f879754 | 1558058744.501 | select  travel_agency,count(id) as count from visitor_info    group by travel_agency    order by count desc
+2019-05-17 10:05:44 | DEBUG | 1014 | 5cde16f879754 | 1558058744.502 | select  count(id) as count from visitor_info
+2019-05-17 10:05:44 | DEBUG | 1014 | 5cde16f879754 | 1558058744.503 | select  travel_agency,count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-01-20' and '2019-05-21'   group by travel_agency    order by count desc  limit 3  offset 0
+2019-05-17 10:05:44 | DEBUG | 1014 | 5cde16f879754 | 1558058744.505 | select  sex,count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-01-20' and '2019-05-21'   group by sex
+2019-05-17 10:05:44 | DEBUG | 1014 | 5cde16f879754 | 1558058744.505 | select  birthday from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-01-20' and '2019-05-21'
+2019-05-17 10:05:51 | DEBUG | 4033 | 5cde16ff22565 | 1558058751.142 | select  travel_agency,count(id) as count from visitor_info    group by travel_agency    order by count desc
+2019-05-17 10:05:51 | DEBUG | 4033 | 5cde16ff22565 | 1558058751.143 | select  count(id) as count from visitor_info
+2019-05-17 10:05:51 | DEBUG | 4033 | 5cde16ff22565 | 1558058751.144 | select  travel_agency,count(id) as count from visitor_info   where province in ('宁夏') AND date = '2019-05-17'   group by travel_agency    order by count desc  limit 3  offset 0
+2019-05-17 10:05:51 | DEBUG | 4033 | 5cde16ff22565 | 1558058751.144 | select  sex,count(id) as count from visitor_info   where province in ('宁夏') AND date = '2019-05-17'   group by sex
+2019-05-17 10:05:51 | DEBUG | 4033 | 5cde16ff22565 | 1558058751.145 | select  birthday from visitor_info   where province in ('宁夏') AND date = '2019-05-17'
+2019-05-17 10:13:38 | DEBUG | 29472 | 5cde18d20f4d5 | 1558059218.65 | select  date,sum(scattered_ticket_num) as scattered_num,sum(group_ticket_num) as group_num from group_scattered_ticket   where date between '2019-05-11' and '2019-05-17'   group by date
+2019-05-17 10:13:38 | DEBUG | 29472 | 5cde18d20f4d5 | 1558059218.65 | select  sum(scattered_ticket_num) as scattered_num,
+                sum(group_ticket_num) as group_num from group_scattered_ticket   where date between '2019-05-19' and '2019-05-20'
+2019-05-17 10:13:48 | DEBUG | 1014 | 5cde18dcd66b9 | 1558059228.879 | select  date,sum(scattered_ticket_num) as scattered_num,sum(group_ticket_num) as group_num from group_scattered_ticket   where date between '2019-05-11' and '2019-05-17'   group by date
+2019-05-17 10:13:48 | DEBUG | 1014 | 5cde18dcd66b9 | 1558059228.880 | select  sum(scattered_ticket_num) as scattered_num,
+                sum(group_ticket_num) as group_num from group_scattered_ticket   where date between '2019-05-14' and '2019-05-15'
+2019-05-17 11:26:01 | DEBUG | 10444 | 5cde29c965966 | 1558063561.595 | select  id,date,car_number from car_info   where is_analysisided = 0
+2019-05-17 12:30:01 | DEBUG | 14402 | 5cde38c968e21 | 1558067401.447 | select  id,date,id_card,province,birthday,sex from visitor_info   where  is_analysisided = 0
+2019-05-17 12:30:01 | DEBUG | 14402 | 5cde38c968e21 | 1558067401.628 | insert into visitor_from(shanxi_visitor_count,beijing_visitor_count,tianjin_visitor_count,hebei_visitor_count,sanxi_visitor_count,neimeng_visitor_count,liaoning_visitor_count,jilin_visitor_count,heilongjiang_visitor_count,shanghai_visitor_count,jiangsu_visitor_count,zhejiang_visitor_count,anhui_visitor_count,fujian_visitor_count,jiangxi_visitor_count,shandong_visitor_count,henan_visitor_count,hubei_visitor_count,hunan_visitor_count,guangdong_visitor_count,guangxi_visitor_count,hainan_visitor_count,chongqing_visitor_count,sichuan_visitor_count,guizhou_visitor_count,yunnan_visitor_count,xizang_visitor_count,gansu_visitor_count,qinghai_visitor_count,ningxia_visitor_count,xinjiang_visitor_count,xianggang_visitor_count,taiwan_visitor_count,aomen_visitor_count) values('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0')
+2019-05-17 14:45:10 | DEBUG | 4033 | 5cde58761203a | 1558075510.366 | select  travel_agency,count(id) as count from visitor_info    group by travel_agency    order by count desc
+2019-05-17 14:45:10 | DEBUG | 4033 | 5cde58761203a | 1558075510.369 | select  count(id) as count from visitor_info
+2019-05-17 14:45:10 | DEBUG | 4033 | 5cde58761203a | 1558075510.455 | select  travel_agency,count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17'   group by travel_agency    order by count desc  limit 3  offset 0
+2019-05-17 14:45:10 | DEBUG | 4033 | 5cde58761203a | 1558075510.461 | select  sex,count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17'   group by sex
+2019-05-17 14:45:10 | DEBUG | 4033 | 5cde58761203a | 1558075510.464 | select  birthday from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17'
+2019-05-17 14:45:10 | DEBUG | 4033 | 5cde58761203a | 1558075510.474 | select  travel_agency,count(id) as count from visitor_info   where province in ('') AND date between '2019-05-17' and '2019-05-13'   group by travel_agency    order by count desc  limit 3  offset 0
+2019-05-17 14:45:10 | DEBUG | 4033 | 5cde58761203a | 1558075510.481 | select  sex,count(id) as count from visitor_info   where province in ('') AND date between '2019-05-17' and '2019-05-13'   group by sex
+2019-05-17 14:45:10 | DEBUG | 4033 | 5cde58761203a | 1558075510.513 | select  birthday from visitor_info   where province in ('') AND date between '2019-05-17' and '2019-05-13'
+2019-05-17 14:45:10 | DEBUG | 4033 | 5cde58761203a | 1558075510.621 | select  travel_agency,count(id) as count from visitor_info   where province in ('') AND date between '2019-05-17' and ''   group by travel_agency    order by count desc  limit 3  offset 0
+2019-05-17 14:45:10 | DEBUG | 4033 | 5cde58761203a | 1558075510.628 | select  sex,count(id) as count from visitor_info   where province in ('') AND date between '2019-05-17' and ''   group by sex
+2019-05-17 14:45:10 | DEBUG | 4033 | 5cde58761203a | 1558075510.638 | select  birthday from visitor_info   where province in ('') AND date between '2019-05-17' and ''
+2019-05-17 14:47:31 | DEBUG | 29472 | 5cde59031e9de | 1558075651.127 | select  travel_agency,count(id) as count from visitor_info    group by travel_agency    order by count desc
+2019-05-17 14:47:31 | DEBUG | 29472 | 5cde59031e9de | 1558075651.128 | select  count(id) as count from visitor_info
+2019-05-17 14:47:31 | DEBUG | 29472 | 5cde59031e9de | 1558075651.129 | select  travel_agency,count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17'   group by travel_agency    order by count desc  limit 3  offset 0
+2019-05-17 14:47:31 | DEBUG | 29472 | 5cde59031e9de | 1558075651.130 | select  sex,count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17'   group by sex
+2019-05-17 14:47:31 | DEBUG | 29472 | 5cde59031e9de | 1558075651.131 | select  birthday from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17'
+2019-05-17 14:47:31 | DEBUG | 29472 | 5cde59031e9de | 1558075651.131 | select  travel_agency,count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17'   group by travel_agency    order by count desc  limit 3  offset 0
+2019-05-17 14:47:31 | DEBUG | 29472 | 5cde59031e9de | 1558075651.132 | select  sex,count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17'   group by sex
+2019-05-17 14:47:31 | DEBUG | 29472 | 5cde59031e9de | 1558075651.133 | select  birthday from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17'
+2019-05-17 14:47:31 | DEBUG | 29472 | 5cde59031e9de | 1558075651.134 | select  travel_agency,count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17'   group by travel_agency    order by count desc  limit 3  offset 0
+2019-05-17 14:47:31 | DEBUG | 29472 | 5cde59031e9de | 1558075651.134 | select  sex,count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17'   group by sex
+2019-05-17 14:47:31 | DEBUG | 29472 | 5cde59031e9de | 1558075651.135 | select  birthday from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17'
+2019-05-17 14:49:05 | DEBUG | 1014 | 5cde59618d7b7 | 1558075745.582 | select  travel_agency,count(id) as count from visitor_info    group by travel_agency    order by count desc
+2019-05-17 14:49:05 | DEBUG | 1014 | 5cde59618d7b7 | 1558075745.583 | select  count(id) as count from visitor_info
+2019-05-17 14:49:05 | DEBUG | 1014 | 5cde59618d7b7 | 1558075745.584 | select  travel_agency,count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-04-13' and '2019-04-17'   group by travel_agency    order by count desc  limit 3  offset 0
+2019-05-17 14:49:05 | DEBUG | 1014 | 5cde59618d7b7 | 1558075745.585 | select  sex,count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-04-13' and '2019-04-17'   group by sex
+2019-05-17 14:49:05 | DEBUG | 1014 | 5cde59618d7b7 | 1558075745.586 | select  birthday from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-04-13' and '2019-04-17'
+2019-05-17 14:49:05 | DEBUG | 1014 | 5cde59618d7b7 | 1558075745.587 | select  travel_agency,count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-04-13' and '2019-04-17'   group by travel_agency    order by count desc  limit 3  offset 0
+2019-05-17 14:49:05 | DEBUG | 1014 | 5cde59618d7b7 | 1558075745.703 | select  sex,count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-04-13' and '2019-04-17'   group by sex
+2019-05-17 14:49:05 | DEBUG | 1014 | 5cde59618d7b7 | 1558075745.704 | select  birthday from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-04-13' and '2019-04-17'
+2019-05-17 14:49:05 | DEBUG | 1014 | 5cde59618d7b7 | 1558075745.706 | select  travel_agency,count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17'   group by travel_agency    order by count desc  limit 3  offset 0
+2019-05-17 14:49:05 | DEBUG | 1014 | 5cde59618d7b7 | 1558075745.708 | select  sex,count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17'   group by sex
+2019-05-17 14:49:05 | DEBUG | 1014 | 5cde59618d7b7 | 1558075745.710 | select  birthday from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17'
+2019-05-17 15:21:18 | DEBUG | 4033 | 5cde60eea3207 | 1558077678.672 | select  travel_agency,count(id) as count from visitor_info    group by travel_agency    order by count desc
+2019-05-17 15:21:18 | DEBUG | 4033 | 5cde60eea3207 | 1558077678.673 | select  count(id) as count from visitor_info
+2019-05-17 15:21:18 | DEBUG | 4033 | 5cde60eea3207 | 1558077678.674 | select  travel_agency,count(id) as count from visitor_info   where province in ('宁夏') AND date = '2019-05-17'   group by travel_agency    order by count desc  limit 3  offset 0
+2019-05-17 15:21:18 | DEBUG | 4033 | 5cde60eea3207 | 1558077678.675 | select  count(id) as count from visitor_info   where province in ('宁夏') AND date = '2019-05-17' AND sex = '女'
+2019-05-17 15:21:18 | DEBUG | 4033 | 5cde60eea3207 | 1558077678.676 | select  count(id) as count from visitor_info   where province in ('宁夏') AND date = '2019-05-17' AND sex = '男'
+2019-05-17 15:22:51 | DEBUG | 29472 | 5cde614b7c083 | 1558077771.512 | select  travel_agency,count(id) as count from visitor_info    group by travel_agency    order by count desc
+2019-05-17 15:22:51 | DEBUG | 29472 | 5cde614b7c083 | 1558077771.513 | select  count(id) as count from visitor_info
+2019-05-17 15:22:51 | DEBUG | 29472 | 5cde614b7c083 | 1558077771.514 | select  travel_agency,count(id) as count from visitor_info   where province in ('宁夏') AND date = '2019-05-17'   group by travel_agency    order by count desc  limit 3  offset 0
+2019-05-17 15:22:51 | DEBUG | 29472 | 5cde614b7c083 | 1558077771.515 | select  count(id) as count from visitor_info   where province in ('宁夏') AND date = '2019-05-17' AND sex = '女'
+2019-05-17 15:22:51 | DEBUG | 29472 | 5cde614b7c083 | 1558077771.516 | select  count(id) as count from visitor_info   where province in ('宁夏') AND date = '2019-05-17' AND sex = '男'
+2019-05-17 15:28:09 | DEBUG | 1014 | 5cde6289519ce | 1558078089.337 | select  travel_agency,count(id) as count from visitor_info    group by travel_agency    order by count desc
+2019-05-17 15:28:09 | DEBUG | 1014 | 5cde6289519ce | 1558078089.337 | select  count(id) as count from visitor_info
+2019-05-17 15:28:09 | DEBUG | 1014 | 5cde6289519ce | 1558078089.338 | select  travel_agency,count(id) as count from visitor_info   where province in ('宁夏') AND date = '2019-05-17'   group by travel_agency    order by count desc  limit 3  offset 0
+2019-05-17 15:28:09 | DEBUG | 1014 | 5cde6289519ce | 1558078089.339 | select  count(id) as count from visitor_info   where province in ('宁夏') AND date = '2019-05-17' AND sex = '女'
+2019-05-17 15:28:09 | DEBUG | 1014 | 5cde6289519ce | 1558078089.339 | select  count(id) as count from visitor_info   where province in ('宁夏') AND date = '2019-05-17' AND sex = '男'
+2019-05-17 15:28:09 | DEBUG | 1014 | 5cde6289519ce | 1558078089.340 | select  birthday from visitor_info   where province in ('宁夏') AND date = '2019-05-17'
+2019-05-17 15:28:42 | DEBUG | 4033 | 5cde62aa66fb0 | 1558078122.423 | select  travel_agency,count(id) as count from visitor_info    group by travel_agency    order by count desc
+2019-05-17 15:28:42 | DEBUG | 4033 | 5cde62aa66fb0 | 1558078122.424 | select  count(id) as count from visitor_info
+2019-05-17 15:28:42 | DEBUG | 4033 | 5cde62aa66fb0 | 1558078122.425 | select  travel_agency,count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-04-13' and '2019-04-17'   group by travel_agency    order by count desc  limit 3  offset 0
+2019-05-17 15:28:42 | DEBUG | 4033 | 5cde62aa66fb0 | 1558078122.425 | select  count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date = '' AND sex = '女'
+2019-05-17 15:28:42 | DEBUG | 4033 | 5cde62aa66fb0 | 1558078122.426 | select  count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date = '' AND sex = '男'
+2019-05-17 15:28:42 | DEBUG | 4033 | 5cde62aa66fb0 | 1558078122.427 | select  birthday from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-04-13' and '2019-04-17'
+2019-05-17 15:28:42 | DEBUG | 4033 | 5cde62aa66fb0 | 1558078122.427 | select  travel_agency,count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-04-13' and '2019-04-17'   group by travel_agency    order by count desc  limit 3  offset 0
+2019-05-17 15:28:42 | DEBUG | 4033 | 5cde62aa66fb0 | 1558078122.428 | select  count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date = '' AND sex = '女'
+2019-05-17 15:28:42 | DEBUG | 4033 | 5cde62aa66fb0 | 1558078122.429 | select  count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date = '' AND sex = '男'
+2019-05-17 15:28:42 | DEBUG | 4033 | 5cde62aa66fb0 | 1558078122.429 | select  birthday from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-04-13' and '2019-04-17'
+2019-05-17 15:28:42 | DEBUG | 4033 | 5cde62aa66fb0 | 1558078122.430 | select  travel_agency,count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17'   group by travel_agency    order by count desc  limit 3  offset 0
+2019-05-17 15:28:42 | DEBUG | 4033 | 5cde62aa66fb0 | 1558078122.431 | select  count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date = '' AND sex = '女'
+2019-05-17 15:28:42 | DEBUG | 4033 | 5cde62aa66fb0 | 1558078122.431 | select  count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date = '' AND sex = '男'
+2019-05-17 15:28:42 | DEBUG | 4033 | 5cde62aa66fb0 | 1558078122.432 | select  birthday from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17'
+2019-05-17 15:32:28 | DEBUG | 29472 | 5cde638c93951 | 1558078348.607 | select  travel_agency,count(id) as count from visitor_info    group by travel_agency    order by count desc
+2019-05-17 15:32:28 | DEBUG | 29472 | 5cde638c93951 | 1558078348.608 | select  count(id) as count from visitor_info
+2019-05-17 15:32:28 | DEBUG | 29472 | 5cde638c93951 | 1558078348.608 | select  travel_agency,count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-04-13' and '2019-04-17'   group by travel_agency    order by count desc  limit 3  offset 0
+2019-05-17 15:32:28 | DEBUG | 29472 | 5cde638c93951 | 1558078348.609 | select  count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-04-13' and '2019-04-17' AND sex = '女'
+2019-05-17 15:32:28 | DEBUG | 29472 | 5cde638c93951 | 1558078348.610 | select  count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-04-13' and '2019-04-17' AND sex = '男'
+2019-05-17 15:32:28 | DEBUG | 29472 | 5cde638c93951 | 1558078348.610 | select  birthday from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-04-13' and '2019-04-17'
+2019-05-17 15:32:28 | DEBUG | 29472 | 5cde638c93951 | 1558078348.611 | select  travel_agency,count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-04-13' and '2019-04-17'   group by travel_agency    order by count desc  limit 3  offset 0
+2019-05-17 15:32:28 | DEBUG | 29472 | 5cde638c93951 | 1558078348.612 | select  count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-04-13' and '2019-04-17' AND sex = '女'
+2019-05-17 15:32:28 | DEBUG | 29472 | 5cde638c93951 | 1558078348.612 | select  count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-04-13' and '2019-04-17' AND sex = '男'
+2019-05-17 15:32:28 | DEBUG | 29472 | 5cde638c93951 | 1558078348.613 | select  birthday from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-04-13' and '2019-04-17'
+2019-05-17 15:32:28 | DEBUG | 29472 | 5cde638c93951 | 1558078348.614 | select  travel_agency,count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17'   group by travel_agency    order by count desc  limit 3  offset 0
+2019-05-17 15:32:28 | DEBUG | 29472 | 5cde638c93951 | 1558078348.614 | select  count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17' AND sex = '女'
+2019-05-17 15:32:28 | DEBUG | 29472 | 5cde638c93951 | 1558078348.615 | select  count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17' AND sex = '男'
+2019-05-17 15:32:28 | DEBUG | 29472 | 5cde638c93951 | 1558078348.615 | select  birthday from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17'
+2019-05-17 16:12:50 | DEBUG | 1014 | 5cde6d022b064 | 1558080770.180 | select  travel_agency,count(id) as count from visitor_info    group by travel_agency    order by count desc
+2019-05-17 16:12:50 | DEBUG | 1014 | 5cde6d022b064 | 1558080770.181 | select  count(id) as count from visitor_info
+2019-05-17 16:12:50 | DEBUG | 1014 | 5cde6d022b064 | 1558080770.182 | select  travel_agency,count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-04-13' and '2019-04-17'   group by travel_agency    order by count desc  limit 3  offset 0
+2019-05-17 16:12:50 | DEBUG | 1014 | 5cde6d022b064 | 1558080770.183 | select  count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-04-13' and '2019-04-17' AND sex = '女'
+2019-05-17 16:12:50 | DEBUG | 1014 | 5cde6d022b064 | 1558080770.185 | select  count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-04-13' and '2019-04-17' AND sex = '男'
+2019-05-17 16:12:50 | DEBUG | 1014 | 5cde6d022b064 | 1558080770.186 | select  birthday from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-04-13' and '2019-04-17'
+2019-05-17 16:12:50 | DEBUG | 1014 | 5cde6d022b064 | 1558080770.187 | select  travel_agency,count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-04-13' and '2019-04-17'   group by travel_agency    order by count desc  limit 3  offset 0
+2019-05-17 16:12:50 | DEBUG | 1014 | 5cde6d022b064 | 1558080770.188 | select  count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-04-13' and '2019-04-17' AND sex = '女'
+2019-05-17 16:12:50 | DEBUG | 1014 | 5cde6d022b064 | 1558080770.189 | select  count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-04-13' and '2019-04-17' AND sex = '男'
+2019-05-17 16:12:50 | DEBUG | 1014 | 5cde6d022b064 | 1558080770.190 | select  birthday from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-04-13' and '2019-04-17'
+2019-05-17 16:12:50 | DEBUG | 1014 | 5cde6d022b064 | 1558080770.191 | select  travel_agency,count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17'   group by travel_agency    order by count desc  limit 3  offset 0
+2019-05-17 16:12:50 | DEBUG | 1014 | 5cde6d022b064 | 1558080770.193 | select  count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17' AND sex = '女'
+2019-05-17 16:12:50 | DEBUG | 1014 | 5cde6d022b064 | 1558080770.194 | select  count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17' AND sex = '男'
+2019-05-17 16:12:50 | DEBUG | 1014 | 5cde6d022b064 | 1558080770.196 | select  birthday from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17'
+2019-05-17 16:15:05 | DEBUG | 4033 | 5cde6d8943b7b | 1558080905.281 | select  travel_agency,count(id) as count from visitor_info    group by travel_agency    order by count desc
+2019-05-17 16:15:05 | DEBUG | 4033 | 5cde6d8943b7b | 1558080905.282 | select  count(id) as count from visitor_info
+2019-05-17 16:15:05 | DEBUG | 4033 | 5cde6d8943b7b | 1558080905.285 | select  travel_agency,count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-04-13' and '2019-04-17'   group by travel_agency    order by count desc  limit 3  offset 0
+2019-05-17 16:15:05 | DEBUG | 4033 | 5cde6d8943b7b | 1558080905.287 | select  count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-04-13' and '2019-04-17' AND sex = '女'
+2019-05-17 16:15:05 | DEBUG | 4033 | 5cde6d8943b7b | 1558080905.288 | select  count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-04-13' and '2019-04-17' AND sex = '男'
+2019-05-17 16:15:05 | DEBUG | 4033 | 5cde6d8943b7b | 1558080905.290 | select  birthday from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-04-13' and '2019-04-17'
+2019-05-17 16:15:05 | DEBUG | 4033 | 5cde6d8943b7b | 1558080905.291 | select  travel_agency,count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-04-13' and '2019-04-17'   group by travel_agency    order by count desc  limit 3  offset 0
+2019-05-17 16:15:05 | DEBUG | 4033 | 5cde6d8943b7b | 1558080905.296 | select  count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-04-13' and '2019-04-17' AND sex = '女'
+2019-05-17 16:15:05 | DEBUG | 4033 | 5cde6d8943b7b | 1558080905.297 | select  count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-04-13' and '2019-04-17' AND sex = '男'
+2019-05-17 16:15:05 | DEBUG | 4033 | 5cde6d8943b7b | 1558080905.298 | select  birthday from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-04-13' and '2019-04-17'
+2019-05-17 16:15:05 | DEBUG | 4033 | 5cde6d8943b7b | 1558080905.300 | select  travel_agency,count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17'   group by travel_agency    order by count desc  limit 3  offset 0
+2019-05-17 16:15:05 | DEBUG | 4033 | 5cde6d8943b7b | 1558080905.301 | select  count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17' AND sex = '女'
+2019-05-17 16:15:05 | DEBUG | 4033 | 5cde6d8943b7b | 1558080905.302 | select  count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17' AND sex = '男'
+2019-05-17 16:15:05 | DEBUG | 4033 | 5cde6d8943b7b | 1558080905.306 | select  birthday from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17'
+2019-05-17 16:16:14 | DEBUG | 29472 | 5cde6dceda654 | 1558080974.898 | select  travel_agency,count(id) as count from visitor_info    group by travel_agency    order by count desc
+2019-05-17 16:16:14 | DEBUG | 29472 | 5cde6dceda654 | 1558080974.899 | select  count(id) as count from visitor_info
+2019-05-17 16:16:14 | DEBUG | 29472 | 5cde6dceda654 | 1558080974.900 | select  travel_agency,count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-04-13' and '2019-04-17'   group by travel_agency    order by count desc  limit 3  offset 0
+2019-05-17 16:16:14 | DEBUG | 29472 | 5cde6dceda654 | 1558080974.902 | select  count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-04-13' and '2019-04-17' AND sex = '女'
+2019-05-17 16:16:14 | DEBUG | 29472 | 5cde6dceda654 | 1558080974.903 | select  count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-04-13' and '2019-04-17' AND sex = '男'
+2019-05-17 16:16:14 | DEBUG | 29472 | 5cde6dceda654 | 1558080974.904 | select  birthday from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-04-13' and '2019-04-17'
+2019-05-17 16:16:14 | DEBUG | 29472 | 5cde6dceda654 | 1558080974.905 | select  travel_agency,count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-04-13' and '2019-04-17'   group by travel_agency    order by count desc  limit 3  offset 0
+2019-05-17 16:16:14 | DEBUG | 29472 | 5cde6dceda654 | 1558080974.906 | select  count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-04-13' and '2019-04-17' AND sex = '女'
+2019-05-17 16:16:14 | DEBUG | 29472 | 5cde6dceda654 | 1558080974.907 | select  count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-04-13' and '2019-04-17' AND sex = '男'
+2019-05-17 16:16:14 | DEBUG | 29472 | 5cde6dceda654 | 1558080974.908 | select  birthday from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-04-13' and '2019-04-17'
+2019-05-17 16:16:14 | DEBUG | 29472 | 5cde6dceda654 | 1558080974.909 | select  travel_agency,count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17'   group by travel_agency    order by count desc  limit 3  offset 0
+2019-05-17 16:16:14 | DEBUG | 29472 | 5cde6dceda654 | 1558080974.910 | select  count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17' AND sex = '女'
+2019-05-17 16:16:14 | DEBUG | 29472 | 5cde6dceda654 | 1558080974.911 | select  count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17' AND sex = '男'
+2019-05-17 16:16:14 | DEBUG | 29472 | 5cde6dceda654 | 1558080974.912 | select  birthday from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17'
+2019-05-17 16:16:25 | DEBUG | 1014 | 5cde6dd9951f6 | 1558080985.613 | select  travel_agency,count(id) as count from visitor_info    group by travel_agency    order by count desc
+2019-05-17 16:16:25 | DEBUG | 1014 | 5cde6dd9951f6 | 1558080985.614 | select  count(id) as count from visitor_info
+2019-05-17 16:16:25 | DEBUG | 1014 | 5cde6dd9951f6 | 1558080985.619 | select  travel_agency,count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-04-13' and '2019-04-17'   group by travel_agency    order by count desc  limit 3  offset 0
+2019-05-17 16:16:25 | DEBUG | 1014 | 5cde6dd9951f6 | 1558080985.620 | select  count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-04-13' and '2019-04-17' AND sex = '女'
+2019-05-17 16:16:25 | DEBUG | 1014 | 5cde6dd9951f6 | 1558080985.621 | select  count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-04-13' and '2019-04-17' AND sex = '男'
+2019-05-17 16:16:25 | DEBUG | 1014 | 5cde6dd9951f6 | 1558080985.622 | select  birthday from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-04-13' and '2019-04-17'
+2019-05-17 16:16:25 | DEBUG | 1014 | 5cde6dd9951f6 | 1558080985.625 | select  travel_agency,count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-04-13' and '2019-04-17'   group by travel_agency    order by count desc  limit 3  offset 0
+2019-05-17 16:16:25 | DEBUG | 1014 | 5cde6dd9951f6 | 1558080985.627 | select  count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-04-13' and '2019-04-17' AND sex = '女'
+2019-05-17 16:16:25 | DEBUG | 1014 | 5cde6dd9951f6 | 1558080985.628 | select  count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-04-13' and '2019-04-17' AND sex = '男'
+2019-05-17 16:16:25 | DEBUG | 1014 | 5cde6dd9951f6 | 1558080985.629 | select  birthday from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-04-13' and '2019-04-17'
+2019-05-17 16:16:25 | DEBUG | 1014 | 5cde6dd9951f6 | 1558080985.635 | select  travel_agency,count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17'   group by travel_agency    order by count desc  limit 3  offset 0
+2019-05-17 16:16:25 | DEBUG | 1014 | 5cde6dd9951f6 | 1558080985.636 | select  count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17' AND sex = '女'
+2019-05-17 16:16:25 | DEBUG | 1014 | 5cde6dd9951f6 | 1558080985.637 | select  count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17' AND sex = '男'
+2019-05-17 16:16:25 | DEBUG | 1014 | 5cde6dd9951f6 | 1558080985.640 | select  birthday from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17'
+2019-05-17 16:17:06 | DEBUG | 4033 | 5cde6e02deff5 | 1558081026.916 | select  travel_agency,count(id) as count from visitor_info    group by travel_agency    order by count desc
+2019-05-17 16:17:06 | DEBUG | 4033 | 5cde6e02deff5 | 1558081026.917 | select  count(id) as count from visitor_info
+2019-05-17 16:17:06 | DEBUG | 4033 | 5cde6e02deff5 | 1558081026.918 | select  travel_agency,count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17'   group by travel_agency    order by count desc  limit 3  offset 0
+2019-05-17 16:17:06 | DEBUG | 4033 | 5cde6e02deff5 | 1558081026.920 | select  count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17' AND sex = '女'
+2019-05-17 16:17:06 | DEBUG | 4033 | 5cde6e02deff5 | 1558081026.921 | select  count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17' AND sex = '男'
+2019-05-17 16:17:06 | DEBUG | 4033 | 5cde6e02deff5 | 1558081026.922 | select  birthday from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17'
+2019-05-17 16:17:06 | DEBUG | 4033 | 5cde6e02deff5 | 1558081026.923 | select  travel_agency,count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17'   group by travel_agency    order by count desc  limit 3  offset 0
+2019-05-17 16:17:06 | DEBUG | 4033 | 5cde6e02deff5 | 1558081026.924 | select  count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17' AND sex = '女'
+2019-05-17 16:17:06 | DEBUG | 4033 | 5cde6e02deff5 | 1558081026.926 | select  count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17' AND sex = '男'
+2019-05-17 16:17:06 | DEBUG | 4033 | 5cde6e02deff5 | 1558081026.927 | select  birthday from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17'
+2019-05-17 16:17:06 | DEBUG | 4033 | 5cde6e02deff5 | 1558081026.928 | select  travel_agency,count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17'   group by travel_agency    order by count desc  limit 3  offset 0
+2019-05-17 16:17:06 | DEBUG | 4033 | 5cde6e02deff5 | 1558081026.929 | select  count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17' AND sex = '女'
+2019-05-17 16:17:06 | DEBUG | 4033 | 5cde6e02deff5 | 1558081026.931 | select  count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17' AND sex = '男'
+2019-05-17 16:17:06 | DEBUG | 4033 | 5cde6e02deff5 | 1558081026.932 | select  birthday from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17'
+2019-05-17 16:19:48 | DEBUG | 29472 | 5cde6ea48c1fd | 1558081188.576 | select  travel_agency,count(id) as count from visitor_info    group by travel_agency    order by count desc
+2019-05-17 16:19:48 | DEBUG | 29472 | 5cde6ea48c1fd | 1558081188.576 | select  count(id) as count from visitor_info
+2019-05-17 16:19:48 | DEBUG | 29472 | 5cde6ea48c1fd | 1558081188.577 | select  travel_agency,count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17'   group by travel_agency    order by count desc  limit 3  offset 0
+2019-05-17 16:19:48 | DEBUG | 29472 | 5cde6ea48c1fd | 1558081188.578 | select  count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17' AND sex = '女'
+2019-05-17 16:19:48 | DEBUG | 29472 | 5cde6ea48c1fd | 1558081188.578 | select  count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17' AND sex = '男'
+2019-05-17 16:19:48 | DEBUG | 29472 | 5cde6ea48c1fd | 1558081188.579 | select  birthday from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17'
+2019-05-17 16:35:58 | DEBUG | 4033 | 5cde726ec4070 | 1558082158.807 | select  travel_agency,count(id) as count from visitor_info    group by travel_agency    order by count desc
+2019-05-17 16:35:58 | DEBUG | 4033 | 5cde726ec4070 | 1558082158.809 | select  count(id) as count from visitor_info
+2019-05-17 16:35:58 | DEBUG | 4033 | 5cde726ec4070 | 1558082158.810 | select  travel_agency,count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17'   group by travel_agency    order by count desc  limit 3  offset 0
+2019-05-17 16:35:58 | DEBUG | 4033 | 5cde726ec4070 | 1558082158.811 | select  count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17' AND sex = '女'
+2019-05-17 16:35:58 | DEBUG | 4033 | 5cde726ec4070 | 1558082158.814 | select  count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17' AND sex = '男'
+2019-05-17 16:35:58 | DEBUG | 4033 | 5cde726ec4070 | 1558082158.843 | select  birthday from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17'
+2019-05-17 16:36:12 | DEBUG | 5970 | 5cde727cda6a1 | 1558082172.898 | select  travel_agency,count(id) as count from visitor_info    group by travel_agency    order by count desc
+2019-05-17 16:36:12 | DEBUG | 5970 | 5cde727cda6a1 | 1558082172.899 | select  count(id) as count from visitor_info
+2019-05-17 16:36:12 | DEBUG | 5970 | 5cde727cda6a1 | 1558082172.900 | select  travel_agency,count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17'   group by travel_agency    order by count desc  limit 3  offset 0
+2019-05-17 16:36:12 | DEBUG | 5970 | 5cde727cda6a1 | 1558082172.901 | select  count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17' AND sex = '女'
+2019-05-17 16:36:12 | DEBUG | 5970 | 5cde727cda6a1 | 1558082172.903 | select  count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17' AND sex = '男'
+2019-05-17 16:36:12 | DEBUG | 5970 | 5cde727cda6a1 | 1558082172.904 | select  birthday from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17'
+2019-05-17 16:36:12 | DEBUG | 5970 | 5cde727cda6a1 | 1558082172.905 | select  travel_agency,count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17'   group by travel_agency    order by count desc  limit 3  offset 0
+2019-05-17 16:36:12 | DEBUG | 5970 | 5cde727cda6a1 | 1558082172.907 | select  count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17' AND sex = '女'
+2019-05-17 16:36:12 | DEBUG | 5970 | 5cde727cda6a1 | 1558082172.909 | select  count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17' AND sex = '男'
+2019-05-17 16:36:12 | DEBUG | 5970 | 5cde727cda6a1 | 1558082172.911 | select  birthday from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17'
+2019-05-17 16:36:12 | DEBUG | 5970 | 5cde727cda6a1 | 1558082172.913 | select  travel_agency,count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17'   group by travel_agency    order by count desc  limit 3  offset 0
+2019-05-17 16:36:12 | DEBUG | 5970 | 5cde727cda6a1 | 1558082172.915 | select  count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17' AND sex = '女'
+2019-05-17 16:36:12 | DEBUG | 5970 | 5cde727cda6a1 | 1558082172.916 | select  count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17' AND sex = '男'
+2019-05-17 16:36:12 | DEBUG | 5970 | 5cde727cda6a1 | 1558082172.917 | select  birthday from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17'
+2019-05-17 16:37:47 | DEBUG | 29472 | 5cde72db3df2d | 1558082267.257 | select  travel_agency,count(id) as count from visitor_info    group by travel_agency    order by count desc
+2019-05-17 16:37:47 | DEBUG | 29472 | 5cde72db3df2d | 1558082267.258 | select  count(id) as count from visitor_info
+2019-05-17 16:37:47 | DEBUG | 29472 | 5cde72db3df2d | 1558082267.259 | select  travel_agency,count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17'   group by travel_agency    order by count desc  limit 3  offset 0
+2019-05-17 16:37:47 | DEBUG | 29472 | 5cde72db3df2d | 1558082267.260 | select  count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17' AND sex = '女'
+2019-05-17 16:37:47 | DEBUG | 29472 | 5cde72db3df2d | 1558082267.261 | select  count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17' AND sex = '男'
+2019-05-17 16:37:47 | DEBUG | 29472 | 5cde72db3df2d | 1558082267.262 | select  birthday from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17'
+2019-05-17 16:37:47 | DEBUG | 29472 | 5cde72db3df2d | 1558082267.263 | select  travel_agency,count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17'   group by travel_agency    order by count desc  limit 3  offset 0
+2019-05-17 16:37:47 | DEBUG | 29472 | 5cde72db3df2d | 1558082267.264 | select  count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17' AND sex = '女'
+2019-05-17 16:37:47 | DEBUG | 29472 | 5cde72db3df2d | 1558082267.266 | select  count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17' AND sex = '男'
+2019-05-17 16:37:47 | DEBUG | 29472 | 5cde72db3df2d | 1558082267.270 | select  birthday from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17'
+2019-05-17 16:37:47 | DEBUG | 29472 | 5cde72db3df2d | 1558082267.271 | select  travel_agency,count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17'   group by travel_agency    order by count desc  limit 3  offset 0
+2019-05-17 16:37:47 | DEBUG | 29472 | 5cde72db3df2d | 1558082267.272 | select  count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17' AND sex = '女'
+2019-05-17 16:37:47 | DEBUG | 29472 | 5cde72db3df2d | 1558082267.273 | select  count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17' AND sex = '男'
+2019-05-17 16:37:47 | DEBUG | 29472 | 5cde72db3df2d | 1558082267.274 | select  birthday from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17'
+2019-05-17 16:37:59 | DEBUG | 4033 | 5cde72e76b9b3 | 1558082279.443 | select  travel_agency,count(id) as count from visitor_info    group by travel_agency    order by count desc
+2019-05-17 16:37:59 | DEBUG | 4033 | 5cde72e76b9b3 | 1558082279.444 | select  count(id) as count from visitor_info
+2019-05-17 16:37:59 | DEBUG | 4033 | 5cde72e76b9b3 | 1558082279.446 | select  travel_agency,count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17'   group by travel_agency    order by count desc  limit 3  offset 0
+2019-05-17 16:37:59 | DEBUG | 4033 | 5cde72e76b9b3 | 1558082279.447 | select  count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17' AND sex = '女'
+2019-05-17 16:37:59 | DEBUG | 4033 | 5cde72e76b9b3 | 1558082279.447 | select  count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17' AND sex = '男'
+2019-05-17 16:37:59 | DEBUG | 4033 | 5cde72e76b9b3 | 1558082279.448 | select  birthday from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17'
+2019-05-17 16:38:31 | DEBUG | 5970 | 5cde73074cef5 | 1558082311.317 | select  travel_agency,count(id) as count from visitor_info    group by travel_agency    order by count desc
+2019-05-17 16:38:31 | DEBUG | 5970 | 5cde73074cef5 | 1558082311.317 | select  count(id) as count from visitor_info
+2019-05-17 16:38:31 | DEBUG | 5970 | 5cde73074cef5 | 1558082311.318 | select  travel_agency,count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17'   group by travel_agency    order by count desc  limit 3  offset 0
+2019-05-17 16:38:31 | DEBUG | 5970 | 5cde73074cef5 | 1558082311.319 | select  count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17' AND sex = '女'
+2019-05-17 16:38:31 | DEBUG | 5970 | 5cde73074cef5 | 1558082311.319 | select  count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17' AND sex = '男'
+2019-05-17 16:38:31 | DEBUG | 5970 | 5cde73074cef5 | 1558082311.320 | select  birthday from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17'
+2019-05-17 16:38:31 | DEBUG | 5970 | 5cde73074cef5 | 1558082311.321 | select  travel_agency,count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17'   group by travel_agency    order by count desc  limit 3  offset 0
+2019-05-17 16:38:31 | DEBUG | 5970 | 5cde73074cef5 | 1558082311.321 | select  count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17' AND sex = '女'
+2019-05-17 16:38:31 | DEBUG | 5970 | 5cde73074cef5 | 1558082311.322 | select  count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17' AND sex = '男'
+2019-05-17 16:38:31 | DEBUG | 5970 | 5cde73074cef5 | 1558082311.323 | select  birthday from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17'
+2019-05-17 16:38:31 | DEBUG | 5970 | 5cde73074cef5 | 1558082311.323 | select  travel_agency,count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17'   group by travel_agency    order by count desc  limit 3  offset 0
+2019-05-17 16:38:31 | DEBUG | 5970 | 5cde73074cef5 | 1558082311.324 | select  count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17' AND sex = '女'
+2019-05-17 16:38:31 | DEBUG | 5970 | 5cde73074cef5 | 1558082311.325 | select  count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17' AND sex = '男'
+2019-05-17 16:38:31 | DEBUG | 5970 | 5cde73074cef5 | 1558082311.325 | select  birthday from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17'
+2019-05-17 16:39:01 | DEBUG | 29472 | 5cde73254b342 | 1558082341.310 | select  travel_agency,count(id) as count from visitor_info    group by travel_agency    order by count desc
+2019-05-17 16:39:01 | DEBUG | 29472 | 5cde73254b342 | 1558082341.311 | select  count(id) as count from visitor_info
+2019-05-17 16:39:01 | DEBUG | 29472 | 5cde73254b342 | 1558082341.312 | select  travel_agency,count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17'   group by travel_agency    order by count desc  limit 3  offset 0
+2019-05-17 16:39:01 | DEBUG | 29472 | 5cde73254b342 | 1558082341.313 | select  count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17' AND sex = '女'
+2019-05-17 16:39:01 | DEBUG | 29472 | 5cde73254b342 | 1558082341.314 | select  count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17' AND sex = '男'
+2019-05-17 16:39:01 | DEBUG | 29472 | 5cde73254b342 | 1558082341.315 | select  birthday from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17'
+2019-05-17 16:39:01 | DEBUG | 29472 | 5cde73254b342 | 1558082341.316 | select  travel_agency,count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17'   group by travel_agency    order by count desc  limit 3  offset 0
+2019-05-17 16:39:01 | DEBUG | 29472 | 5cde73254b342 | 1558082341.317 | select  count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17' AND sex = '女'
+2019-05-17 16:39:01 | DEBUG | 29472 | 5cde73254b342 | 1558082341.318 | select  count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17' AND sex = '男'
+2019-05-17 16:39:01 | DEBUG | 29472 | 5cde73254b342 | 1558082341.319 | select  birthday from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17'
+2019-05-17 16:39:01 | DEBUG | 29472 | 5cde73254b342 | 1558082341.320 | select  travel_agency,count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17'   group by travel_agency    order by count desc  limit 3  offset 0
+2019-05-17 16:39:01 | DEBUG | 29472 | 5cde73254b342 | 1558082341.321 | select  count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17' AND sex = '女'
+2019-05-17 16:39:01 | DEBUG | 29472 | 5cde73254b342 | 1558082341.322 | select  count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17' AND sex = '男'
+2019-05-17 16:39:01 | DEBUG | 29472 | 5cde73254b342 | 1558082341.323 | select  birthday from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17'
+2019-05-17 16:56:31 | DEBUG | 5970 | 5cde773f54495 | 1558083391.348 | select  travel_agency,count(id) as count from visitor_info    group by travel_agency    order by count desc
+2019-05-17 16:56:31 | DEBUG | 5970 | 5cde773f54495 | 1558083391.349 | select  count(id) as count from visitor_info
+2019-05-17 16:56:31 | DEBUG | 5970 | 5cde773f54495 | 1558083391.350 | select  travel_agency,count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17'   group by travel_agency    order by count desc  limit 3  offset 0
+2019-05-17 16:56:31 | DEBUG | 5970 | 5cde773f54495 | 1558083391.351 | select  count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17' AND sex = '女'
+2019-05-17 16:56:31 | DEBUG | 5970 | 5cde773f54495 | 1558083391.352 | select  count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17' AND sex = '男'
+2019-05-17 16:56:31 | DEBUG | 5970 | 5cde773f54495 | 1558083391.353 | select  birthday from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17'
+2019-05-17 16:56:31 | DEBUG | 5970 | 5cde773f54495 | 1558083391.354 | select  travel_agency,count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17'   group by travel_agency    order by count desc  limit 3  offset 0
+2019-05-17 16:56:31 | DEBUG | 5970 | 5cde773f54495 | 1558083391.355 | select  count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17' AND sex = '女'
+2019-05-17 16:56:31 | DEBUG | 5970 | 5cde773f54495 | 1558083391.356 | select  count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17' AND sex = '男'
+2019-05-17 16:56:31 | DEBUG | 5970 | 5cde773f54495 | 1558083391.357 | select  birthday from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17'
+2019-05-17 16:56:31 | DEBUG | 5970 | 5cde773f54495 | 1558083391.358 | select  travel_agency,count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17'   group by travel_agency    order by count desc  limit 3  offset 0
+2019-05-17 16:56:31 | DEBUG | 5970 | 5cde773f54495 | 1558083391.359 | select  count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17' AND sex = '女'
+2019-05-17 16:56:31 | DEBUG | 5970 | 5cde773f54495 | 1558083391.360 | select  count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17' AND sex = '男'
+2019-05-17 16:56:31 | DEBUG | 5970 | 5cde773f54495 | 1558083391.361 | select  birthday from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2019-05-13' and '2019-05-17'
+2019-05-17 19:23:45 | DEBUG | 4033 | 5cde99bfc9dc4 | 1558092225.242 | select  scenic_spot_id,num from reception_num   where date = '2019-05-17'
+2019-05-17 19:23:45 | DEBUG | 4033 | 5cde99bfc9dc4 | 1558092225.532 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '2' AND date = '2019-05-17'   group by ticket_from
+2019-05-17 19:23:45 | DEBUG | 4033 | 5cde99bfc9dc4 | 1558092225.534 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '1' AND ticket_of = '1' AND date = '2019-05-17'   group by ticket_from
+2019-05-17 19:23:45 | DEBUG | 4033 | 5cde99bfc9dc4 | 1558092225.536 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '1' AND ticket_of = '2' AND date = '2019-05-17'   group by ticket_from
+2019-05-17 19:23:45 | DEBUG | 4033 | 5cde99bfc9dc4 | 1558092225.538 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '3' AND ticket_of = '1' AND date = '2019-05-17'   group by ticket_from
+2019-05-17 19:23:45 | DEBUG | 4033 | 5cde99bfc9dc4 | 1558092225.541 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '3' AND ticket_of = '2' AND date = '2019-05-17'   group by ticket_from
+2019-05-17 19:23:45 | DEBUG | 4033 | 5cde99bfc9dc4 | 1558092225.542 | select  sum(ticket_num) as special from ticket_type   where scenic_spot_id = '4' AND date = '2019-05-17'
+2019-05-17 19:25:23 | DEBUG | 5970 | 5cde9a232063e | 1558092323.290 | select  scenic_spot_id,num from reception_num   where date = '2019-05-17'
+2019-05-17 19:25:23 | DEBUG | 5970 | 5cde9a232063e | 1558092323.291 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '2' AND date = '2019-05-17'   group by ticket_from
+2019-05-17 19:25:23 | DEBUG | 5970 | 5cde9a232063e | 1558092323.291 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '1' AND ticket_of = '1' AND date = '2019-05-17'   group by ticket_from
+2019-05-17 19:25:23 | DEBUG | 5970 | 5cde9a232063e | 1558092323.291 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '1' AND ticket_of = '2' AND date = '2019-05-17'   group by ticket_from
+2019-05-17 19:25:23 | DEBUG | 5970 | 5cde9a232063e | 1558092323.292 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '3' AND ticket_of = '1' AND date = '2019-05-17'   group by ticket_from
+2019-05-17 19:25:23 | DEBUG | 5970 | 5cde9a232063e | 1558092323.292 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '3' AND ticket_of = '2' AND date = '2019-05-17'   group by ticket_from
+2019-05-17 19:25:23 | DEBUG | 5970 | 5cde9a232063e | 1558092323.292 | select  sum(ticket_num) as special from ticket_type   where scenic_spot_id = '4' AND date = '2019-05-17'
+2019-05-17 19:25:55 | DEBUG | 29472 | 5cde9a436f7e5 | 1558092355.466 | select  scenic_spot_id,num from reception_num   where date = '2019-05-17'
+2019-05-17 19:25:55 | DEBUG | 29472 | 5cde9a436f7e5 | 1558092355.467 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '2' AND date = '2019-05-17'   group by ticket_from
+2019-05-17 19:25:55 | DEBUG | 29472 | 5cde9a436f7e5 | 1558092355.468 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '1' AND ticket_of = '1' AND date = '2019-05-17'   group by ticket_from
+2019-05-17 19:25:55 | DEBUG | 29472 | 5cde9a436f7e5 | 1558092355.468 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '1' AND ticket_of = '2' AND date = '2019-05-17'   group by ticket_from
+2019-05-17 19:25:55 | DEBUG | 29472 | 5cde9a436f7e5 | 1558092355.468 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '3' AND ticket_of = '1' AND date = '2019-05-17'   group by ticket_from
+2019-05-17 19:25:55 | DEBUG | 29472 | 5cde9a436f7e5 | 1558092355.469 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '3' AND ticket_of = '2' AND date = '2019-05-17'   group by ticket_from
+2019-05-17 19:25:55 | DEBUG | 29472 | 5cde9a436f7e5 | 1558092355.469 | select  sum(ticket_num) as special from ticket_type   where scenic_spot_id = '4' AND date = '2019-05-17'
+2019-05-17 19:26:09 | DEBUG | 4033 | 5cde9a51a1b28 | 1558092369.665 | select  scenic_spot_id,sum(num) as num from reception_num   where date between '2019-05-10' and '2019-05-15'   group by scenic_spot_id
+2019-05-17 19:26:09 | DEBUG | 4033 | 5cde9a51a1b28 | 1558092369.731 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '2' AND date between '2019-05-10' and '2019-05-15'   group by ticket_from
+2019-05-17 19:26:09 | DEBUG | 4033 | 5cde9a51a1b28 | 1558092369.732 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '1' AND ticket_of = '1' AND date between '2019-05-10' and '2019-05-15'   group by ticket_from
+2019-05-17 19:26:09 | DEBUG | 4033 | 5cde9a51a1b28 | 1558092369.733 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '1' AND ticket_of = '2' AND date between '2019-05-10' and '2019-05-15'   group by ticket_from
+2019-05-17 19:26:09 | DEBUG | 4033 | 5cde9a51a1b28 | 1558092369.733 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '3' AND ticket_of = '1' AND date between '2019-05-10' and '2019-05-15'   group by ticket_from
+2019-05-17 19:26:09 | DEBUG | 4033 | 5cde9a51a1b28 | 1558092369.734 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '3' AND ticket_of = '2' AND date between '2019-05-10' and '2019-05-15'   group by ticket_from
+2019-05-17 19:26:09 | DEBUG | 4033 | 5cde9a51a1b28 | 1558092369.735 | select  sum(ticket_num) as special from ticket_type   where scenic_spot_id = '4' AND date between '2019-05-10' and '2019-05-15'

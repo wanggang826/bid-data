@@ -1,0 +1,93 @@
+2019-05-10 17:35:24 | DEBUG | 1013 | 5cd545dc00fc8 | 1557480924.735 | select  scenic_spot_id,sum(num) as num from reception_num   where date between '2019-01-01' and '2019-05-10'   group by scenic_spot_id
+2019-05-10 17:35:24 | DEBUG | 1013 | 5cd545dc00fc8 | 1557480924.737 | select  scenic_spot_id,sum(num) as num from reception_num   where date between '2019-05-01' and '2019-05-10'   group by scenic_spot_id
+2019-05-10 17:35:24 | DEBUG | 1013 | 5cd545dc00fc8 | 1557480924.750 | select  scenic_spot_id,num from reception_num   where date = '2019-05-10'
+2019-05-10 17:35:24 | DEBUG | 1013 | 5cd545dc00fc8 | 1557480924.752 | select  month(date) as month,sum(num) as num from reception_num   where date between '2016-01-01' and '2017-01-01'    group by month
+2019-05-10 17:35:24 | DEBUG | 1013 | 5cd545dc00fc8 | 1557480924.755 | select  month(date) as month,sum(num) as num from reception_num   where date between '2017-01-01' and '2018-01-01'    group by month
+2019-05-10 17:35:24 | DEBUG | 1013 | 5cd545dc00fc8 | 1557480924.757 | select  month(date) as month,sum(num) as num from reception_num   where date between '2018-01-01' and '2019-01-01'    group by month
+2019-05-10 17:35:24 | DEBUG | 1013 | 5cd545dc00fc8 | 1557480924.759 | select  month(date) as month,sum(num) as num from reception_num   where date between '2019-01-01' and '2019-05-09'   group by month
+2019-05-10 17:35:24 | DEBUG | 1013 | 5cd545dc00fc8 | 1557480924.871 | select  year(date) as year,sum(shanxi_car_count) as 陕西,
+                sum(beijing_car_count) as 北京,
+                sum(tianjin_car_count) as 天津,
+                sum(hebei_car_count) as 河北,
+                sum(sanxi_car_count) as 山西,
+                sum(neimeng_car_count) as 内蒙古,
+                sum(liaoning_car_count) as 辽宁,
+                sum(jilin_car_count) as 吉林,
+                sum(heilongjiang_car_count) as 黑龙江,
+                sum(shanghai_car_count) as 上海,
+                sum(jiangsu_car_count) as 江苏,
+                sum(zhejiang_car_count) as 浙江,
+                sum(anhui_car_count) as 安徽,
+                sum(fujian_car_count) as 福建,
+                sum(jiangxi_car_count) as 江西,
+                sum(shandong_car_count) as 山东,
+                sum(henan_car_count) as 河南,
+                sum(hubei_car_count) as 湖北,
+                sum(hunan_car_count) as 湖南,
+                sum(guangdong_car_count) as 广东,
+                sum(guangxi_car_count) as 广西,
+                sum(hainan_car_count) as 海南,
+                sum(chongqing_car_count) as 重庆,
+                sum(sichuan_car_count) as 四川,
+                sum(guizhou_car_count) as 贵州,
+                sum(yunnan_car_count) as 云南,
+                sum(xizang_car_count) as 西藏,
+                sum(gansu_car_count) as 甘肃,
+                sum(qinghai_car_count) as 青海,
+                sum(ningxia_car_count) as 宁夏,
+                sum(xinjiang_car_count) as 新疆,
+                sum(xianggang_car_count) as 香港,
+                sum(taiwan_car_count) as 台湾,
+                sum(aomen_car_count) as 澳门  from car_from    group by year
+2019-05-10 17:35:24 | DEBUG | 1013 | 5cd545dc00fc8 | 1557480924.924 | select  sum(shanxi_visitor_count) as 陕西,
+                sum(beijing_visitor_count) as 北京,
+                sum(tianjin_visitor_count) as 天津,
+                sum(hebei_visitor_count) as 河北,
+                sum(sanxi_visitor_count) as 山西,
+                sum(neimeng_visitor_count) as 内蒙古,
+                sum(liaoning_visitor_count) as 辽宁,
+                sum(jilin_visitor_count) as 吉林,
+                sum(heilongjiang_visitor_count) as 黑龙江,
+                sum(shanghai_visitor_count) as 上海,
+                sum(jiangsu_visitor_count) as 江苏,
+                sum(zhejiang_visitor_count) as 浙江,
+                sum(anhui_visitor_count) as 安徽,
+                sum(fujian_visitor_count) as 福建,
+                sum(jiangxi_visitor_count) as 江西,
+                sum(shandong_visitor_count) as 山东,
+                sum(henan_visitor_count) as 河南,
+                sum(hubei_visitor_count) as 湖北,
+                sum(hunan_visitor_count) as 湖南,
+                sum(guangdong_visitor_count) as 广东,
+                sum(guangxi_visitor_count) as 广西,
+                sum(hainan_visitor_count) as 海南,
+                sum(chongqing_visitor_count) as 重庆,
+                sum(sichuan_visitor_count) as 四川,
+                sum(guizhou_visitor_count) as 贵州,
+                sum(yunnan_visitor_count) as 云南,
+                sum(xizang_visitor_count) as 西藏,
+                sum(gansu_visitor_count) as 甘肃,
+                sum(qinghai_visitor_count) as 青海,
+                sum(ningxia_visitor_count) as 宁夏,
+                sum(xinjiang_visitor_count) as 新疆,
+                sum(xianggang_visitor_count) as 香港,
+                sum(taiwan_visitor_count) as 台湾,
+                sum(aomen_visitor_count) as 澳门  from visitor_from
+2019-05-10 17:35:24 | DEBUG | 1013 | 5cd545dc00fc8 | 1557480924.963 | select  sum(man_count) as man_count,sum(women_count) as women_count from visitor_att
+2019-05-10 17:35:24 | DEBUG | 1013 | 5cd545dc00fc8 | 1557480924.964 | select  year(date) as year,
+                sum(age1_count) as age1,
+                sum(age2_count) as age2,
+                sum(age3_count) as age3,
+                sum(age4_count) as age4,
+                sum(age5_count) as age5,
+                sum(age6_count) as age6,
+                sum(age7_count) as age7 from visitor_att    group by year
+2019-05-10 17:35:25 | DEBUG | 1013 | 5cd545dc00fc8 | 1557480925.32 | select  hotel_room_num,hotel_occupancy_num from hotel_occupancy   where date ='2019-05-10'
+2019-05-10 17:35:25 | DEBUG | 1013 | 5cd545dc00fc8 | 1557480925.71 | select  year(date) as year,
+                sum(scattered_ticket_num) as scattered_num,
+                sum(group_ticket_num) as group_num from group_scattered_ticket    group by year
+2019-05-10 17:35:25 | DEBUG | 1013 | 5cd545dc00fc8 | 1557480925.120 | select  month(date) as month,sum(income) as income from tourism_income   where date between '2016-01-01' and '2017-01-01'    group by month
+2019-05-10 17:35:25 | DEBUG | 1013 | 5cd545dc00fc8 | 1557480925.124 | select  month(date) as month,sum(income) as income from tourism_income   where date between '2017-01-01' and '2018-01-01'    group by month
+2019-05-10 17:35:25 | DEBUG | 1013 | 5cd545dc00fc8 | 1557480925.126 | select  month(date) as month,sum(income) as income from tourism_income   where date between '2018-01-01' and '2019-01-01'    group by month
+2019-05-10 17:35:25 | DEBUG | 1013 | 5cd545dc00fc8 | 1557480925.128 | select  month(date) as month,sum(income) as income from tourism_income   where date between '2019-01-01' and '2019-05-09'   group by month
+2019-05-10 17:35:25 | DEBUG | 1013 | 5cd545dc00fc8 | 1557480925.178 | execute error: select  warn_time,warn_msg from warning   where date > '2019-05-10'     order by id desc

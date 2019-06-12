@@ -1,0 +1,7 @@
+2019-05-22 16:53:06 | DEBUG | 996 | 5ce50df05ac79 | 1558515186.818 | select  date,count(car_number) as count from car_info   where scenic_spot_id = 1 and date between '2019-05-10' and '2019-05-15'   group by date
+2019-05-22 16:53:06 | DEBUG | 996 | 5ce50df05ac79 | 1558515186.855 | select  date,count(car_number) as count from car_info   where scenic_spot_id = 2 and date between '2019-05-10' and '2019-05-15'   group by date
+2019-05-22 16:53:17 | DEBUG | 995 | 5ce50dfcf257f | 1558515197.587 | select  sum(hotel_occupancy_num) as hotel_occupancy_num from hotel_occupancy   where date between '2019-05-12' and '2019-05-15'
+2019-05-22 16:53:17 | DEBUG | 995 | 5ce50dfcf257f | 1558515197.609 | select  hotel_id,sum(CASE WHEN room_type='1' THEN hotel_occupancy_num ELSE 0 END) as standard_occupancy,
+            sum(CASE WHEN room_type='2' THEN hotel_occupancy_num ELSE 0 END) as kingsize_occupancy,
+            sum(CASE WHEN room_type='3' THEN hotel_occupancy_num ELSE 0 END) as other_occupancy from hotel_occupancy   where date between '2019-05-12' and '2019-05-15'   group by hotel_id
+2019-05-22 16:53:17 | DEBUG | 995 | 5ce50dfcf257f | 1558515197.626 | select  date,sum(hotel_occupancy_num) as occupancy from hotel_occupancy   where date between '2019-05-16' and '2019-05-22'   group by date

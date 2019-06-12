@@ -1,0 +1,10 @@
+2019-05-13 15:35:14 | CRITICAL | 4033 | 5cd91e329f61a | 1557732914.692 | Error - type:1 - file:/var/www/html/big-data/application/controllers/Index.php - line:43 - msg:Uncaught Error: Call to undefined method IndexController::_getHotelData() in /var/www/html/big-data/application/controllers/Index.php:43
+Stack trace:
+#0 [internal function]: IndexController->formDataAction()
+#1 /var/www/html/big-data/index.php(29): Yaf_Application->run()
+#2 {main}
+  thrown
+2019-05-13 15:39:57 | ERROR | 1013 | 5cd91f4d287d1 | 1557733197.187 | Yaf Error Msg: Failed opening controller script /var/www/html/big-data/application/controllers/Index.php: Success
+2019-05-13 15:40:40 | ERROR | 4033 | 5cd91f7838df3 | 1557733240.236 | Yaf Error Msg: Failed opening controller script /var/www/html/big-data/application/controllers/Index.php: Success
+2019-05-13 15:41:39 | ERROR | 1014 | 5cd91fb31dad1 | 1557733299.125 | Yaf Error Msg: Failed opening controller script /var/www/html/big-data/application/controllers/Index.php: Success
+2019-05-13 15:42:32 | ERROR | 1013 | 5cd91fe8d550a | 1557733352.876 | Yaf Error Msg: Failed opening controller script /var/www/html/big-data/application/controllers/Index.php: Success

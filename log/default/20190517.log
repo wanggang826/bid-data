@@ -1,0 +1,1 @@
+2019-05-17 09:58:27 | CRITICAL | 29472 | 5cde1543c89a4 | 1558058307.822 | Error - type:4 - file:/var/www/html/big-data/application/models/VisitorInfo.php - line:197 - msg:syntax error, unexpected '$visitorSexData' (T_VARIABLE)

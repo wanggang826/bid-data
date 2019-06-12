@@ -1,0 +1,388 @@
+2019-05-21 09:20:16 | DEBUG | 29834 | 5ce3524f7e48a | 1558401616.63 | insert into  `car_info`(`date`,`scenic_spot_id`,`car_number`) values ('2019-04-07',1,'宁-CP7596'),('2019-04-07',1,'宁-AH317R'),('2019-04-07',1,'宁-AJ836J'),('2019-04-07',1,'宁-CEU866'),('2019-04-07',1,'青-A8K833'),('2019-04-07',1,'宁-CDG423'),('2019-04-07',1,'宁-ANY357'),('2019-04-07',1,'宁-AMJ038'),('2019-04-07',1,'甘-AF1U12'),('2019-04-07',1,'陕-AS0N87'),('2019-04-07',1,'宁-AYE220'),('2019-04-07',1,'宁-AG0975'),('2019-04-07',1,'宁-B33355'),('2019-04-07',1,'浙-D09900'),('2019-04-07',1,'宁-CH9899'),('2019-04-07',1,'宁-CDX165'),('2019-04-07',1,'宁-A89963'),('2019-04-07',1,'宁-BR9016'),('2019-04-07',1,'宁-AFU068'),('2019-04-07',1,'宁-BS5872'),('2019-04-07',1,'宁-A919M2'),('2019-04-07',1,'宁-BAP003'),('2019-04-07',1,'陕-K10N11'),('2019-04-07',1,'宁-ACE158'),('2019-04-07',1,'宁-A320S3'),('2019-04-07',1,'宁-AEK277'),('2019-04-07',1,'宁-AWY096'),('2019-04-07',1,'宁-ASK197'),('2019-04-07',1,'宁-AG843T'),('2019-04-07',1,'宁-A696C8'),('2019-04-07',1,'宁-AXD190'),('2019-04-07',1,'蒙-CKW258'),('2019-04-07',1,'陕-K36N82'),('2019-04-07',1,'宁-A001P2'),('2019-04-07',1,'宁-BBQ711'),('2019-04-07',1,'鄂-EV7D57'),('2019-04-07',1,'宁-ADP287'),('2019-04-07',1,'宁-AX0452'),('2019-04-07',1,'宁-AL350Y'),('2019-04-07',1,'宁-CH6929'),('2019-04-07',1,'宁-A36180'),('2019-04-07',1,'宁-CFP039'),('2019-04-08',1,'宁-A12345')
+2019-05-21 10:15:28 | DEBUG | 996 | 5ce35f40ba09d | 1558404928.841 | select  sum(hotel_occupancy_num) as hotel_occupancy_num from hotel_occupancy
+2019-05-21 10:15:28 | DEBUG | 996 | 5ce35f40ba09d | 1558404928.841 | select  hotel_id,sum(CASE WHEN room_type='1' THEN hotel_occupancy_num ELSE 0 END) as standard_occupancy,
+            sum(CASE WHEN room_type='2' THEN hotel_occupancy_num ELSE 0 END) as kingsize_occupancy,
+            sum(CASE WHEN room_type='3' THEN hotel_occupancy_num ELSE 0 END) as other_occupancy from hotel_occupancy    group by hotel_id
+2019-05-21 10:15:28 | DEBUG | 996 | 5ce35f40ba09d | 1558404928.841 | select  date,sum(hotel_occupancy_num) as occupancy from hotel_occupancy   where date between '2019-05-15' and '2019-05-21'   group by date
+2019-05-21 10:25:11 | DEBUG | 29834 | 5ce361874730e | 1558405511.296 | select  sum(hotel_occupancy_num) as hotel_occupancy_num from hotel_occupancy
+2019-05-21 10:25:11 | DEBUG | 29834 | 5ce361874730e | 1558405511.296 | select  hotel_id,sum(CASE WHEN room_type='1' THEN hotel_occupancy_num ELSE 0 END) as standard_occupancy,
+            sum(CASE WHEN room_type='2' THEN hotel_occupancy_num ELSE 0 END) as kingsize_occupancy,
+            sum(CASE WHEN room_type='3' THEN hotel_occupancy_num ELSE 0 END) as other_occupancy from hotel_occupancy    group by hotel_id
+2019-05-21 10:25:11 | DEBUG | 29834 | 5ce361874730e | 1558405511.297 | select  date,sum(hotel_occupancy_num) as occupancy from hotel_occupancy   where date between '2019-05-15' and '2019-05-21'   group by date
+2019-05-21 10:26:33 | DEBUG | 995 | 5ce361d942ad8 | 1558405593.274 | select  sum(hotel_occupancy_num) as hotel_occupancy_num from hotel_occupancy
+2019-05-21 10:26:33 | DEBUG | 995 | 5ce361d942ad8 | 1558405593.274 | select  hotel_id,sum(CASE WHEN room_type='1' THEN hotel_occupancy_num ELSE 0 END) as standard_occupancy,
+            sum(CASE WHEN room_type='2' THEN hotel_occupancy_num ELSE 0 END) as kingsize_occupancy,
+            sum(CASE WHEN room_type='3' THEN hotel_occupancy_num ELSE 0 END) as other_occupancy from hotel_occupancy    group by hotel_id
+2019-05-21 10:26:33 | DEBUG | 995 | 5ce361d942ad8 | 1558405593.275 | select  date,sum(hotel_occupancy_num) as occupancy from hotel_occupancy   where date between '2019-05-15' and '2019-05-21'   group by date
+2019-05-21 12:30:01 | DEBUG | 6282 | 5ce37ec91100a | 1558413001.96 | select  id,date,id_card,province,birthday,sex from visitor_info   where  is_analysisided = 0
+2019-05-21 12:30:01 | DEBUG | 6282 | 5ce37ec91100a | 1558413001.116 | insert into visitor_from(shanxi_visitor_count,beijing_visitor_count,tianjin_visitor_count,hebei_visitor_count,sanxi_visitor_count,neimeng_visitor_count,liaoning_visitor_count,jilin_visitor_count,heilongjiang_visitor_count,shanghai_visitor_count,jiangsu_visitor_count,zhejiang_visitor_count,anhui_visitor_count,fujian_visitor_count,jiangxi_visitor_count,shandong_visitor_count,henan_visitor_count,hubei_visitor_count,hunan_visitor_count,guangdong_visitor_count,guangxi_visitor_count,hainan_visitor_count,chongqing_visitor_count,sichuan_visitor_count,guizhou_visitor_count,yunnan_visitor_count,xizang_visitor_count,gansu_visitor_count,qinghai_visitor_count,ningxia_visitor_count,xinjiang_visitor_count,xianggang_visitor_count,taiwan_visitor_count,aomen_visitor_count) values('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0')
+2019-05-21 13:34:33 | DEBUG | 29834 | 5ce38de979ddb | 1558416873.507 | select  scenic_spot_id,sum(num) as num from reception_num   where date between '2019-01-01' and '2019-05-21'   group by scenic_spot_id
+2019-05-21 13:34:33 | DEBUG | 29834 | 5ce38de979ddb | 1558416873.512 | select  scenic_spot_id,sum(num) as num from reception_num   where date between '2019-05-01' and '2019-05-21'   group by scenic_spot_id
+2019-05-21 13:34:33 | DEBUG | 29834 | 5ce38de979ddb | 1558416873.514 | select  scenic_spot_id,num from reception_num   where date = '2019-05-21'
+2019-05-21 13:34:33 | DEBUG | 29834 | 5ce38de979ddb | 1558416873.523 | select  month(date) as month,sum(num) as num from reception_num   where date between '2016-01-01' and '2017-01-01'    group by month
+2019-05-21 13:34:33 | DEBUG | 29834 | 5ce38de979ddb | 1558416873.534 | select  month(date) as month,sum(num) as num from reception_num   where date between '2017-01-01' and '2018-01-01'    group by month
+2019-05-21 13:34:33 | DEBUG | 29834 | 5ce38de979ddb | 1558416873.539 | select  month(date) as month,sum(num) as num from reception_num   where date between '2018-01-01' and '2019-01-01'    group by month
+2019-05-21 13:34:33 | DEBUG | 29834 | 5ce38de979ddb | 1558416873.545 | select  month(date) as month,sum(num) as num from reception_num   where date between '2019-01-01' and '2019-05-20'   group by month
+2019-05-21 13:34:33 | DEBUG | 29834 | 5ce38de979ddb | 1558416873.634 | select  year(date) as year,sum(shanxi_car_count) as 陕西,
+                sum(beijing_car_count) as 北京,
+                sum(tianjin_car_count) as 天津,
+                sum(hebei_car_count) as 河北,
+                sum(sanxi_car_count) as 山西,
+                sum(neimeng_car_count) as 内蒙古,
+                sum(liaoning_car_count) as 辽宁,
+                sum(jilin_car_count) as 吉林,
+                sum(heilongjiang_car_count) as 黑龙江,
+                sum(shanghai_car_count) as 上海,
+                sum(jiangsu_car_count) as 江苏,
+                sum(zhejiang_car_count) as 浙江,
+                sum(anhui_car_count) as 安徽,
+                sum(fujian_car_count) as 福建,
+                sum(jiangxi_car_count) as 江西,
+                sum(shandong_car_count) as 山东,
+                sum(henan_car_count) as 河南,
+                sum(hubei_car_count) as 湖北,
+                sum(hunan_car_count) as 湖南,
+                sum(guangdong_car_count) as 广东,
+                sum(guangxi_car_count) as 广西,
+                sum(hainan_car_count) as 海南,
+                sum(chongqing_car_count) as 重庆,
+                sum(sichuan_car_count) as 四川,
+                sum(guizhou_car_count) as 贵州,
+                sum(yunnan_car_count) as 云南,
+                sum(xizang_car_count) as 西藏,
+                sum(gansu_car_count) as 甘肃,
+                sum(qinghai_car_count) as 青海,
+                sum(ningxia_car_count) as 宁夏,
+                sum(xinjiang_car_count) as 新疆,
+                sum(xianggang_car_count) as 香港,
+                sum(taiwan_car_count) as 台湾,
+                sum(aomen_car_count) as 澳门  from car_from    group by year
+2019-05-21 13:34:33 | DEBUG | 29834 | 5ce38de979ddb | 1558416873.636 | select  sum(shanxi_visitor_count) as 陕西,
+                sum(beijing_visitor_count) as 北京,
+                sum(tianjin_visitor_count) as 天津,
+                sum(hebei_visitor_count) as 河北,
+                sum(sanxi_visitor_count) as 山西,
+                sum(neimeng_visitor_count) as 内蒙古,
+                sum(liaoning_visitor_count) as 辽宁,
+                sum(jilin_visitor_count) as 吉林,
+                sum(heilongjiang_visitor_count) as 黑龙江,
+                sum(shanghai_visitor_count) as 上海,
+                sum(jiangsu_visitor_count) as 江苏,
+                sum(zhejiang_visitor_count) as 浙江,
+                sum(anhui_visitor_count) as 安徽,
+                sum(fujian_visitor_count) as 福建,
+                sum(jiangxi_visitor_count) as 江西,
+                sum(shandong_visitor_count) as 山东,
+                sum(henan_visitor_count) as 河南,
+                sum(hubei_visitor_count) as 湖北,
+                sum(hunan_visitor_count) as 湖南,
+                sum(guangdong_visitor_count) as 广东,
+                sum(guangxi_visitor_count) as 广西,
+                sum(hainan_visitor_count) as 海南,
+                sum(chongqing_visitor_count) as 重庆,
+                sum(sichuan_visitor_count) as 四川,
+                sum(guizhou_visitor_count) as 贵州,
+                sum(yunnan_visitor_count) as 云南,
+                sum(xizang_visitor_count) as 西藏,
+                sum(gansu_visitor_count) as 甘肃,
+                sum(qinghai_visitor_count) as 青海,
+                sum(ningxia_visitor_count) as 宁夏,
+                sum(xinjiang_visitor_count) as 新疆,
+                sum(xianggang_visitor_count) as 香港,
+                sum(taiwan_visitor_count) as 台湾,
+                sum(aomen_visitor_count) as 澳门  from visitor_from
+2019-05-21 13:34:33 | DEBUG | 29834 | 5ce38de979ddb | 1558416873.691 | select  sum(man_count) as man_count,sum(women_count) as women_count from visitor_att
+2019-05-21 13:34:33 | DEBUG | 29834 | 5ce38de979ddb | 1558416873.694 | select  year(date) as year,
+                sum(age1_count) as age1,
+                sum(age2_count) as age2,
+                sum(age3_count) as age3,
+                sum(age4_count) as age4,
+                sum(age5_count) as age5,
+                sum(age6_count) as age6,
+                sum(age7_count) as age7 from visitor_att    group by year
+2019-05-21 13:34:33 | DEBUG | 29834 | 5ce38de979ddb | 1558416873.704 | select  sum(hotel_occupancy_num) as hotel_occupancy_num from hotel_occupancy   where date = '2019-05-21'
+2019-05-21 13:34:33 | DEBUG | 29834 | 5ce38de979ddb | 1558416873.709 | select  year(date) as year,
+                sum(scattered_ticket_num) as scattered_num,
+                sum(group_ticket_num) as group_num from group_scattered_ticket    group by year
+2019-05-21 13:34:33 | DEBUG | 29834 | 5ce38de979ddb | 1558416873.762 | select  month(date) as month,sum(income) as income from tourism_income   where date between '2016-01-01' and '2017-01-01'    group by month
+2019-05-21 13:34:33 | DEBUG | 29834 | 5ce38de979ddb | 1558416873.763 | select  month(date) as month,sum(income) as income from tourism_income   where date between '2017-01-01' and '2018-01-01'    group by month
+2019-05-21 13:34:33 | DEBUG | 29834 | 5ce38de979ddb | 1558416873.765 | select  month(date) as month,sum(income) as income from tourism_income   where date between '2018-01-01' and '2019-01-01'    group by month
+2019-05-21 13:34:33 | DEBUG | 29834 | 5ce38de979ddb | 1558416873.769 | select  month(date) as month,sum(income) as income from tourism_income   where date between '2019-01-01' and '2019-05-20'   group by month
+2019-05-21 13:34:33 | DEBUG | 29834 | 5ce38de979ddb | 1558416873.823 | execute error: select  warn_time,warn_msg from warning   where date > '2019-05-21'     order by id desc
+2019-05-21 13:39:46 | DEBUG | 995 | 5ce38f22b27af | 1558417186.740 | select  scenic_spot_id,sum(num) as num from reception_num   where date between '2019-01-01' and '2019-05-21'   group by scenic_spot_id
+2019-05-21 13:39:46 | DEBUG | 995 | 5ce38f22b27af | 1558417186.743 | select  scenic_spot_id,sum(num) as num from reception_num   where date between '2019-05-01' and '2019-05-21'   group by scenic_spot_id
+2019-05-21 13:39:46 | DEBUG | 995 | 5ce38f22b27af | 1558417186.745 | select  scenic_spot_id,num from reception_num   where date = '2019-05-21'
+2019-05-21 13:39:46 | DEBUG | 995 | 5ce38f22b27af | 1558417186.749 | select  month(date) as month,sum(num) as num from reception_num   where date between '2016-01-01' and '2017-01-01'    group by month
+2019-05-21 13:39:46 | DEBUG | 995 | 5ce38f22b27af | 1558417186.757 | select  month(date) as month,sum(num) as num from reception_num   where date between '2017-01-01' and '2018-01-01'    group by month
+2019-05-21 13:39:46 | DEBUG | 995 | 5ce38f22b27af | 1558417186.764 | select  month(date) as month,sum(num) as num from reception_num   where date between '2018-01-01' and '2019-01-01'    group by month
+2019-05-21 13:39:46 | DEBUG | 995 | 5ce38f22b27af | 1558417186.769 | select  month(date) as month,sum(num) as num from reception_num   where date between '2019-01-01' and '2019-05-20'   group by month
+2019-05-21 13:39:46 | DEBUG | 995 | 5ce38f22b27af | 1558417186.774 | select  year(date) as year,sum(shanxi_car_count) as 陕西,
+                sum(beijing_car_count) as 北京,
+                sum(tianjin_car_count) as 天津,
+                sum(hebei_car_count) as 河北,
+                sum(sanxi_car_count) as 山西,
+                sum(neimeng_car_count) as 内蒙古,
+                sum(liaoning_car_count) as 辽宁,
+                sum(jilin_car_count) as 吉林,
+                sum(heilongjiang_car_count) as 黑龙江,
+                sum(shanghai_car_count) as 上海,
+                sum(jiangsu_car_count) as 江苏,
+                sum(zhejiang_car_count) as 浙江,
+                sum(anhui_car_count) as 安徽,
+                sum(fujian_car_count) as 福建,
+                sum(jiangxi_car_count) as 江西,
+                sum(shandong_car_count) as 山东,
+                sum(henan_car_count) as 河南,
+                sum(hubei_car_count) as 湖北,
+                sum(hunan_car_count) as 湖南,
+                sum(guangdong_car_count) as 广东,
+                sum(guangxi_car_count) as 广西,
+                sum(hainan_car_count) as 海南,
+                sum(chongqing_car_count) as 重庆,
+                sum(sichuan_car_count) as 四川,
+                sum(guizhou_car_count) as 贵州,
+                sum(yunnan_car_count) as 云南,
+                sum(xizang_car_count) as 西藏,
+                sum(gansu_car_count) as 甘肃,
+                sum(qinghai_car_count) as 青海,
+                sum(ningxia_car_count) as 宁夏,
+                sum(xinjiang_car_count) as 新疆,
+                sum(xianggang_car_count) as 香港,
+                sum(taiwan_car_count) as 台湾,
+                sum(aomen_car_count) as 澳门  from car_from    group by year
+2019-05-21 13:39:46 | DEBUG | 995 | 5ce38f22b27af | 1558417186.776 | select  sum(shanxi_visitor_count) as 陕西,
+                sum(beijing_visitor_count) as 北京,
+                sum(tianjin_visitor_count) as 天津,
+                sum(hebei_visitor_count) as 河北,
+                sum(sanxi_visitor_count) as 山西,
+                sum(neimeng_visitor_count) as 内蒙古,
+                sum(liaoning_visitor_count) as 辽宁,
+                sum(jilin_visitor_count) as 吉林,
+                sum(heilongjiang_visitor_count) as 黑龙江,
+                sum(shanghai_visitor_count) as 上海,
+                sum(jiangsu_visitor_count) as 江苏,
+                sum(zhejiang_visitor_count) as 浙江,
+                sum(anhui_visitor_count) as 安徽,
+                sum(fujian_visitor_count) as 福建,
+                sum(jiangxi_visitor_count) as 江西,
+                sum(shandong_visitor_count) as 山东,
+                sum(henan_visitor_count) as 河南,
+                sum(hubei_visitor_count) as 湖北,
+                sum(hunan_visitor_count) as 湖南,
+                sum(guangdong_visitor_count) as 广东,
+                sum(guangxi_visitor_count) as 广西,
+                sum(hainan_visitor_count) as 海南,
+                sum(chongqing_visitor_count) as 重庆,
+                sum(sichuan_visitor_count) as 四川,
+                sum(guizhou_visitor_count) as 贵州,
+                sum(yunnan_visitor_count) as 云南,
+                sum(xizang_visitor_count) as 西藏,
+                sum(gansu_visitor_count) as 甘肃,
+                sum(qinghai_visitor_count) as 青海,
+                sum(ningxia_visitor_count) as 宁夏,
+                sum(xinjiang_visitor_count) as 新疆,
+                sum(xianggang_visitor_count) as 香港,
+                sum(taiwan_visitor_count) as 台湾,
+                sum(aomen_visitor_count) as 澳门  from visitor_from
+2019-05-21 13:39:46 | DEBUG | 995 | 5ce38f22b27af | 1558417186.780 | select  sum(man_count) as man_count,sum(women_count) as women_count from visitor_att
+2019-05-21 13:39:46 | DEBUG | 995 | 5ce38f22b27af | 1558417186.782 | select  year(date) as year,
+                sum(age1_count) as age1,
+                sum(age2_count) as age2,
+                sum(age3_count) as age3,
+                sum(age4_count) as age4,
+                sum(age5_count) as age5,
+                sum(age6_count) as age6,
+                sum(age7_count) as age7 from visitor_att    group by year
+2019-05-21 13:39:46 | DEBUG | 995 | 5ce38f22b27af | 1558417186.793 | select  sum(hotel_occupancy_num) as hotel_occupancy_num from hotel_occupancy   where date = '2019-05-21'
+2019-05-21 13:39:46 | DEBUG | 995 | 5ce38f22b27af | 1558417186.794 | select  year(date) as year,
+                sum(scattered_ticket_num) as scattered_num,
+                sum(group_ticket_num) as group_num from group_scattered_ticket    group by year
+2019-05-21 13:39:46 | DEBUG | 995 | 5ce38f22b27af | 1558417186.795 | select  month(date) as month,sum(income) as income from tourism_income   where date between '2016-01-01' and '2017-01-01'    group by month
+2019-05-21 13:39:46 | DEBUG | 995 | 5ce38f22b27af | 1558417186.796 | select  month(date) as month,sum(income) as income from tourism_income   where date between '2017-01-01' and '2018-01-01'    group by month
+2019-05-21 13:39:46 | DEBUG | 995 | 5ce38f22b27af | 1558417186.797 | select  month(date) as month,sum(income) as income from tourism_income   where date between '2018-01-01' and '2019-01-01'    group by month
+2019-05-21 13:39:46 | DEBUG | 995 | 5ce38f22b27af | 1558417186.798 | select  month(date) as month,sum(income) as income from tourism_income   where date between '2019-01-01' and '2019-05-20'   group by month
+2019-05-21 13:39:46 | DEBUG | 995 | 5ce38f22b27af | 1558417186.798 | execute error: select  warn_time,warn_msg from warning   where date > '2019-05-21'     order by id desc
+2019-05-21 16:12:07 | DEBUG | 996 | 5ce3b2d71b2cd | 1558426327.117 | select  scenic_spot_id,sum(num) as num from reception_num   where date between '2019-05-10' and '2019-05-15'   group by scenic_spot_id
+2019-05-21 16:12:07 | DEBUG | 996 | 5ce3b2d71b2cd | 1558426327.231 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '2' AND date between '2019-05-10' and '2019-05-15'   group by ticket_from
+2019-05-21 16:12:07 | DEBUG | 996 | 5ce3b2d71b2cd | 1558426327.233 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '1' AND ticket_of = '1' AND date between '2019-05-10' and '2019-05-15'   group by ticket_from
+2019-05-21 16:12:07 | DEBUG | 996 | 5ce3b2d71b2cd | 1558426327.234 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '1' AND ticket_of = '2' AND date between '2019-05-10' and '2019-05-15'   group by ticket_from
+2019-05-21 16:12:07 | DEBUG | 996 | 5ce3b2d71b2cd | 1558426327.234 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '3' AND ticket_of = '1' AND date between '2019-05-10' and '2019-05-15'   group by ticket_from
+2019-05-21 16:12:07 | DEBUG | 996 | 5ce3b2d71b2cd | 1558426327.235 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '3' AND ticket_of = '2' AND date between '2019-05-10' and '2019-05-15'   group by ticket_from
+2019-05-21 16:12:07 | DEBUG | 996 | 5ce3b2d71b2cd | 1558426327.236 | select  sum(ticket_num) as special from ticket_type   where scenic_spot_id = '4' AND date between '2019-05-10' and '2019-05-15'
+2019-05-21 16:15:13 | DEBUG | 995 | 5ce3b39161ea1 | 1558426513.412 | select  scenic_spot_id,sum(num) as num from reception_num   where date between '2019-05-10' and '2019-05-21'   group by scenic_spot_id
+2019-05-21 16:15:13 | DEBUG | 995 | 5ce3b39161ea1 | 1558426513.414 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '2' AND date between '2019-05-10' and '2019-05-21'   group by ticket_from
+2019-05-21 16:15:13 | DEBUG | 995 | 5ce3b39161ea1 | 1558426513.415 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '1' AND ticket_of = '1' AND date between '2019-05-10' and '2019-05-21'   group by ticket_from
+2019-05-21 16:15:13 | DEBUG | 995 | 5ce3b39161ea1 | 1558426513.417 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '1' AND ticket_of = '2' AND date between '2019-05-10' and '2019-05-21'   group by ticket_from
+2019-05-21 16:15:13 | DEBUG | 995 | 5ce3b39161ea1 | 1558426513.419 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '3' AND ticket_of = '1' AND date between '2019-05-10' and '2019-05-21'   group by ticket_from
+2019-05-21 16:15:13 | DEBUG | 995 | 5ce3b39161ea1 | 1558426513.420 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '3' AND ticket_of = '2' AND date between '2019-05-10' and '2019-05-21'   group by ticket_from
+2019-05-21 16:15:13 | DEBUG | 995 | 5ce3b39161ea1 | 1558426513.421 | select  sum(ticket_num) as special from ticket_type   where scenic_spot_id = '4' AND date between '2019-05-10' and '2019-05-21'
+2019-05-21 16:15:53 | DEBUG | 29834 | 5ce3b3b90ca39 | 1558426553.56 | select  * from ticket_type   where scenic_spot_id=1 AND ticket_type_id=1 AND ticket_of=1 AND ticket_from=2 AND date = '2019-05-20'
+2019-05-21 16:15:53 | DEBUG | 29834 | 5ce3b3b90ca39 | 1558426553.57 | insert into ticket_type(date,scenic_spot_id,ticket_type_id,ticket_of,ticket_from,ticket_num) values('2019-05-20','1','1','1','2','10')
+2019-05-21 16:15:53 | DEBUG | 29834 | 5ce3b3b90ca39 | 1558426553.57 | select  * from ticket_type   where scenic_spot_id=1 AND ticket_type_id=2 AND ticket_of=1 AND ticket_from=2 AND date = '2019-05-20'
+2019-05-21 16:15:53 | DEBUG | 29834 | 5ce3b3b90ca39 | 1558426553.58 | insert into ticket_type(date,scenic_spot_id,ticket_type_id,ticket_of,ticket_from,ticket_num) values('2019-05-20','1','2','1','2','20')
+2019-05-21 16:15:53 | DEBUG | 29834 | 5ce3b3b90ca39 | 1558426553.59 | select  * from ticket_type   where scenic_spot_id=2 AND ticket_type_id=3 AND ticket_of=1 AND ticket_from=2 AND date = '2019-05-20'
+2019-05-21 16:15:53 | DEBUG | 29834 | 5ce3b3b90ca39 | 1558426553.59 | insert into ticket_type(date,scenic_spot_id,ticket_type_id,ticket_of,ticket_from,ticket_num) values('2019-05-20','2','3','1','2','2')
+2019-05-21 16:15:58 | DEBUG | 996 | 5ce3b3bea938b | 1558426558.704 | select  scenic_spot_id,sum(num) as num from reception_num   where date between '2019-05-10' and '2019-05-21'   group by scenic_spot_id
+2019-05-21 16:15:58 | DEBUG | 996 | 5ce3b3bea938b | 1558426558.708 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '2' AND date between '2019-05-10' and '2019-05-21'   group by ticket_from
+2019-05-21 16:15:58 | DEBUG | 996 | 5ce3b3bea938b | 1558426558.711 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '1' AND ticket_of = '1' AND date between '2019-05-10' and '2019-05-21'   group by ticket_from
+2019-05-21 16:15:58 | DEBUG | 996 | 5ce3b3bea938b | 1558426558.713 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '1' AND ticket_of = '2' AND date between '2019-05-10' and '2019-05-21'   group by ticket_from
+2019-05-21 16:15:58 | DEBUG | 996 | 5ce3b3bea938b | 1558426558.714 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '3' AND ticket_of = '1' AND date between '2019-05-10' and '2019-05-21'   group by ticket_from
+2019-05-21 16:15:58 | DEBUG | 996 | 5ce3b3bea938b | 1558426558.715 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '3' AND ticket_of = '2' AND date between '2019-05-10' and '2019-05-21'   group by ticket_from
+2019-05-21 16:15:58 | DEBUG | 996 | 5ce3b3bea938b | 1558426558.716 | select  sum(ticket_num) as special from ticket_type   where scenic_spot_id = '4' AND date between '2019-05-10' and '2019-05-21'
+2019-05-21 16:35:59 | DEBUG | 29834 | 5ce3b86f30307 | 1558427759.208 | select  scenic_spot_id,sum(num) as num from reception_num   where date between '2019-05-10' and '2019-05-21'   group by scenic_spot_id
+2019-05-21 16:35:59 | DEBUG | 29834 | 5ce3b86f30307 | 1558427759.215 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '2' AND date between '2019-05-10' and '2019-05-21'   group by ticket_from
+2019-05-21 16:35:59 | DEBUG | 29834 | 5ce3b86f30307 | 1558427759.216 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '1' AND ticket_of = '1' AND date between '2019-05-10' and '2019-05-21'   group by ticket_from
+2019-05-21 16:35:59 | DEBUG | 29834 | 5ce3b86f30307 | 1558427759.217 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '1' AND ticket_of = '2' AND date between '2019-05-10' and '2019-05-21'   group by ticket_from
+2019-05-21 16:35:59 | DEBUG | 29834 | 5ce3b86f30307 | 1558427759.217 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '3' AND ticket_of = '1' AND date between '2019-05-10' and '2019-05-21'   group by ticket_from
+2019-05-21 16:35:59 | DEBUG | 29834 | 5ce3b86f30307 | 1558427759.218 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '3' AND ticket_of = '2' AND date between '2019-05-10' and '2019-05-21'   group by ticket_from
+2019-05-21 16:35:59 | DEBUG | 29834 | 5ce3b86f30307 | 1558427759.219 | select  sum(ticket_num) as special from ticket_type   where scenic_spot_id = '4' AND date between '2019-05-10' and '2019-05-21'
+2019-05-21 16:36:18 | DEBUG | 995 | 5ce3b8829d7d4 | 1558427778.650 | select  scenic_spot_id,sum(num) as num from reception_num   where date between '2019-05-01' and '2019-05-07'   group by scenic_spot_id
+2019-05-21 16:36:18 | DEBUG | 995 | 5ce3b8829d7d4 | 1558427778.651 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '2' AND date between '2019-05-01' and '2019-05-07'   group by ticket_from
+2019-05-21 16:36:18 | DEBUG | 995 | 5ce3b8829d7d4 | 1558427778.651 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '1' AND ticket_of = '1' AND date between '2019-05-01' and '2019-05-07'   group by ticket_from
+2019-05-21 16:36:18 | DEBUG | 995 | 5ce3b8829d7d4 | 1558427778.652 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '1' AND ticket_of = '2' AND date between '2019-05-01' and '2019-05-07'   group by ticket_from
+2019-05-21 16:36:18 | DEBUG | 995 | 5ce3b8829d7d4 | 1558427778.653 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '3' AND ticket_of = '1' AND date between '2019-05-01' and '2019-05-07'   group by ticket_from
+2019-05-21 16:36:18 | DEBUG | 995 | 5ce3b8829d7d4 | 1558427778.653 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '3' AND ticket_of = '2' AND date between '2019-05-01' and '2019-05-07'   group by ticket_from
+2019-05-21 16:36:18 | DEBUG | 995 | 5ce3b8829d7d4 | 1558427778.654 | select  sum(ticket_num) as special from ticket_type   where scenic_spot_id = '4' AND date between '2019-05-01' and '2019-05-07'
+2019-05-21 16:40:36 | DEBUG | 996 | 5ce3b984e6a19 | 1558428036.949 | select  scenic_spot_id,sum(num) as num from reception_num   where date between '2019-05-01' and '2019-05-07'   group by scenic_spot_id
+2019-05-21 16:40:36 | DEBUG | 996 | 5ce3b984e6a19 | 1558428036.956 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '2' AND date between '2019-05-01' and '2019-05-07'   group by ticket_from
+2019-05-21 16:40:36 | DEBUG | 996 | 5ce3b984e6a19 | 1558428036.957 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '1' AND ticket_of = '1' AND date between '2019-05-01' and '2019-05-07'   group by ticket_from
+2019-05-21 16:40:36 | DEBUG | 996 | 5ce3b984e6a19 | 1558428036.958 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '1' AND ticket_of = '2' AND date between '2019-05-01' and '2019-05-07'   group by ticket_from
+2019-05-21 16:40:36 | DEBUG | 996 | 5ce3b984e6a19 | 1558428036.958 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '3' AND ticket_of = '1' AND date between '2019-05-01' and '2019-05-07'   group by ticket_from
+2019-05-21 16:40:36 | DEBUG | 996 | 5ce3b984e6a19 | 1558428036.959 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '3' AND ticket_of = '2' AND date between '2019-05-01' and '2019-05-07'   group by ticket_from
+2019-05-21 16:40:36 | DEBUG | 996 | 5ce3b984e6a19 | 1558428036.959 | select  sum(ticket_num) as special from ticket_type   where scenic_spot_id = '4' AND date between '2019-05-01' and '2019-05-07'
+2019-05-21 16:40:56 | DEBUG | 29834 | 5ce3b9982ddf9 | 1558428056.192 | select  scenic_spot_id,num from reception_num   where date = '2019-05-21'
+2019-05-21 16:40:56 | DEBUG | 29834 | 5ce3b9982ddf9 | 1558428056.192 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '2' AND date = '2019-05-21'   group by ticket_from
+2019-05-21 16:40:56 | DEBUG | 29834 | 5ce3b9982ddf9 | 1558428056.193 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '1' AND ticket_of = '1' AND date = '2019-05-21'   group by ticket_from
+2019-05-21 16:40:56 | DEBUG | 29834 | 5ce3b9982ddf9 | 1558428056.194 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '1' AND ticket_of = '2' AND date = '2019-05-21'   group by ticket_from
+2019-05-21 16:40:56 | DEBUG | 29834 | 5ce3b9982ddf9 | 1558428056.195 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '3' AND ticket_of = '1' AND date = '2019-05-21'   group by ticket_from
+2019-05-21 16:40:56 | DEBUG | 29834 | 5ce3b9982ddf9 | 1558428056.196 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '3' AND ticket_of = '2' AND date = '2019-05-21'   group by ticket_from
+2019-05-21 16:40:56 | DEBUG | 29834 | 5ce3b9982ddf9 | 1558428056.196 | select  sum(ticket_num) as special from ticket_type   where scenic_spot_id = '4' AND date = '2019-05-21'
+2019-05-21 16:45:19 | DEBUG | 995 | 5ce3ba9f70b4b | 1558428319.478 | select  sum(hotel_occupancy_num) as hotel_occupancy_num from hotel_occupancy   where date = '2019-05-21'
+2019-05-21 16:45:19 | DEBUG | 995 | 5ce3ba9f70b4b | 1558428319.480 | select  hotel_id,sum(CASE WHEN room_type='1' THEN hotel_occupancy_num ELSE 0 END) as standard_occupancy,
+            sum(CASE WHEN room_type='2' THEN hotel_occupancy_num ELSE 0 END) as kingsize_occupancy,
+            sum(CASE WHEN room_type='3' THEN hotel_occupancy_num ELSE 0 END) as other_occupancy from hotel_occupancy    group by hotel_id
+2019-05-21 16:48:28 | DEBUG | 995 | 5ce3bb5c614f6 | 1558428508.405 | select  sum(hotel_occupancy_num) as hotel_occupancy_num from hotel_occupancy   where date = '2019-05-21'
+2019-05-21 16:48:28 | DEBUG | 995 | 5ce3bb5c614f6 | 1558428508.406 | select  hotel_id,sum(CASE WHEN room_type='1' THEN hotel_occupancy_num ELSE 0 END) as standard_occupancy,
+            sum(CASE WHEN room_type='2' THEN hotel_occupancy_num ELSE 0 END) as kingsize_occupancy,
+            sum(CASE WHEN room_type='3' THEN hotel_occupancy_num ELSE 0 END) as other_occupancy from hotel_occupancy    group by hotel_id
+2019-05-21 16:48:28 | DEBUG | 995 | 5ce3bb5c614f6 | 1558428508.442 | select  date,sum(hotel_occupancy_num) as occupancy from hotel_occupancy   where date between '2019-05-15' and '2019-05-21'   group by date
+2019-05-21 16:49:56 | DEBUG | 996 | 5ce3bbb4dd2f4 | 1558428596.918 | select  sum(hotel_occupancy_num) as hotel_occupancy_num from hotel_occupancy   where date = '2019-05-21'
+2019-05-21 16:49:56 | DEBUG | 996 | 5ce3bbb4dd2f4 | 1558428596.923 | select  hotel_id,sum(CASE WHEN room_type='1' THEN hotel_occupancy_num ELSE 0 END) as standard_occupancy,
+            sum(CASE WHEN room_type='2' THEN hotel_occupancy_num ELSE 0 END) as kingsize_occupancy,
+            sum(CASE WHEN room_type='3' THEN hotel_occupancy_num ELSE 0 END) as other_occupancy from hotel_occupancy    group by hotel_id
+2019-05-21 16:50:43 | DEBUG | 29834 | 5ce3bbe3cf6e0 | 1558428643.860 | select  sum(hotel_occupancy_num) as hotel_occupancy_num from hotel_occupancy   where date = '2019-05-21'
+2019-05-21 16:50:43 | DEBUG | 29834 | 5ce3bbe3cf6e0 | 1558428643.861 | select  hotel_id,sum(CASE WHEN room_type='1' THEN hotel_occupancy_num ELSE 0 END) as standard_occupancy,
+            sum(CASE WHEN room_type='2' THEN hotel_occupancy_num ELSE 0 END) as kingsize_occupancy,
+            sum(CASE WHEN room_type='3' THEN hotel_occupancy_num ELSE 0 END) as other_occupancy from hotel_occupancy    group by hotel_id
+2019-05-21 17:08:27 | DEBUG | 995 | 5ce3c00b2672c | 1558429707.172 | select  sum(hotel_occupancy_num) as hotel_occupancy_num from hotel_occupancy   where date = '2019-05-21'
+2019-05-21 17:08:27 | DEBUG | 995 | 5ce3c00b2672c | 1558429707.173 | select  hotel_id,sum(CASE WHEN room_type='1' THEN hotel_occupancy_num ELSE 0 END) as standard_occupancy,
+            sum(CASE WHEN room_type='2' THEN hotel_occupancy_num ELSE 0 END) as kingsize_occupancy,
+            sum(CASE WHEN room_type='3' THEN hotel_occupancy_num ELSE 0 END) as other_occupancy from hotel_occupancy   where date ='2019-05-21'   group by hotel_id
+2019-05-21 17:08:27 | DEBUG | 995 | 5ce3c00b2672c | 1558429707.174 | select  date,sum(hotel_occupancy_num) as occupancy from hotel_occupancy   where date between '2019-05-15' and '2019-05-21'   group by date
+2019-05-21 17:08:48 | DEBUG | 996 | 5ce3c02087eea | 1558429728.578 | select  sum(hotel_occupancy_num) as hotel_occupancy_num from hotel_occupancy   where date between '2019-05-12' and '2019-05-15'
+2019-05-21 17:08:48 | DEBUG | 996 | 5ce3c02087eea | 1558429728.581 | select  hotel_id,sum(CASE WHEN room_type='1' THEN hotel_occupancy_num ELSE 0 END) as standard_occupancy,
+            sum(CASE WHEN room_type='2' THEN hotel_occupancy_num ELSE 0 END) as kingsize_occupancy,
+            sum(CASE WHEN room_type='3' THEN hotel_occupancy_num ELSE 0 END) as other_occupancy from hotel_occupancy   where date between '2019-05-12' and '2019-05-15'   group by hotel_id
+2019-05-21 17:08:48 | DEBUG | 996 | 5ce3c02087eea | 1558429728.582 | select  date,sum(hotel_occupancy_num) as occupancy from hotel_occupancy   where date between '2019-05-15' and '2019-05-21'   group by date
+2019-05-21 17:09:31 | DEBUG | 29834 | 5ce3c04b72f5f | 1558429771.473 | select  sum(hotel_occupancy_num) as hotel_occupancy_num from hotel_occupancy   where date = '2019-05-21'
+2019-05-21 17:09:31 | DEBUG | 29834 | 5ce3c04b72f5f | 1558429771.474 | select  hotel_id,sum(CASE WHEN room_type='1' THEN hotel_occupancy_num ELSE 0 END) as standard_occupancy,
+            sum(CASE WHEN room_type='2' THEN hotel_occupancy_num ELSE 0 END) as kingsize_occupancy,
+            sum(CASE WHEN room_type='3' THEN hotel_occupancy_num ELSE 0 END) as other_occupancy from hotel_occupancy   where date ='2019-05-21'   group by hotel_id
+2019-05-21 17:09:31 | DEBUG | 29834 | 5ce3c04b72f5f | 1558429771.475 | select  date,sum(hotel_occupancy_num) as occupancy from hotel_occupancy   where date between '2019-05-15' and '2019-05-21'   group by date
+2019-05-21 17:09:48 | DEBUG | 995 | 5ce3c05c82abf | 1558429788.540 | select  * from hotel_occupancy   where hotel_id=1 AND room_type=1 AND date = '2019-05-21'
+2019-05-21 17:09:48 | DEBUG | 995 | 5ce3c05c82abf | 1558429788.540 | insert into hotel_occupancy(date,hotel_id,room_type,hotel_occupancy_num) values('2019-05-21','1','1','12')
+2019-05-21 17:09:58 | DEBUG | 29834 | 5ce3c066b1c49 | 1558429798.735 | select  sum(hotel_occupancy_num) as hotel_occupancy_num from hotel_occupancy   where date = '2019-05-21'
+2019-05-21 17:09:58 | DEBUG | 29834 | 5ce3c066b1c49 | 1558429798.736 | select  hotel_id,sum(CASE WHEN room_type='1' THEN hotel_occupancy_num ELSE 0 END) as standard_occupancy,
+            sum(CASE WHEN room_type='2' THEN hotel_occupancy_num ELSE 0 END) as kingsize_occupancy,
+            sum(CASE WHEN room_type='3' THEN hotel_occupancy_num ELSE 0 END) as other_occupancy from hotel_occupancy   where date ='2019-05-21'   group by hotel_id
+2019-05-21 17:09:58 | DEBUG | 29834 | 5ce3c066b1c49 | 1558429798.737 | select  date,sum(hotel_occupancy_num) as occupancy from hotel_occupancy   where date between '2019-05-15' and '2019-05-21'   group by date
+2019-05-21 17:29:46 | DEBUG | 995 | 5ce3c50a019c7 | 1558430986.13 | select  sum(hotel_occupancy_num) as hotel_occupancy_num from hotel_occupancy   where date = '2019-05-21'
+2019-05-21 17:29:46 | DEBUG | 995 | 5ce3c50a019c7 | 1558430986.14 | select  hotel_id,sum(CASE WHEN room_type='1' THEN hotel_occupancy_num ELSE 0 END) as standard_occupancy,
+            sum(CASE WHEN room_type='2' THEN hotel_occupancy_num ELSE 0 END) as kingsize_occupancy,
+            sum(CASE WHEN room_type='3' THEN hotel_occupancy_num ELSE 0 END) as other_occupancy from hotel_occupancy   where date ='2019-05-21'   group by hotel_id
+2019-05-21 17:29:46 | DEBUG | 995 | 5ce3c50a019c7 | 1558430986.14 | select  date,sum(hotel_occupancy_num) as occupancy from hotel_occupancy   where date between '2019-05-15' and '2019-05-21'   group by date
+2019-05-21 19:01:48 | DEBUG | 996 | 5ce3da9ce3954 | 1558436508.936 | select  sum(hotel_occupancy_num) as hotel_occupancy_num from hotel_occupancy   where date = '2019-05-21'
+2019-05-21 19:01:48 | DEBUG | 996 | 5ce3da9ce3954 | 1558436508.937 | select  hotel_id,sum(CASE WHEN room_type='1' THEN hotel_occupancy_num ELSE 0 END) as standard_occupancy,
+            sum(CASE WHEN room_type='2' THEN hotel_occupancy_num ELSE 0 END) as kingsize_occupancy,
+            sum(CASE WHEN room_type='3' THEN hotel_occupancy_num ELSE 0 END) as other_occupancy from hotel_occupancy   where date ='2019-05-21'   group by hotel_id
+2019-05-21 19:01:48 | DEBUG | 996 | 5ce3da9ce3954 | 1558436508.938 | select  date,sum(hotel_occupancy_num) as occupancy from hotel_occupancy   where date between '2019-05-15' and '2019-05-21'   group by date
+2019-05-21 19:20:05 | DEBUG | 29834 | 5ce3dee59b43b | 1558437605.641 | select  sum(hotel_occupancy_num) as hotel_occupancy_num from hotel_occupancy   where date = '2019-05-21'
+2019-05-21 19:20:05 | DEBUG | 29834 | 5ce3dee59b43b | 1558437605.642 | select  hotel_id,sum(CASE WHEN room_type='1' THEN hotel_occupancy_num ELSE 0 END) as standard_occupancy,
+            sum(CASE WHEN room_type='2' THEN hotel_occupancy_num ELSE 0 END) as kingsize_occupancy,
+            sum(CASE WHEN room_type='3' THEN hotel_occupancy_num ELSE 0 END) as other_occupancy from hotel_occupancy   where date ='2019-05-21'   group by hotel_id
+2019-05-21 19:20:05 | DEBUG | 29834 | 5ce3dee59b43b | 1558437605.642 | select  date,sum(hotel_occupancy_num) as occupancy from hotel_occupancy   where date between '2019-05-15' and '2019-05-21'   group by date
+2019-05-21 19:20:21 | DEBUG | 995 | 5ce3def558652 | 1558437621.363 | select  sum(hotel_occupancy_num) as hotel_occupancy_num from hotel_occupancy   where date between '2019-05-12' and '2019-05-15'
+2019-05-21 19:20:21 | DEBUG | 995 | 5ce3def558652 | 1558437621.364 | select  hotel_id,sum(CASE WHEN room_type='1' THEN hotel_occupancy_num ELSE 0 END) as standard_occupancy,
+            sum(CASE WHEN room_type='2' THEN hotel_occupancy_num ELSE 0 END) as kingsize_occupancy,
+            sum(CASE WHEN room_type='3' THEN hotel_occupancy_num ELSE 0 END) as other_occupancy from hotel_occupancy   where date between '2019-05-12' and '2019-05-15'   group by hotel_id
+2019-05-21 19:20:21 | DEBUG | 995 | 5ce3def558652 | 1558437621.364 | select  date,sum(hotel_occupancy_num) as occupancy from hotel_occupancy   where date between '2019-05-15' and '2019-05-21'   group by date

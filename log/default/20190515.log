@@ -1,0 +1,16 @@
+2019-05-15 00:23:09 | ERROR | 1014 | 5cdaeb6d9467f | 1557850989.610 | Yaf Error Msg: Failed opening controller script /var/www/html/big-data/application/controllers/Login.php: No such file or directory
+2019-05-15 00:23:10 | ERROR | 4033 | 5cdaeb6e57e46 | 1557850990.362 | Yaf Error Msg: Failed opening controller script /var/www/html/big-data/application/controllers/Favicon.ico.php: No such file or directory
+2019-05-15 00:23:18 | ERROR | 1014 | 5cdaeb76c2d9c | 1557850998.801 | Yaf Error Msg: Failed opening controller script /var/www/html/big-data/application/controllers/Login.php: No such file or directory
+2019-05-15 00:23:18 | ERROR | 4033 | 5cdaeb76d6fcb | 1557850998.881 | Yaf Error Msg: Failed opening controller script /var/www/html/big-data/application/controllers/Favicon.ico.php: No such file or directory
+2019-05-15 00:29:18 | ERROR | 1014 | 5cdaecde8d84c | 1557851358.603 | Yaf Error Msg: Failed opening controller script /var/www/html/big-data/application/controllers/Public.php: No such file or directory
+2019-05-15 00:31:04 | ERROR | 4033 | 5cdaed48e02de | 1557851464.919 | Yaf Error Msg: Failed opening controller script /var/www/html/big-data/application/controllers/Public.php: No such file or directory
+2019-05-15 00:31:48 | ERROR | 17202 | 5cdaed74e44f1 | 1557851508.940 | Yaf Error Msg: SeasLog Invalid Log File - /var/www/html/big-data/log/sql/20190515.log
+2019-05-15 10:44:14 | CRITICAL | 1014 | 5cdb7cfdb04e6 | 1557888254.154 | Error - type:4 - file:/var/www/html/big-data/application/models/Hotel.php - line:135 - msg:syntax error, unexpected 'return' (T_RETURN)
+2019-05-15 10:44:49 | CRITICAL | 4033 | 5cdb7d213f188 | 1557888289.259 | Error - type:4 - file:/var/www/html/big-data/application/models/Hotel.php - line:135 - msg:syntax error, unexpected 'return' (T_RETURN)
+2019-05-15 13:23:32 | CRITICAL | 1014 | 5cdba2548ba0c | 1557897812.721 | Error - type:1 - file:/var/www/html/big-data/application/models/Hotel.php - line:539 - msg:Uncaught Error: Call to undefined function 2019-05-12() in /var/www/html/big-data/application/models/Hotel.php:539
+Stack trace:
+#0 /var/www/html/big-data/application/controllers/Api.php(70): HotelModel::getHotelDetailDataByTime('2019-05-12', '2019-05-15')
+#1 [internal function]: ApiController->getHotelDataAction()
+#2 /var/www/html/big-data/index.php(29): Yaf_Application->run()
+#3 {main}
+  thrown

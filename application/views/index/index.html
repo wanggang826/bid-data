@@ -1,0 +1,754 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="/public/qingtongxiaicon.png" type="image/x-icon" />
+    <!--<link rel="stylesheet" href="https://payapi.tuoxingwang.com/static/layui/css/layui.css" media="all">-->
+    <link rel="stylesheet" href="/public/lib/layui/css/layui.css" media="all">
+    <title>青铜峡大数据平台数据上报</title>
+    <style>
+        .layui-table{
+            width: 85%;
+            min-width: 680px;
+            margin: 0 auto;
+        }
+        .input-box{
+            width: 550px!important;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .picktime{
+            width: 200px;
+        }
+        .no-padding{
+            padding: 0!important;
+        }
+        .layui-form-item{
+            margin-bottom: 0!important;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 5px 0;
+        }
+        .layui-form-label{
+            margin-bottom: 0!important;
+            width: 100px;
+        }
+        .notdborder td{
+            border-bottom: 0;
+        }
+        .subdata{
+            margin-left: 15px;
+        }
+        .data-table td{
+            text-align: center;
+        }
+        [v-cloak] {
+            display: none;
+        }
+        .token{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<!--<div id="app" v-cloak>-->
+<div>
+    <table class="layui-table data-table" style="margin-top: 50px;border-collapse:separate;">
+        <thead>
+        <tr>
+            <th colspan="6" style="text-align: center;color:#000;font-weight: bold;font-size: 20px;">青铜峡大数据平台数据上报</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="notdborder">
+            <td class="no-padding"><b>日期</b></td>
+            <td colspan="5" class="no-padding">
+                <div class="layui-form-item">
+                    <label class="layui-form-label" style="width: 15%;">数据时间</label>
+                    <div class="layui-input-inline input-box" style="width: 30%;">
+                    <input type="text" name="data_time" id="dataTime" required lay-verify="required" placeholder="请选择日期时间" class="layui-input picktime">
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr class="notdborder">
+            <td class="no-padding"><b>接待人数</b></td>
+            <td colspan="5" class="no-padding">
+                <div class="layui-form-item">
+                    <label class="layui-form-label" style="width: 20%;margin-left: 5px;">黄河大峡谷:</label>
+                    <div class="layui-input-inline" style="width: 25%;">
+                        <input type="text" id="hhdxg" name="hhdxg" class="layui-input token"/>
+                    </div>
+                    <label class="layui-form-label" style="width: 20%;margin-left: 5px;">黄河楼:</label>
+                    <div class="layui-input-inline" style="width: 25%;">
+                        <input type="text" id="hhl" name="hhl" class="layui-input token"/>
+                    </div>
+                    <label class="layui-form-label" style="width: 20%;margin-left: 5px;">黄河坛:</label>
+                    <div class="layui-input-inline" style="width: 25%;">
+                        <input type="text" id="hht" name="hht" class="layui-input token"/>
+                    </div>
+                    <label class="layui-form-label" style="width: 20%;margin-left: 5px;">黄河生态园:</label>
+                    <div class="layui-input-inline" style="width: 25%;">
+                        <input type="text" id="hhsty" name="hhsty" class="layui-input token"/>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr class="notdborder">
+            <td class="no-padding"><b>营销数据-旅游收入</b></td>
+            <td colspan="5" class="no-padding">
+                <div class="layui-form-item">
+                    <label class="layui-form-label" style="width: 20%;margin-left: 5px;">旅游收入:</label>
+                    <div class="layui-input-inline" style="width: 25%;">
+                        <input type="text" id="tourism_income" name="tourism_income" class="layui-input token"/>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr class="notdborder">
+            <td class="no-padding"><b>营销数据-团散票</b></td>
+            <td colspan="5" class="no-padding">
+                <div class="layui-form-item">
+                    <label class="layui-form-label" style="width: 20%;margin-left: 5px;">团票数:</label>
+                    <div class="layui-input-inline" style="width: 25%;">
+                        <input type="text" id="group_ticket" name="group_ticket" class="layui-input token"/>
+                    </div>
+                    <label class="layui-form-label" style="width: 20%;margin-left: 5px;">散票数:</label>
+                    <div class="layui-input-inline" style="width: 25%;">
+                        <input type="text" id="scattered_ticket" name="scattered_ticket" class="layui-input token"/>
+                    </div>
+                </div>
+            </td>
+        </tr>
+
+        <tr class="notdborder">
+            <td class="no-padding"><b>天气预警</b></td>
+            <td colspan="5" class="no-padding">
+                <div class="layui-form-item">
+                    <label class="layui-form-label" style="width: 10%;margin-left: 5px;">时间:</label>
+                    <div class="layui-input-inline input-box" style="width: 15%;">
+                        <input type="text" name="warn_time" id="warnTime" required lay-verify="required" placeholder="请选择时间" class="layui-input picktime">
+                    </div>
+                    <label class="layui-form-label" style="width: 8%;margin-left: 5px;">预警提示信息:</label>
+                    <div class="layui-input-inline" style="width: 35%;">
+                        <input type="text"  name="warn_msg" id="warnMsg" class="layui-input token"/>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr class="notdborder" style="height: 50px;">
+            <td class="no-padding" colspan="6"><b>酒店入住率数据上报</b></td>
+        </tr>
+        <tr class="notdborder">
+            <td class="no-padding"><b>青铜峡宾馆</b></td>
+            <td colspan="5" class="no-padding">
+                <div class="layui-form-item">
+                    <label class="layui-form-label" style="width: 20%;margin-left: 5px;">标间:</label>
+                    <div class="layui-input-inline" style="width: 25%;">
+                        <input type="text" id="qtx_standard_num" name="qtx_standard_num" class="layui-input token"/>
+                    </div>
+                    <label class="layui-form-label" style="width: 20%;margin-left: 5px;">大床房:</label>
+                    <div class="layui-input-inline" style="width: 25%;">
+                        <input type="text" id="qtx_kingsize_num" name="qtx_kingsize_num" class="layui-input token"/>
+                    </div>
+                    <label class="layui-form-label" style="width: 20%;margin-left: 5px;">其他房型:</label>
+                    <div class="layui-input-inline" style="width: 25%;">
+                        <input type="text" id="qtx_other_num" name="qtx_other_num" class="layui-input token"/>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr class="notdborder">
+            <td class="no-padding"><b>龙海宾馆</b></td>
+            <td colspan="5" class="no-padding">
+                <div class="layui-form-item">
+                    <label class="layui-form-label" style="width: 20%;margin-left: 5px;">标间:</label>
+                    <div class="layui-input-inline" style="width: 25%;">
+                        <input type="text" id="lh_standard_num" name="lh_standard_num" class="layui-input token"/>
+                    </div>
+                    <label class="layui-form-label" style="width: 20%;margin-left: 5px;">大床房:</label>
+                    <div class="layui-input-inline" style="width: 25%;">
+                        <input type="text" id="lh_kingsize_num" name="lh_kingsize_num" class="layui-input token"/>
+                    </div>
+                    <label class="layui-form-label" style="width: 20%;margin-left: 5px;">其他房型:</label>
+                    <div class="layui-input-inline" style="width: 25%;">
+                        <input type="text" id="lh_other_num" name="lh_other_num" class="layui-input token"/>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr class="notdborder">
+            <td class="no-padding"><b>格林豪泰</b></td>
+            <td colspan="5" class="no-padding">
+                <div class="layui-form-item">
+                    <label class="layui-form-label" style="width: 20%;margin-left: 5px;">标间:</label>
+                    <div class="layui-input-inline" style="width: 25%;">
+                        <input type="text" id="glht_standard_num" name="qtx_standard_num" class="layui-input token"/>
+                    </div>
+                    <label class="layui-form-label" style="width: 20%;margin-left: 5px;">大床房:</label>
+                    <div class="layui-input-inline" style="width: 25%;">
+                        <input type="text" id="glht_kingsize_num" name="qtx_kingsize_num" class="layui-input token"/>
+                    </div>
+                    <label class="layui-form-label" style="width: 20%;margin-left: 5px;">其他房型:</label>
+                    <div class="layui-input-inline" style="width: 25%;">
+                        <input type="text" id="glht_other_num" name="qtx_other_num" class="layui-input token"/>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr class="notdborder">
+            <td class="no-padding"><b>凯鹏宾馆</b></td>
+            <td colspan="5" class="no-padding">
+                <div class="layui-form-item">
+                    <label class="layui-form-label" style="width: 20%;margin-left: 5px;">标间:</label>
+                    <div class="layui-input-inline" style="width: 25%;">
+                        <input type="text" id="kp_standard_num" name="qtx_standard_num" class="layui-input token"/>
+                    </div>
+                    <label class="layui-form-label" style="width: 20%;margin-left: 5px;">大床房:</label>
+                    <div class="layui-input-inline" style="width: 25%;">
+                        <input type="text" id="kp_kingsize_num" name="qtx_kingsize_num" class="layui-input token"/>
+                    </div>
+                    <label class="layui-form-label" style="width: 20%;margin-left: 5px;">其他房型:</label>
+                    <div class="layui-input-inline" style="width: 25%;">
+                        <input type="text" id="kp_other_num" name="qtx_other_num" class="layui-input token"/>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr class="notdborder">
+            <td class="no-padding"><b>豪泰大酒店</b></td>
+            <td colspan="5" class="no-padding">
+                <div class="layui-form-item">
+                    <label class="layui-form-label" style="width: 20%;margin-left: 5px;">标间:</label>
+                    <div class="layui-input-inline" style="width: 25%;">
+                        <input type="text" id="ht_standard_num" name="ht_standard_num" class="layui-input token"/>
+                    </div>
+                    <label class="layui-form-label" style="width: 20%;margin-left: 5px;">大床房:</label>
+                    <div class="layui-input-inline" style="width: 25%;">
+                        <input type="text" id="ht_kingsize_num" name="ht_kingsize_num" class="layui-input token"/>
+                    </div>
+                    <label class="layui-form-label" style="width: 20%;margin-left: 5px;">其他房型:</label>
+                    <div class="layui-input-inline" style="width: 25%;">
+                        <input type="text" id="ht_other_num" name="ht_other_num" class="layui-input token"/>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr class="notdborder">
+            <td class="no-padding"><b>庆阳大酒店</b></td>
+            <td colspan="5" class="no-padding">
+                <div class="layui-form-item">
+                    <label class="layui-form-label" style="width: 20%;margin-left: 5px;">标间:</label>
+                    <div class="layui-input-inline" style="width: 25%;">
+                        <input type="text" id="qy_standard_num" name="qtx_standard_num" class="layui-input token"/>
+                    </div>
+                    <label class="layui-form-label" style="width: 20%;margin-left: 5px;">大床房:</label>
+                    <div class="layui-input-inline" style="width: 25%;">
+                        <input type="text" id="qy_kingsize_num" name="qtx_kingsize_num" class="layui-input token"/>
+                    </div>
+                    <label class="layui-form-label" style="width: 20%;margin-left: 5px;">其他房型:</label>
+                    <div class="layui-input-inline" style="width: 25%;">
+                        <input type="text" id="qy_other_num" name="qtx_other_num" class="layui-input token"/>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr class="notdborder">
+            <td class="no-padding"><b>时兴饭店</b></td>
+            <td colspan="5" class="no-padding">
+                <div class="layui-form-item">
+                    <label class="layui-form-label" style="width: 20%;margin-left: 5px;">标间:</label>
+                    <div class="layui-input-inline" style="width: 25%;">
+                        <input type="text" id="sx_standard_num" name="sx_standard_num" class="layui-input token"/>
+                    </div>
+                    <label class="layui-form-label" style="width: 20%;margin-left: 5px;">大床房:</label>
+                    <div class="layui-input-inline" style="width: 25%;">
+                        <input type="text" id="sx_kingsize_num" name="sx_kingsize_num" class="layui-input token"/>
+                    </div>
+                    <label class="layui-form-label" style="width: 20%;margin-left: 5px;">其他房型:</label>
+                    <div class="layui-input-inline" style="width: 25%;">
+                        <input type="text" id="sx_other_num" name="sx_other_num" class="layui-input token"/>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr class="notdborder">
+            <td class="no-padding"><b>万豪宾馆</b></td>
+            <td colspan="5" class="no-padding">
+                <div class="layui-form-item">
+                    <label class="layui-form-label" style="width: 20%;margin-left: 5px;">标间:</label>
+                    <div class="layui-input-inline" style="width: 25%;">
+                        <input type="text" id="wh_standard_num" name="wh_standard_num" class="layui-input token"/>
+                    </div>
+                    <label class="layui-form-label" style="width: 20%;margin-left: 5px;">大床房:</label>
+                    <div class="layui-input-inline" style="width: 25%;">
+                        <input type="text" id="wh_kingsize_num" name="wh_kingsize_num" class="layui-input token"/>
+                    </div>
+                    <label class="layui-form-label" style="width: 20%;margin-left: 5px;">其他房型:</label>
+                    <div class="layui-input-inline" style="width: 25%;">
+                        <input type="text" id="wh_other_num" name="wh_other_num" class="layui-input token"/>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr class="notdborder">
+            <td class="no-padding"><b>其他酒店</b></td>
+            <td colspan="5" class="no-padding">
+                <div class="layui-form-item">
+                    <label class="layui-form-label" style="width: 20%;margin-left: 5px;">标间:</label>
+                    <div class="layui-input-inline" style="width: 25%;">
+                        <input type="text" id="other_standard_num" name="other_standard_num" class="layui-input token"/>
+                    </div>
+                    <label class="layui-form-label" style="width: 20%;margin-left: 5px;">大床房:</label>
+                    <div class="layui-input-inline" style="width: 25%;">
+                        <input type="text" id="other_kingsize_num" name="other_kingsize_num" class="layui-input token"/>
+                    </div>
+                    <label class="layui-form-label" style="width: 20%;margin-left: 5px;">其他房型:</label>
+                    <div class="layui-input-inline" style="width: 25%;">
+                        <input type="text" id="other_other_num" name="other_other_num" class="layui-input token"/>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr class="notdborder" style="height: 50px;">
+            <td class="no-padding" colspan="6"><b>票种数据上报</b></td>
+        </tr>
+        <tr class="notdborder">
+            <td class="no-padding" rowspan="2"><b>黄河楼</b></td>
+            <td class="no-padding" ><b>散客门票票种</b></td>
+            <td colspan="4" class="no-padding">
+                <div class="layui-form-item">
+                    <label class="layui-form-label" style="width: 20%;margin-left: 5px;">学生票:</label>
+                    <div class="layui-input-inline" style="width: 25%;">
+                        <input type="text" id="hhl_single_door_student" name="hhl_single_door_student" class="layui-input token"/>
+                    </div>
+                    <label class="layui-form-label" style="width: 20%;margin-left: 5px;">成人票:</label>
+                    <div class="layui-input-inline" style="width: 25%;">
+                        <input type="text" id="hhl_single_door_man" name="hhl_single_door_man" class="layui-input token"/>
+                    </div>
+                    <label class="layui-form-label" style="width: 20%;margin-left: 5px;">免票:</label>
+                    <div class="layui-input-inline" style="width: 25%;">
+                        <input type="text" id="hhl_single_door_free" name="hhl_single_door_free" class="layui-input token"/>
+                    </div>
+                </div>
+            </td>
+
+        </tr>
+        <tr class="">
+            <td class="no-padding" ><b>旅行社门票票种</b></td>
+            <td colspan="4" class="no-padding">
+                <div class="layui-form-item">
+                    <label class="layui-form-label" style="width: 20%;margin-left: 5px;">学生票:</label>
+                    <div class="layui-input-inline" style="width: 25%;">
+                        <input type="text" id="hhl_group_door_student" name="hhl_group_door_student" class="layui-input token"/>
+                    </div>
+                    <label class="layui-form-label" style="width: 20%;margin-left: 5px;">成人票:</label>
+                    <div class="layui-input-inline" style="width: 25%;">
+                        <input type="text" id="hhl_group_door_man" name="hhl_group_door_man" class="layui-input token"/>
+                    </div>
+                    <label class="layui-form-label" style="width: 20%;margin-left: 5px;">免票:</label>
+                    <div class="layui-input-inline" style="width: 25%;">
+                        <input type="text" id="hhl_group_door_free" name="hhl_group_door_free" class="layui-input token"/>
+                    </div>
+                </div>
+            </td>
+
+        </tr>
+        <tr class="">
+            <td class="no-padding" rowspan="4"><b>大峡谷</b></td>
+            <td class="no-padding"><b>散客门票票种</b></td>
+            <td colspan="4" class="no-padding">
+                <div class="layui-form-item">
+                    <label class="layui-form-label" style="width: 20%;margin-left: 5px;">学生票:</label>
+                    <div class="layui-input-inline" style="width: 25%;">
+                        <input type="text" id="dxg_single_door_student" name="dxg_single_door_student" class="layui-input token"/>
+                    </div>
+                    <label class="layui-form-label" style="width: 20%;margin-left: 5px;">成人票:</label>
+                    <div class="layui-input-inline" style="width: 25%;">
+                        <input type="text" id="dxg_single_door_man" name="dxg_single_door_man" class="layui-input token"/>
+                    </div>
+                    <label class="layui-form-label" style="width: 20%;margin-left: 5px;">免票:</label>
+                    <div class="layui-input-inline" style="width: 25%;">
+                        <input type="text" id="dxg_single_door_free" name="dxg_single_door_free" class="layui-input token"/>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr class="">
+            <td class="no-padding"><b>散客船票票种</b></td>
+            <td colspan="4" class="no-padding">
+                <div class="layui-form-item">
+                    <label class="layui-form-label" style="width: 20%;margin-left: 5px;">成人票:</label>
+                    <div class="layui-input-inline" style="width: 25%;">
+                        <input type="text" id="dxg_single_boat_man" name="dxg_single_boat_man" class="layui-input token"/>
+                    </div>
+                    <label class="layui-form-label" style="width: 20%;margin-left: 5px;">学生票:</label>
+                    <div class="layui-input-inline" style="width: 25%;">
+                        <input type="text" id="dxg_single_boat_student" name="dxg_single_boat_student" class="layui-input token"/>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr class="">
+            <td class="no-padding" ><b>旅行社门票票种</b></td>
+            <td colspan="4" class="no-padding">
+                <div class="layui-form-item">
+                    <label class="layui-form-label" style="width: 20%;margin-left: 5px;">学生票:</label>
+                    <div class="layui-input-inline" style="width: 25%;">
+                        <input type="text" id="dxg_group_door_student" name="dxg_group_door_student" class="layui-input token"/>
+                    </div>
+                    <label class="layui-form-label" style="width: 20%;margin-left: 5px;">成人票:</label>
+                    <div class="layui-input-inline" style="width: 25%;">
+                        <input type="text" id="dxg_group_door_man" name="dxg_group_door_man" class="layui-input token"/>
+                    </div>
+                    <label class="layui-form-label" style="width: 20%;margin-left: 5px;">免票:</label>
+                    <div class="layui-input-inline" style="width: 25%;">
+                        <input type="text" id="dxg_groupe_door_free" name="dxg_groupe_door_free" class="layui-input token"/>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr class="">
+            <td class="no-padding"><b>旅行社船票票种</b></td>
+            <td colspan="4" class="no-padding">
+                <div class="layui-form-item">
+                    <label class="layui-form-label" style="width: 20%;margin-left: 5px;">成人票:</label>
+                    <div class="layui-input-inline" style="width: 25%;">
+                        <input type="text" id="dxg_group_boat_man" name="dxg_group_boat_man" class="layui-input token"/>
+                    </div>
+                    <label class="layui-form-label" style="width: 20%;margin-left: 5px;">学生票:</label>
+                    <div class="layui-input-inline" style="width: 25%;">
+                        <input type="text" id="dxg_group_boat_student" name="dxg_group_boat_student" class="layui-input token"/>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr class="">
+            <td class="" rowspan="4" style=""><b>黄河坛</b></td>
+            <td class="no-padding" ><b>散客门票票种</b></td>
+            <td colspan="4" class="no-padding">
+                <div class="layui-form-item">
+                    <label class="layui-form-label" style="width: 20%;margin-left: 5px;">学生票:</label>
+                    <div class="layui-input-inline" style="width: 25%;">
+                        <input type="text" id="hht_single_door_student" name="hht_single_door_student" class="layui-input token"/>
+                    </div>
+                    <label class="layui-form-label" style="width: 20%;margin-left: 5px;">成人票:</label>
+                    <div class="layui-input-inline" style="width: 25%;">
+                        <input type="text" id="hht_single_door_man" name="hht_single_door_man" class="layui-input token"/>
+                    </div>
+                    <label class="layui-form-label" style="width: 20%;margin-left: 5px;">免票:</label>
+                    <div class="layui-input-inline" style="width: 25%;">
+                        <input type="text" id="hht_single_door_free" name="hht_single_door_free" class="layui-input token"/>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr class="">
+            <td class="no-padding" ><b>散客船票票种</b></td>
+            <td colspan="4" class="no-padding">
+                <div class="layui-form-item">
+                    <label class="layui-form-label" style="width: 20%;margin-left: 5px;">成人票:</label>
+                    <div class="layui-input-inline" style="width: 25%;">
+                        <input type="text" id="hht_single_boat_man" name="hht_single_boat_man" class="layui-input token"/>
+                    </div>
+                    <label class="layui-form-label" style="width: 20%;margin-left: 5px;">学生票:</label>
+                    <div class="layui-input-inline" style="width: 25%;">
+                        <input type="text" id="hht_single_boat_student" name="hht_single_boat_student" class="layui-input token"/>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr class="">
+            <td class="no-padding" ><b>旅行社门票票种</b></td>
+            <td colspan="4" class="no-padding">
+                <div class="layui-form-item">
+                    <label class="layui-form-label" style="width: 20%;margin-left: 5px;">学生票:</label>
+                    <div class="layui-input-inline" style="width: 25%;">
+                        <input type="text" id="hht_group_door_student" name="hht_group_door_student" class="layui-input token"/>
+                    </div>
+                    <label class="layui-form-label" style="width: 20%;margin-left: 5px;">成人票:</label>
+                    <div class="layui-input-inline" style="width: 25%;">
+                        <input type="text" id="hht_group_door_man" name="hht_group_door_man" class="layui-input token"/>
+                    </div>
+                    <label class="layui-form-label" style="width: 20%;margin-left: 5px;">免票:</label>
+                    <div class="layui-input-inline" style="width: 25%;">
+                        <input type="text" id="hht_group_door_free" name="hht_group_door_free" class="layui-input token"/>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr class="">
+            <td class="no-padding" ><b>旅行社船票票种</b></td>
+            <td colspan="4" class="no-padding">
+                <div class="layui-form-item">
+                    <label class="layui-form-label" style="width: 20%;margin-left: 5px;">成人票:</label>
+                    <div class="layui-input-inline" style="width: 25%;">
+                        <input type="text" id="hht_group_boat_man" name="hht_group_boat_man" class="layui-input token"/>
+                    </div>
+                    <label class="layui-form-label" style="width: 20%;margin-left: 5px;">学生票:</label>
+                    <div class="layui-input-inline" style="width: 25%;">
+                        <input type="text" id="hht_group_boat_student" name="hht_group_boat_student" class="layui-input token"/>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr class="">
+            <td class="no-padding"><b>黄河生态园门票票种</b></td>
+            <td colspan="5" class="no-padding">
+                <div class="layui-form-item">
+                    <label class="layui-form-label" style="width: 20%;margin-left: 5px;">一元门票:</label>
+                    <div class="layui-input-inline" style="width: 25%;">
+                        <input type="text" id="sty_single_door_special" name="sty_single_door_special" class="layui-input token"/>
+                    </div>
+                </div>
+            </td>
+        </tr>
+
+        <tr class="">
+            <td colspan="6" class="no-padding">
+                <div class="layui-form-item">
+                    <div class="ui-btn-center" style="width:100%">
+                        <button class="layui-btn data-submit" id="data-submit">提交</button>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr><td  colspan="6" class="no-padding" height="50"></td></tr>
+        <tr class="">
+            <td class="no-padding"><b>EXCEL数据导入</b></td>
+            <td colspan="5" class="no-padding">
+                <div class="layui-form-item">
+                    <div class="ui-btn-center" style="width: 24%">
+                        <button class="layui-btn submit-reception-num" id="reception_num"><i class="layui-icon">&#xe67c;</i><b>接待人数数据导入</b></button>
+                    </div>
+                    <div class="ui-btn-center" style="width: 24%">
+                        <button class="layui-btn submit-idcard" id="id_card"><i class="layui-icon">&#xe67c;</i><b>游客身份信息导入</b></button>
+                    </div>
+                    <div class="ui-btn-center" style="width: 24%">
+                        <button class="layui-btn submit-dxg" id="dxg_car"><i class="layui-icon">&#xe67c;</i><b>大峡谷车辆数据导入</b></button>
+                    </div>
+                    <div class="ui-btn-center" style="width: 24%">
+                        <button class="layui-btn submit-hhl" id="hhl_car"><i class="layui-icon">&#xe67c;</i><b>黄河楼车辆数据导入</b></button>
+                    </div>
+                </div>
+            </td>
+        </tr>
+
+        </tbody>
+    </table>
+</div>
+<!-- Optional JavaScript -->
+<!--<script src="https://payapi.tuoxingwang.com/static/layui/layui.js"></script>-->
+<!--<script src="https://payapi.tuoxingwang.com/static/layui/vue.js"></script>-->
+<script src="/public/lib/layui/layui.js"></script>
+<script src="/public/lib/js/jquery.min.js"></script>
+<script>
+    var date = new Date(),
+        year = date.getFullYear(),
+        month = date.getMonth() + 1,
+        day = date.getDate();            
+    var dateTime = year+'-'+month+'-'+day;
+    layui.use('laydate', function(){
+        var laydate = layui.laydate;
+
+        //执行一个laydate实例
+        laydate.render({
+            elem: '#dataTime', //指定元素
+            min:'2016-01-01',
+            max:dateTime
+        });
+        //执行一个laydate实例
+        laydate.render({
+            elem: '#warnTime', //指定元素
+            min:dateTime+' 00:00:00',
+            type:'datetime'
+        });
+
+    });
+    $("#data-submit").click(function(){
+        $.ajax({
+            url: '/submit_data',
+            type: 'POST',
+            dataType: 'json',
+            data: {
+                'date_time':$('#dataTime').val(),
+                'hhdxg':$('#hhdxg').val(),
+                'hhl':$('#hhl').val(),
+                'hht':$('#hht').val(),
+                'hhsty':$('#hhsty').val(),
+                'tourism_income':$('#tourism_income').val(),
+                'group_ticket':$('#group_ticket').val(),
+                'scattered_ticket':$('#scattered_ticket').val(),
+                'warn_time':$('#warnTime').val(),
+                'warn_msg':$('#warnMsg').val(),
+                'qtx_standard_num':$('#qtx_standard_num').val(),
+                'qtx_kingsize_num':$('#qtx_kingsize_num').val(),
+                'qtx_other_num':$('#qtx_other_num').val(),
+                'lh_standard_num':$('#lh_standard_num').val(),
+                'lh_kingsize_num':$('#lh_kingsize_num').val(),
+                'lh_other_num':$('#lh_other_num').val(),
+                'glht_standard_num':$('#glht_standard_num').val(),
+                'glht_kingsize_num':$('#glht_kingsize_num').val(),
+                'glht_other_num':$('#glht_other_num').val(),
+                'kp_standard_num':$('#kp_standard_num').val(),
+                'kp_kingsize_num':$('#kp_kingsize_num').val(),
+                'kp_other_num':$('#kp_other_num').val(),
+                'ht_standard_num':$('#ht_standard_num').val(),
+                'ht_kingsize_num':$('#ht_kingsize_num').val(),
+                'ht_other_num':$('#ht_other_num').val(),
+                'qy_standard_num':$('#qy_standard_num').val(),
+                'qy_kingsize_num':$('#qy_kingsize_num').val(),
+                'qy_other_num':$('#qy_other_num').val(),
+                'sx_standard_num':$('#sx_standard_num').val(),
+                'sx_kingsize_num':$('#sx_kingsize_num').val(),
+                'sx_other_num':$('#sx_other_num').val(),
+                'wh_standard_num':$('#wh_standard_num').val(),
+                'wh_kingsize_num':$('#wh_kingsize_num').val(),
+                'wh_other_num':$('#wh_other_num').val(),
+                'other_standard_num':$('#other_standard_num').val(),
+                'other_kingsize_num':$('#other_kingsize_num').val(),
+                'other_other_num':$('#other_other_num').val(),
+                'hhl_single_door_student':$('#hhl_single_door_student').val(),
+                'hhl_single_door_man':$('#hhl_single_door_man').val(),
+                'hhl_single_door_free':$('#hhl_single_door_free').val(),
+                'hhl_group_door_student':$('#hhl_group_door_student').val(),
+                'hhl_group_door_man':$('#hhl_group_door_man ').val(),
+                'hhl_group_door_free':$('#hhl_group_door_free').val(),
+                'dxg_single_door_student':$('#dxg_single_door_student').val(),
+                'dxg_single_door_man':$('#dxg_single_door_man').val(),
+                'dxg_single_door_free':$('#dxg_single_door_free').val(),
+                'dxg_single_boat_man':$('#dxg_single_boat_man').val(),
+                'dxg_single_boat_student':$('#dxg_single_boat_student').val(),
+                'dxg_group_door_student':$('#dxg_group_door_student').val(),
+                'dxg_group_door_man':$('#dxg_group_door_man').val(),
+                'dxg_groupe_door_free':$('#dxg_groupe_door_free').val(),
+                'dxg_group_boat_man':$('#dxg_group_boat_man').val(),
+                'dxg_group_boat_student':$('#dxg_group_boat_student').val(),
+                'hht_single_door_student':$('#hht_single_door_student').val(),
+                'hht_single_door_man':$('#hht_single_door_man').val(),
+                'hht_single_door_free':$('#hht_single_door_free').val(),
+                'hht_single_boat_man':$('#hht_single_boat_man').val(),
+                'hht_single_boat_student':$('#hht_single_boat_student').val(),
+                'hht_group_door_student':$('#hht_group_door_student').val(),
+                'hht_group_door_man':$('#hht_group_door_man').val(),
+                'hht_group_door_free':$('#hht_group_door_free').val(),
+                'hht_group_boat_man':$('#hht_group_boat_man').val(),
+                'hht_group_boat_student':$('#hht_group_boat_student').val(),
+                'sty_single_door_special':$('#sty_single_door_special').val(),
+
+            },
+            success: function(e) {
+                console.log(e);
+                if(e.code == 200) {
+                    layer.msg('保存成功', {icon: 1}, function(){
+                        location.reload(); // 页面刷新
+                    });
+                } else {
+                    layer.msg(e.msg, {icon: 2});
+                }
+            },
+        })
+    })
+    layui.use('upload', function(){
+        var layer = layui.layer;
+        var upload = layui.upload;
+        //执行实例 上传身份证
+        upload.render({
+            elem: '#id_card' //绑定元素
+            ,url: '/id_card_excel' //上传接口
+            ,accept:'file'
+            ,method:'POST'
+            ,data:{}
+            ,done: function(e){
+                //上传完毕回调
+                if(e.code == 200) {
+                    layer.msg('游客身份信息上传成功', {icon: 1}, function(){
+                        location.reload(); // 页面刷新
+                    });
+                } else {
+                    layer.msg(e.msg, {icon: 2});
+                }
+            }
+            ,error: function(){
+                //请求异常回调
+            }
+
+        });
+
+        //执行实例 大峡谷车辆信息
+        upload.render({
+            elem: '#dxg_car' //绑定元素
+            ,url: '/dxg_car_excel' //上传接口
+            ,accept:'file'
+            ,method:'POST'
+            ,data:{}
+            ,done: function(e){
+                //上传完毕回调
+                if(e.code == 200) {
+                    layer.msg('大峡谷车辆信息上传成功', {icon: 1}, function(){
+                        location.reload(); // 页面刷新
+                    });
+                } else {
+                    layer.msg(e.msg, {icon: 2});
+                }
+            }
+            ,error: function(){
+                //请求异常回调
+            }
+
+        });
+
+        //执行实例 黄河楼车辆信息
+        upload.render({
+            elem: '#hhl_car' //绑定元素
+            ,url: '/hhl_car_excel' //上传接口
+            ,accept:'file'
+            ,method:'POST'
+            ,data:{}
+            ,done: function(e){
+                //上传完毕回调
+                if(e.code == 200) {
+                    layer.msg('黄河楼车辆信息上传成功', {icon: 1}, function(){
+                        location.reload(); // 页面刷新
+                    });
+                } else {
+                    layer.msg(e.msg, {icon: 2});
+                }
+            }
+            ,error: function(){
+                //请求异常回调
+            }
+
+        });
+
+        //执行实例 各景区接待人数
+        upload.render({
+            elem: '#reception_num' //绑定元素
+            ,url: '/reception_num_excel' //上传接口
+            ,accept:'file'
+            ,method:'POST'
+            ,data:{}
+            ,done: function(e){
+                //上传完毕回调
+                if(e.code == 200) {
+                    layer.msg('接待人数数据上传成功', {icon: 1}, function(){
+                        location.reload(); // 页面刷新
+                    });
+                } else {
+                    layer.msg(e.msg, {icon: 2});
+                }
+            }
+            ,error: function(){
+                //请求异常回调
+            }
+
+        });
+    });
+
+</script>
+</body>
+</html>

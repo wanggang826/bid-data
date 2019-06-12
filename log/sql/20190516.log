@@ -1,0 +1,551 @@
+2019-05-16 09:24:15 | DEBUG | 4033 | 5cdcbbbf799c4 | 1557969855.912 | select  travel_agency,count(id) as count from visitor_info    group by travel_agency    order by count desc
+2019-05-16 09:24:15 | DEBUG | 4033 | 5cdcbbbf799c4 | 1557969855.913 | select  count(id) as count from visitor_info
+2019-05-16 09:24:15 | DEBUG | 4033 | 5cdcbbbf799c4 | 1557969855.915 | select  travel_agency,count(id) as count from visitor_info   where province = '四川' AND date = '2019-05-16'   group by travel_agency    order by count desc  limit 3  offset 0
+2019-05-16 09:24:15 | DEBUG | 4033 | 5cdcbbbf799c4 | 1557969855.916 | select  sex,count(id) as count from visitor_info   where province = '四川' AND date = '2019-05-16'   group by sex
+2019-05-16 09:24:15 | DEBUG | 4033 | 5cdcbbbf799c4 | 1557969855.917 | select  birthday from visitor_info   where province = '四川' AND date = '2019-05-16'
+2019-05-16 09:25:34 | DEBUG | 1014 | 5cdcbc0e1b11d | 1557969934.113 | select  travel_agency,count(id) as count from visitor_info    group by travel_agency    order by count desc
+2019-05-16 09:25:34 | DEBUG | 1014 | 5cdcbc0e1b11d | 1557969934.114 | select  count(id) as count from visitor_info
+2019-05-16 09:25:34 | DEBUG | 1014 | 5cdcbc0e1b11d | 1557969934.115 | select  travel_agency,count(id) as count from visitor_info   where province = '四川' AND date = '2019-05-16'   group by travel_agency    order by count desc  limit 3  offset 0
+2019-05-16 09:25:34 | DEBUG | 1014 | 5cdcbc0e1b11d | 1557969934.116 | select  sex,count(id) as count from visitor_info   where province = '四川' AND date = '2019-05-16'   group by sex
+2019-05-16 09:25:34 | DEBUG | 1014 | 5cdcbc0e1b11d | 1557969934.117 | select  birthday from visitor_info   where province = '四川' AND date = '2019-05-16'
+2019-05-16 09:57:25 | DEBUG | 4033 | 5cdcc38527157 | 1557971845.219 | select  travel_agency,count(id) as count from visitor_info    group by travel_agency    order by count desc
+2019-05-16 09:57:25 | DEBUG | 4033 | 5cdcc38527157 | 1557971845.221 | select  count(id) as count from visitor_info
+2019-05-16 09:57:25 | DEBUG | 4033 | 5cdcc38527157 | 1557971845.223 | select  travel_agency,count(id) as count from visitor_info   where province = '四川' AND date = '2019-05-16'   group by travel_agency    order by count desc  limit 3  offset 0
+2019-05-16 09:57:25 | DEBUG | 4033 | 5cdcc38527157 | 1557971845.225 | select  sex,count(id) as count from visitor_info   where province = '四川' AND date = '2019-05-16'   group by sex
+2019-05-16 09:57:25 | DEBUG | 4033 | 5cdcc38527157 | 1557971845.226 | select  birthday from visitor_info   where province = '四川' AND date = '2019-05-16'
+2019-05-16 10:04:38 | DEBUG | 1014 | 5cdcc5363d0d4 | 1557972278.254 | select  travel_agency,count(id) as count from visitor_info    group by travel_agency    order by count desc
+2019-05-16 10:04:38 | DEBUG | 1014 | 5cdcc5363d0d4 | 1557972278.254 | select  count(id) as count from visitor_info
+2019-05-16 10:04:38 | DEBUG | 1014 | 5cdcc5363d0d4 | 1557972278.256 | select  travel_agency,count(id) as count from visitor_info   where province = '四川' AND date = '2019-05-16'   group by travel_agency    order by count desc  limit 3  offset 0
+2019-05-16 10:04:38 | DEBUG | 1014 | 5cdcc5363d0d4 | 1557972278.257 | select  sex,count(id) as count from visitor_info   where province = '四川' AND date = '2019-05-16'   group by sex
+2019-05-16 10:04:38 | DEBUG | 1014 | 5cdcc5363d0d4 | 1557972278.258 | select  birthday from visitor_info   where province = '四川' AND date = '2019-05-16'
+2019-05-16 10:06:35 | DEBUG | 1013 | 5cdcc5ab0f9f1 | 1557972395.66 | select  travel_agency,count(id) as count from visitor_info    group by travel_agency    order by count desc
+2019-05-16 10:06:35 | DEBUG | 1013 | 5cdcc5ab0f9f1 | 1557972395.67 | select  count(id) as count from visitor_info
+2019-05-16 10:06:35 | DEBUG | 1013 | 5cdcc5ab0f9f1 | 1557972395.69 | select  travel_agency,count(id) as count from visitor_info   where province = '四川' AND date = '2019-05-16'   group by travel_agency    order by count desc  limit 3  offset 0
+2019-05-16 10:06:35 | DEBUG | 1013 | 5cdcc5ab0f9f1 | 1557972395.70 | select  sex,count(id) as count from visitor_info   where province = '四川' AND date = '2019-05-16'   group by sex
+2019-05-16 10:06:35 | DEBUG | 1013 | 5cdcc5ab0f9f1 | 1557972395.71 | select  birthday from visitor_info   where province = '四川' AND date = '2019-05-16'
+2019-05-16 10:08:46 | DEBUG | 1013 | 5cdcc62e6fa22 | 1557972526.460 | select  travel_agency,count(id) as count from visitor_info    group by travel_agency    order by count desc
+2019-05-16 10:08:46 | DEBUG | 1013 | 5cdcc62e6fa22 | 1557972526.460 | select  count(id) as count from visitor_info
+2019-05-16 10:08:46 | DEBUG | 1013 | 5cdcc62e6fa22 | 1557972526.462 | select  travel_agency,count(id) as count from visitor_info   where province = '陕西' AND date = '2019-05-16'   group by travel_agency    order by count desc  limit 3  offset 0
+2019-05-16 10:08:46 | DEBUG | 1013 | 5cdcc62e6fa22 | 1557972526.463 | select  sex,count(id) as count from visitor_info   where province = '陕西' AND date = '2019-05-16'   group by sex
+2019-05-16 10:08:46 | DEBUG | 1013 | 5cdcc62e6fa22 | 1557972526.464 | select  birthday from visitor_info   where province = '陕西' AND date = '2019-05-16'
+2019-05-16 10:11:09 | DEBUG | 4033 | 5cdcc6bd3c5f8 | 1557972669.251 | select  travel_agency,count(id) as count from visitor_info    group by travel_agency    order by count desc
+2019-05-16 10:11:09 | DEBUG | 4033 | 5cdcc6bd3c5f8 | 1557972669.252 | select  count(id) as count from visitor_info
+2019-05-16 10:11:09 | DEBUG | 4033 | 5cdcc6bd3c5f8 | 1557972669.253 | select  travel_agency,count(id) as count from visitor_info   where province = '陕西' AND date = '2019-05-16'   group by travel_agency    order by count desc  limit 3  offset 0
+2019-05-16 10:11:09 | DEBUG | 4033 | 5cdcc6bd3c5f8 | 1557972669.254 | select  sex,count(id) as count from visitor_info   where province = '陕西' AND date = '2019-05-16'   group by sex
+2019-05-16 10:11:09 | DEBUG | 4033 | 5cdcc6bd3c5f8 | 1557972669.255 | select  birthday from visitor_info   where province = '陕西' AND date = '2019-05-16'
+2019-05-16 10:13:44 | DEBUG | 1014 | 5cdcc758601c8 | 1557972824.397 | select  travel_agency,count(id) as count from visitor_info    group by travel_agency    order by count desc
+2019-05-16 10:13:44 | DEBUG | 1014 | 5cdcc758601c8 | 1557972824.398 | select  count(id) as count from visitor_info
+2019-05-16 10:13:44 | DEBUG | 1014 | 5cdcc758601c8 | 1557972824.399 | select  travel_agency,count(id) as count from visitor_info   where province = '陕西' AND date between '2018-12-20' and '2019-05-16'   group by travel_agency    order by count desc  limit 3  offset 0
+2019-05-16 10:13:44 | DEBUG | 1014 | 5cdcc758601c8 | 1557972824.400 | select  sex,count(id) as count from visitor_info   where province = '陕西' AND date between '2018-12-20' and '2019-05-16'   group by sex
+2019-05-16 10:13:44 | DEBUG | 1014 | 5cdcc758601c8 | 1557972824.401 | select  birthday from visitor_info   where province = '陕西' AND date between '2018-12-20' and '2019-05-16'
+2019-05-16 10:20:29 | DEBUG | 1013 | 5cdcc8ed7d400 | 1557973229.517 | select  travel_agency,count(id) as count from visitor_info    group by travel_agency    order by count desc
+2019-05-16 10:20:29 | DEBUG | 1013 | 5cdcc8ed7d400 | 1557973229.518 | select  count(id) as count from visitor_info
+2019-05-16 10:20:29 | DEBUG | 1013 | 5cdcc8ed7d400 | 1557973229.519 | select  travel_agency,count(id) as count from visitor_info   where province = '陕西' AND date between '2018-12-20' and '2019-05-16'   group by travel_agency    order by count desc  limit 3  offset 0
+2019-05-16 10:20:29 | DEBUG | 1013 | 5cdcc8ed7d400 | 1557973229.520 | select  sex,count(id) as count from visitor_info   where province = '陕西' AND date between '2018-12-20' and '2019-05-16'   group by sex
+2019-05-16 10:20:29 | DEBUG | 1013 | 5cdcc8ed7d400 | 1557973229.521 | select  birthday from visitor_info   where province = '陕西' AND date between '2018-12-20' and '2019-05-16'
+2019-05-16 11:02:48 | DEBUG | 4033 | 5cdcd2d81bfcf | 1557975768.422 | select  scenic_spot_id,sum(num) as num from reception_num   where date between '2019-05-10' and '2019-05-15'   group by scenic_spot_id
+2019-05-16 11:02:48 | DEBUG | 4033 | 5cdcd2d81bfcf | 1557975768.465 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '2' AND date between '2019-05-10' and '2019-05-15'   group by ticket_from
+2019-05-16 11:02:48 | DEBUG | 4033 | 5cdcd2d81bfcf | 1557975768.467 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '1' AND ticket_of = '1' AND date between '2019-05-10' and '2019-05-15'   group by ticket_from
+2019-05-16 11:02:48 | DEBUG | 4033 | 5cdcd2d81bfcf | 1557975768.468 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '1' AND ticket_of = '2' AND date between '2019-05-10' and '2019-05-15'   group by ticket_from
+2019-05-16 11:02:48 | DEBUG | 4033 | 5cdcd2d81bfcf | 1557975768.469 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '3' AND ticket_of = '1' AND date between '2019-05-10' and '2019-05-15'   group by ticket_from
+2019-05-16 11:02:48 | DEBUG | 4033 | 5cdcd2d81bfcf | 1557975768.470 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '3' AND ticket_of = '2' AND date between '2019-05-10' and '2019-05-15'   group by ticket_from
+2019-05-16 11:02:56 | DEBUG | 1014 | 5cdcd2e06da31 | 1557975776.451 | select  scenic_spot_id,num from reception_num   where date = '2019-05-16'
+2019-05-16 11:02:56 | DEBUG | 1014 | 5cdcd2e06da31 | 1557975776.452 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '2' AND date = '2019-05-16'   group by ticket_from
+2019-05-16 11:02:56 | DEBUG | 1014 | 5cdcd2e06da31 | 1557975776.526 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '1' AND ticket_of = '1' AND date = '2019-05-16'   group by ticket_from
+2019-05-16 11:02:56 | DEBUG | 1014 | 5cdcd2e06da31 | 1557975776.527 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '1' AND ticket_of = '2' AND date = '2019-05-16'   group by ticket_from
+2019-05-16 11:02:56 | DEBUG | 1014 | 5cdcd2e06da31 | 1557975776.527 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '3' AND ticket_of = '1' AND date = '2019-05-16'   group by ticket_from
+2019-05-16 11:02:56 | DEBUG | 1014 | 5cdcd2e06da31 | 1557975776.528 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '3' AND ticket_of = '2' AND date = '2019-05-16'   group by ticket_from
+2019-05-16 11:02:56 | DEBUG | 1014 | 5cdcd2e06da31 | 1557975776.529 | select  sum(ticket_num) as ticket_num from ticket_type   where scenic_spot_id = '4' AND date = '2019-05-16'
+2019-05-16 11:03:43 | DEBUG | 1013 | 5cdcd30f7a5ea | 1557975823.613 | select  scenic_spot_id,num from reception_num   where date = '2019-05-16'
+2019-05-16 11:03:43 | DEBUG | 1013 | 5cdcd30f7a5ea | 1557975823.638 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '2' AND date = '2019-05-16'   group by ticket_from
+2019-05-16 11:03:43 | DEBUG | 1013 | 5cdcd30f7a5ea | 1557975823.638 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '1' AND ticket_of = '1' AND date = '2019-05-16'   group by ticket_from
+2019-05-16 11:03:43 | DEBUG | 1013 | 5cdcd30f7a5ea | 1557975823.638 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '1' AND ticket_of = '2' AND date = '2019-05-16'   group by ticket_from
+2019-05-16 11:03:43 | DEBUG | 1013 | 5cdcd30f7a5ea | 1557975823.639 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '3' AND ticket_of = '1' AND date = '2019-05-16'   group by ticket_from
+2019-05-16 11:03:43 | DEBUG | 1013 | 5cdcd30f7a5ea | 1557975823.639 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '3' AND ticket_of = '2' AND date = '2019-05-16'   group by ticket_from
+2019-05-16 11:03:43 | DEBUG | 1013 | 5cdcd30f7a5ea | 1557975823.640 | select  sum(ticket_num) as ticket_num from ticket_type   where scenic_spot_id = '4' AND date = '2019-05-16'
+2019-05-16 11:03:53 | DEBUG | 4033 | 5cdcd318e6fd0 | 1557975833.16 | select  scenic_spot_id,num from reception_num   where date = '2019-05-16'
+2019-05-16 11:03:53 | DEBUG | 4033 | 5cdcd318e6fd0 | 1557975833.21 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '2' AND date = '2019-05-16'   group by ticket_from
+2019-05-16 11:03:53 | DEBUG | 4033 | 5cdcd318e6fd0 | 1557975833.22 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '1' AND ticket_of = '1' AND date = '2019-05-16'   group by ticket_from
+2019-05-16 11:03:53 | DEBUG | 4033 | 5cdcd318e6fd0 | 1557975833.23 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '1' AND ticket_of = '2' AND date = '2019-05-16'   group by ticket_from
+2019-05-16 11:03:53 | DEBUG | 4033 | 5cdcd318e6fd0 | 1557975833.24 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '3' AND ticket_of = '1' AND date = '2019-05-16'   group by ticket_from
+2019-05-16 11:03:53 | DEBUG | 4033 | 5cdcd318e6fd0 | 1557975833.25 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '3' AND ticket_of = '2' AND date = '2019-05-16'   group by ticket_from
+2019-05-16 11:03:53 | DEBUG | 4033 | 5cdcd318e6fd0 | 1557975833.26 | select  sum(ticket_num) as ticket_num from ticket_type   where scenic_spot_id = '4' AND date = '2019-05-16'
+2019-05-16 11:04:05 | DEBUG | 1014 | 5cdcd32540f52 | 1557975845.268 | select  scenic_spot_id,num from reception_num   where date = '2019-05-16'
+2019-05-16 11:04:05 | DEBUG | 1014 | 5cdcd32540f52 | 1557975845.271 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '2' AND date = '2019-05-16'   group by ticket_from
+2019-05-16 11:04:05 | DEBUG | 1014 | 5cdcd32540f52 | 1557975845.271 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '1' AND ticket_of = '1' AND date = '2019-05-16'   group by ticket_from
+2019-05-16 11:04:05 | DEBUG | 1014 | 5cdcd32540f52 | 1557975845.271 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '1' AND ticket_of = '2' AND date = '2019-05-16'   group by ticket_from
+2019-05-16 11:04:05 | DEBUG | 1014 | 5cdcd32540f52 | 1557975845.272 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '3' AND ticket_of = '1' AND date = '2019-05-16'   group by ticket_from
+2019-05-16 11:04:05 | DEBUG | 1014 | 5cdcd32540f52 | 1557975845.272 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '3' AND ticket_of = '2' AND date = '2019-05-16'   group by ticket_from
+2019-05-16 11:04:05 | DEBUG | 1014 | 5cdcd32540f52 | 1557975845.272 | select  sum(ticket_num) as ticket_num from ticket_type   where scenic_spot_id = '4' AND date = '2019-05-16'
+2019-05-16 11:05:17 | DEBUG | 1014 | 5cdcd36d15e9e | 1557975917.126 | select  * from ticket_type   where scenic_spot_id=4 AND ticket_type_id=4 AND ticket_of=1 AND ticket_from=1 AND date = '2019-05-16'
+2019-05-16 11:05:17 | DEBUG | 1014 | 5cdcd36d15e9e | 1557975917.140 | insert into ticket_type(date,scenic_spot_id,ticket_type_id,ticket_of,ticket_from,ticket_num) values('2019-05-16','4','4','1','1','123')
+2019-05-16 11:05:27 | DEBUG | 4033 | 5cdcd37749cd2 | 1557975927.304 | select  scenic_spot_id,num from reception_num   where date = '2019-05-16'
+2019-05-16 11:05:27 | DEBUG | 4033 | 5cdcd37749cd2 | 1557975927.305 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '2' AND date = '2019-05-16'   group by ticket_from
+2019-05-16 11:05:27 | DEBUG | 4033 | 5cdcd37749cd2 | 1557975927.306 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '1' AND ticket_of = '1' AND date = '2019-05-16'   group by ticket_from
+2019-05-16 11:05:27 | DEBUG | 4033 | 5cdcd37749cd2 | 1557975927.306 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '1' AND ticket_of = '2' AND date = '2019-05-16'   group by ticket_from
+2019-05-16 11:05:27 | DEBUG | 4033 | 5cdcd37749cd2 | 1557975927.307 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '3' AND ticket_of = '1' AND date = '2019-05-16'   group by ticket_from
+2019-05-16 11:05:27 | DEBUG | 4033 | 5cdcd37749cd2 | 1557975927.307 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '3' AND ticket_of = '2' AND date = '2019-05-16'   group by ticket_from
+2019-05-16 11:05:27 | DEBUG | 4033 | 5cdcd37749cd2 | 1557975927.307 | select  sum(ticket_num) as ticket_num from ticket_type   where scenic_spot_id = '4' AND date = '2019-05-16'
+2019-05-16 11:12:17 | DEBUG | 4033 | 5cdcd511be5e1 | 1557976337.782 | select  scenic_spot_id,num from reception_num   where date = '2019-05-16'
+2019-05-16 11:12:17 | DEBUG | 4033 | 5cdcd511be5e1 | 1557976337.784 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '2' AND date = '2019-05-16'   group by ticket_from
+2019-05-16 11:12:17 | DEBUG | 4033 | 5cdcd511be5e1 | 1557976337.785 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '1' AND ticket_of = '1' AND date = '2019-05-16'   group by ticket_from
+2019-05-16 11:12:17 | DEBUG | 4033 | 5cdcd511be5e1 | 1557976337.785 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '1' AND ticket_of = '2' AND date = '2019-05-16'   group by ticket_from
+2019-05-16 11:12:17 | DEBUG | 4033 | 5cdcd511be5e1 | 1557976337.786 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '3' AND ticket_of = '1' AND date = '2019-05-16'   group by ticket_from
+2019-05-16 11:12:17 | DEBUG | 4033 | 5cdcd511be5e1 | 1557976337.786 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '3' AND ticket_of = '2' AND date = '2019-05-16'   group by ticket_from
+2019-05-16 11:12:17 | DEBUG | 4033 | 5cdcd511be5e1 | 1557976337.786 | select  sum(ticket_num) as ticket_num from ticket_type   where scenic_spot_id = '4' AND date = '2019-05-16'
+2019-05-16 11:15:26 | DEBUG | 1014 | 5cdcd5ce66b36 | 1557976526.496 | select  scenic_spot_id,num from reception_num   where date = '2019-05-16'
+2019-05-16 11:15:26 | DEBUG | 1014 | 5cdcd5ce66b36 | 1557976526.504 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '2' AND date = '2019-05-16'   group by ticket_from
+2019-05-16 11:15:26 | DEBUG | 1014 | 5cdcd5ce66b36 | 1557976526.505 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '1' AND ticket_of = '1' AND date = '2019-05-16'   group by ticket_from
+2019-05-16 11:15:26 | DEBUG | 1014 | 5cdcd5ce66b36 | 1557976526.506 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '1' AND ticket_of = '2' AND date = '2019-05-16'   group by ticket_from
+2019-05-16 11:15:26 | DEBUG | 1014 | 5cdcd5ce66b36 | 1557976526.507 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '3' AND ticket_of = '1' AND date = '2019-05-16'   group by ticket_from
+2019-05-16 11:15:26 | DEBUG | 1014 | 5cdcd5ce66b36 | 1557976526.508 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '3' AND ticket_of = '2' AND date = '2019-05-16'   group by ticket_from
+2019-05-16 11:15:26 | DEBUG | 1014 | 5cdcd5ce66b36 | 1557976526.509 | select  sum(ticket_num) as ticket_num from ticket_type   where scenic_spot_id = '4' AND date = '2019-05-16'
+2019-05-16 11:15:53 | DEBUG | 4033 | 5cdcd5e96330d | 1557976553.415 | select  * from ticket_type   where scenic_spot_id=4 AND ticket_type_id=4 AND ticket_of=1 AND ticket_from=1 AND date = '2019-05-16'
+2019-05-16 11:15:53 | DEBUG | 4033 | 5cdcd5e96330d | 1557976553.447 | insert into ticket_type(date,scenic_spot_id,ticket_type_id,ticket_of,ticket_from,ticket_num) values('2019-05-16','4','4','1','1','250')
+2019-05-16 11:16:00 | DEBUG | 1013 | 5cdcd5f080bb0 | 1557976560.596 | select  scenic_spot_id,num from reception_num   where date = '2019-05-16'
+2019-05-16 11:16:00 | DEBUG | 1013 | 5cdcd5f080bb0 | 1557976560.643 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '2' AND date = '2019-05-16'   group by ticket_from
+2019-05-16 11:16:00 | DEBUG | 1013 | 5cdcd5f080bb0 | 1557976560.644 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '1' AND ticket_of = '1' AND date = '2019-05-16'   group by ticket_from
+2019-05-16 11:16:00 | DEBUG | 1013 | 5cdcd5f080bb0 | 1557976560.645 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '1' AND ticket_of = '2' AND date = '2019-05-16'   group by ticket_from
+2019-05-16 11:16:00 | DEBUG | 1013 | 5cdcd5f080bb0 | 1557976560.646 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '3' AND ticket_of = '1' AND date = '2019-05-16'   group by ticket_from
+2019-05-16 11:16:00 | DEBUG | 1013 | 5cdcd5f080bb0 | 1557976560.647 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '3' AND ticket_of = '2' AND date = '2019-05-16'   group by ticket_from
+2019-05-16 11:16:00 | DEBUG | 1013 | 5cdcd5f080bb0 | 1557976560.647 | select  sum(ticket_num) as ticket_num from ticket_type   where scenic_spot_id = '4' AND date = '2019-05-16'
+2019-05-16 11:16:28 | DEBUG | 4033 | 5cdcd60cd749c | 1557976588.945 | select  scenic_spot_id,num from reception_num   where date = '2019-05-16'
+2019-05-16 11:16:29 | DEBUG | 4033 | 5cdcd60cd749c | 1557976589.157 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '2' AND date = '2019-05-16'   group by ticket_from
+2019-05-16 11:16:29 | DEBUG | 4033 | 5cdcd60cd749c | 1557976589.159 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '1' AND ticket_of = '1' AND date = '2019-05-16'   group by ticket_from
+2019-05-16 11:16:29 | DEBUG | 4033 | 5cdcd60cd749c | 1557976589.160 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '1' AND ticket_of = '2' AND date = '2019-05-16'   group by ticket_from
+2019-05-16 11:16:29 | DEBUG | 4033 | 5cdcd60cd749c | 1557976589.161 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '3' AND ticket_of = '1' AND date = '2019-05-16'   group by ticket_from
+2019-05-16 11:16:29 | DEBUG | 4033 | 5cdcd60cd749c | 1557976589.162 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '3' AND ticket_of = '2' AND date = '2019-05-16'   group by ticket_from
+2019-05-16 11:16:29 | DEBUG | 4033 | 5cdcd60cd749c | 1557976589.163 | select  sum(ticket_num) as ticket_num from ticket_type   where scenic_spot_id = '4' AND date = '2019-05-16'
+2019-05-16 11:20:02 | DEBUG | 1014 | 5cdcd6e22b257 | 1557976802.228 | select  scenic_spot_id,num from reception_num   where date = '2019-05-16'
+2019-05-16 11:20:02 | DEBUG | 1014 | 5cdcd6e22b257 | 1557976802.231 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '2' AND date = '2019-05-16'   group by ticket_from
+2019-05-16 11:20:02 | DEBUG | 1014 | 5cdcd6e22b257 | 1557976802.232 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '1' AND ticket_of = '1' AND date = '2019-05-16'   group by ticket_from
+2019-05-16 11:20:02 | DEBUG | 1014 | 5cdcd6e22b257 | 1557976802.234 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '1' AND ticket_of = '2' AND date = '2019-05-16'   group by ticket_from
+2019-05-16 11:20:02 | DEBUG | 1014 | 5cdcd6e22b257 | 1557976802.234 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '3' AND ticket_of = '1' AND date = '2019-05-16'   group by ticket_from
+2019-05-16 11:20:02 | DEBUG | 1014 | 5cdcd6e22b257 | 1557976802.236 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '3' AND ticket_of = '2' AND date = '2019-05-16'   group by ticket_from
+2019-05-16 11:20:02 | DEBUG | 1014 | 5cdcd6e22b257 | 1557976802.237 | select  sum(ticket_num) as ticket_num from ticket_type   where scenic_spot_id = '4' AND date = '2019-05-16'
+2019-05-16 11:20:50 | DEBUG | 1013 | 5cdcd712a6c14 | 1557976850.841 | select  scenic_spot_id,num from reception_num   where date = '2019-05-16'
+2019-05-16 11:20:50 | DEBUG | 1013 | 5cdcd712a6c14 | 1557976850.844 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '2' AND date = '2019-05-16'   group by ticket_from
+2019-05-16 11:20:50 | DEBUG | 1013 | 5cdcd712a6c14 | 1557976850.844 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '1' AND ticket_of = '1' AND date = '2019-05-16'   group by ticket_from
+2019-05-16 11:20:50 | DEBUG | 1013 | 5cdcd712a6c14 | 1557976850.844 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '1' AND ticket_of = '2' AND date = '2019-05-16'   group by ticket_from
+2019-05-16 11:20:50 | DEBUG | 1013 | 5cdcd712a6c14 | 1557976850.845 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '3' AND ticket_of = '1' AND date = '2019-05-16'   group by ticket_from
+2019-05-16 11:20:50 | DEBUG | 1013 | 5cdcd712a6c14 | 1557976850.845 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '3' AND ticket_of = '2' AND date = '2019-05-16'   group by ticket_from
+2019-05-16 11:20:50 | DEBUG | 1013 | 5cdcd712a6c14 | 1557976850.845 | select  sum(ticket_num) as ticket_num from ticket_type   where scenic_spot_id = '4' AND date = '2019-05-16'
+2019-05-16 11:21:44 | DEBUG | 4033 | 5cdcd7487efbe | 1557976904.522 | select  scenic_spot_id,num from reception_num   where date = '2019-05-16'
+2019-05-16 11:21:44 | DEBUG | 4033 | 5cdcd7487efbe | 1557976904.576 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '2' AND date = '2019-05-16'   group by ticket_from
+2019-05-16 11:21:44 | DEBUG | 4033 | 5cdcd7487efbe | 1557976904.577 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '1' AND ticket_of = '1' AND date = '2019-05-16'   group by ticket_from
+2019-05-16 11:21:44 | DEBUG | 4033 | 5cdcd7487efbe | 1557976904.577 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '1' AND ticket_of = '2' AND date = '2019-05-16'   group by ticket_from
+2019-05-16 11:21:44 | DEBUG | 4033 | 5cdcd7487efbe | 1557976904.578 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '3' AND ticket_of = '1' AND date = '2019-05-16'   group by ticket_from
+2019-05-16 11:21:44 | DEBUG | 4033 | 5cdcd7487efbe | 1557976904.579 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '3' AND ticket_of = '2' AND date = '2019-05-16'   group by ticket_from
+2019-05-16 11:21:44 | DEBUG | 4033 | 5cdcd7487efbe | 1557976904.579 | select  sum(ticket_num) as ticket_num from ticket_type   where scenic_spot_id = '4' AND date = '2019-05-16'
+2019-05-16 11:23:28 | DEBUG | 1014 | 5cdcd7b0ca978 | 1557977008.885 | select  scenic_spot_id,sum(num) as num from reception_num   where date between '2019-05-10' and '2019-05-15'   group by scenic_spot_id
+2019-05-16 11:23:28 | DEBUG | 1014 | 5cdcd7b0ca978 | 1557977008.888 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '2' AND date between '2019-05-10' and '2019-05-15'   group by ticket_from
+2019-05-16 11:23:28 | DEBUG | 1014 | 5cdcd7b0ca978 | 1557977008.888 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '1' AND ticket_of = '1' AND date between '2019-05-10' and '2019-05-15'   group by ticket_from
+2019-05-16 11:23:28 | DEBUG | 1014 | 5cdcd7b0ca978 | 1557977008.888 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '1' AND ticket_of = '2' AND date between '2019-05-10' and '2019-05-15'   group by ticket_from
+2019-05-16 11:23:28 | DEBUG | 1014 | 5cdcd7b0ca978 | 1557977008.889 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '3' AND ticket_of = '1' AND date between '2019-05-10' and '2019-05-15'   group by ticket_from
+2019-05-16 11:23:28 | DEBUG | 1014 | 5cdcd7b0ca978 | 1557977008.889 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '3' AND ticket_of = '2' AND date between '2019-05-10' and '2019-05-15'   group by ticket_from
+2019-05-16 11:23:28 | DEBUG | 1014 | 5cdcd7b0ca978 | 1557977008.889 | select  sum(ticket_num) as ticket_num from ticket_type   where scenic_spot_id = '4' AND date between '2019-05-10' and '2019-05-15'
+2019-05-16 11:26:02 | DEBUG | 16762 | 5cdcd84a0ec09 | 1557977162.216 | select  id,date,car_number from car_info   where is_analysisided = 0
+2019-05-16 11:26:02 | DEBUG | 16762 | 5cdcd84a0ec09 | 1557977162.289 | insert into  `car_from`(
+          `date`,`shanxi_car_count`,`beijing_car_count`,
+          `tianjin_car_count`,`hebei_car_count`,`sanxi_car_count`,
+          `neimeng_car_count`,`liaoning_car_count`,`jilin_car_count`,
+          `heilongjiang_car_count`,`shanghai_car_count`,`jiangsu_car_count`,
+          `zhejiang_car_count`,`anhui_car_count`,`fujian_car_count`,
+          `jiangxi_car_count`,`shandong_car_count`,`henan_car_count`,
+          `hubei_car_count`,`hunan_car_count`,`guangdong_car_count`,
+          `guangxi_car_count`,`hainan_car_count`,`chongqing_car_count`,
+          `sichuan_car_count`,`guizhou_car_count`,`yunnan_car_count`,
+          `xizang_car_count`,`gansu_car_count`,`qinghai_car_count`,
+          `ningxia_car_count`,`xinjiang_car_count`,`xianggang_car_count`,
+          `taiwan_car_count`,`aomen_car_count`
+          ) values ('2019-04-12','3','1','0','0','1','0','0','0','0','0','0','0','0','0','0','0','1','0','0','0','0','0','0','0','0','0','0','1','0','6','0','0','0','0'),('2019-04-13','0','1','0','0','1','0','1','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','25','0','0','0','0'),('2019-04-14','1','0','0','1','0','2','0','0','0','1','0','0','0','0','0','0','0','0','0','0','0','0','0','2','0','0','0','0','1','41','0','0','0','0'),('2019-04-15','3','0','0','0','1','0','0','0','0','0','0','0','0','0','0','1','1','0','0','0','0','0','0','3','0','0','0','0','0','21','0','0','0','0'),('2019-04-16','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','2','0','0','0','1','0','0','0','0','0','8','0','0','0','0'),('2019-04-17','1','0','0','0','0','1','0','0','0','0','0','1','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','1','1','12','0','0','0','0'),('2019-04-18','1','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','1','0','0','0','0','0','1','0','0','0','3','0','0','0','0'),('2019-04-11','1','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','1','0','0','0','0','0','0','0','0','2','16','0','0','0','0'),('2019-04-10','0','0','0','0','0','0','0','0','0','0','0','0','1','0','0','0','0','0','0','0','0','0','0','0','0','0','0','1','0','6','1','0','0','0'),('2018-10-04','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','1','0','0','0','0'),('2019-04-05','2','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','1','0','36','0','0','0','0'),('2019-04-06','7','0','1','0','0','6','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','1','4','57','0','0','0','0'),('2019-04-07','3','0','0','0','0','1','0','0','0','0','0','1','0','0','0','0','0','1','0','0','0','0','0','0','0','0','0','1','1','34','0','0','0','0'),('2019-04-08','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','1','0','0','0','0'),('2019-04-09','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','1','0','0','0','0','0','0','0','1','0','0','0','0','1','13','0','0','0','0')
+2019-05-16 11:26:02 | DEBUG | 16762 | 5cdcd84a0ec09 | 1557977162.353 | update car_info set is_analysisided='1'  where id in (1703,1704,1705,1706,1707,1708,1709,1710,1711,1712,1713,1714,1715,1716,1717,1718,1719,1720,1721,1722,1723,1724,1725,1726,1727,1728,1729,1730,1731,1732,1733,1734,1735,1736,1737,1738,1739,1740,1741,1742,1743,1744,1745,1746,1747,1748,1749,1750,1751,1752,1753,1754,1755,1756,1757,1758,1759,1760,1761,1762,1763,1764,1765,1766,1767,1768,1769,1770,1771,1772,1773,1774,1775,1776,1777,1778,1779,1780,1781,1782,1783,1784,1785,1786,1787,1788,1789,1790,1791,1792,1793,1794,1795,1796,1797,1798,1799,1800,1801,1802,1803,1804,1805,1806,1807,1808,1809,1810,1811,1812,1813,1814,1815,1816,1817,1818,1819,1820,1821,1822,1823,1824,1825,1826,1827,1828,1829,1830,1831,1832,1833,1834,1835,1836,1837,1838,1839,1840,1841,1842,1843,1844,1845,1846,1847,1848,1849,1850,1851,1852,1853,1854,1855,1856,1857,1858,1859,1860,1861,1862,1863,1864,1865,1866,1867,1868,1869,1870,1871,1872,1873,1874,1875,1876,1877,1878,1879,1880,1881,1882,1883,1884,1885,1886,1887,1888,1889,1890,1891,1892,1893,1894,1895,1896,1897,1898,1899,1900,1901,1902,1903,1904,1905,1906,1907,1908,1909,1910,1911,1912,1913,1914,1915,1916,1917,1918,1919,1920,1921,1922,1923,1924,1925,1926,1927,1928,1929,1930,1931,1932,1933,1934,1935,1936,1937,1938,1939,1940,1941,1942,1943,1944,1945,1946,1947,1948,1949,1950,1951,1952,1953,1954,1955,1956,1957,1958,1959,1960,1961,1962,1963,1964,1965,1966,1967,1968,1969,1970,1971,1972,1973,1974,1975,1976,1977,1978,1979,1980,1981,1982,1983,1984,1985,1986,1987,1988,1989,1990,1991,1992,1993,1994,1995,1996,1997,1998,1999,2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025,2026,2027,2028,2029,2030,2031,2032,2033,2034,2035,2036,2037,2038,2039,2040,2041,2042,2043,2044,2045,2046,2047,2048,2049,2050,2051,2052,2053,2054,2055,2056,2057,2058,2059,2060) 
+2019-05-16 11:34:20 | DEBUG | 1013 | 5cdcda3c68302 | 1557977660.428 | select  scenic_spot_id,sum(num) as num from reception_num   where date between '2019-05-10' and '2019-05-15'   group by scenic_spot_id
+2019-05-16 11:34:20 | DEBUG | 1013 | 5cdcda3c68302 | 1557977660.430 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '2' AND date between '2019-05-10' and '2019-05-15'   group by ticket_from
+2019-05-16 11:34:20 | DEBUG | 1013 | 5cdcda3c68302 | 1557977660.430 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '1' AND ticket_of = '1' AND date between '2019-05-10' and '2019-05-15'   group by ticket_from
+2019-05-16 11:34:20 | DEBUG | 1013 | 5cdcda3c68302 | 1557977660.431 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '1' AND ticket_of = '2' AND date between '2019-05-10' and '2019-05-15'   group by ticket_from
+2019-05-16 11:34:20 | DEBUG | 1013 | 5cdcda3c68302 | 1557977660.431 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '3' AND ticket_of = '1' AND date between '2019-05-10' and '2019-05-15'   group by ticket_from
+2019-05-16 11:34:20 | DEBUG | 1013 | 5cdcda3c68302 | 1557977660.432 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '3' AND ticket_of = '2' AND date between '2019-05-10' and '2019-05-15'   group by ticket_from
+2019-05-16 11:34:20 | DEBUG | 1013 | 5cdcda3c68302 | 1557977660.432 | select  sum(ticket_num) as ticket_num from ticket_type   where scenic_spot_id = '4' AND date between '2019-05-10' and '2019-05-15'
+2019-05-16 11:37:33 | DEBUG | 1014 | 5cdcdafd0d0eb | 1557977853.56 | select  scenic_spot_id,sum(num) as num from reception_num   where date between '2019-05-10' and '2019-05-15'   group by scenic_spot_id
+2019-05-16 11:37:33 | DEBUG | 1014 | 5cdcdafd0d0eb | 1557977853.59 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '2' AND date between '2019-05-10' and '2019-05-15'   group by ticket_from
+2019-05-16 11:37:33 | DEBUG | 1014 | 5cdcdafd0d0eb | 1557977853.59 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '1' AND ticket_of = '1' AND date between '2019-05-10' and '2019-05-15'   group by ticket_from
+2019-05-16 11:37:33 | DEBUG | 1014 | 5cdcdafd0d0eb | 1557977853.60 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '1' AND ticket_of = '2' AND date between '2019-05-10' and '2019-05-15'   group by ticket_from
+2019-05-16 11:37:33 | DEBUG | 1014 | 5cdcdafd0d0eb | 1557977853.60 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '3' AND ticket_of = '1' AND date between '2019-05-10' and '2019-05-15'   group by ticket_from
+2019-05-16 11:37:33 | DEBUG | 1014 | 5cdcdafd0d0eb | 1557977853.60 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '3' AND ticket_of = '2' AND date between '2019-05-10' and '2019-05-15'   group by ticket_from
+2019-05-16 11:37:33 | DEBUG | 1014 | 5cdcdafd0d0eb | 1557977853.61 | select  sum(ticket_num) as ticket_num from ticket_type   where scenic_spot_id = '4' AND date between '2019-05-10' and '2019-05-15'
+2019-05-16 12:30:01 | DEBUG | 20534 | 5cdce7490ab20 | 1557981001.158 | select  id,date,id_card,province,birthday,sex from visitor_info   where  is_analysisided = 0
+2019-05-16 12:30:01 | DEBUG | 20534 | 5cdce7490ab20 | 1557981001.233 | insert into  `visitor_att`(
+          `date`,`man_count`,`women_count`,`age1_count`,`age2_count`,
+          `age3_count`,`age4_count`,`age5_count`,`age6_count`,`age7_count`
+          ) values ('2019-05-13','2','0','0','0','0','0','0','0','2'),('2019-05-14','2','1','0','0','0','0','0','1','2'),('2019-05-16','2','1','0','0','0','0','0','1','2')
+2019-05-16 12:30:01 | DEBUG | 20534 | 5cdce7490ab20 | 1557981001.269 | insert into visitor_from(shanxi_visitor_count,beijing_visitor_count,tianjin_visitor_count,hebei_visitor_count,sanxi_visitor_count,neimeng_visitor_count,liaoning_visitor_count,jilin_visitor_count,heilongjiang_visitor_count,shanghai_visitor_count,jiangsu_visitor_count,zhejiang_visitor_count,anhui_visitor_count,fujian_visitor_count,jiangxi_visitor_count,shandong_visitor_count,henan_visitor_count,hubei_visitor_count,hunan_visitor_count,guangdong_visitor_count,guangxi_visitor_count,hainan_visitor_count,chongqing_visitor_count,sichuan_visitor_count,guizhou_visitor_count,yunnan_visitor_count,xizang_visitor_count,gansu_visitor_count,qinghai_visitor_count,ningxia_visitor_count,xinjiang_visitor_count,xianggang_visitor_count,taiwan_visitor_count,aomen_visitor_count) values('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','8','0','0','0','0','0','0','0','0','0','0')
+2019-05-16 12:30:01 | DEBUG | 20534 | 5cdce7490ab20 | 1557981001.271 | update visitor_info set is_analysisided='1'  where id in (1124,1125,1126,1127,1128,1129,1130,1131) 
+2019-05-16 13:07:37 | DEBUG | 1014 | 5cdcf0195e074 | 1557983257.525 | select  scenic_spot_id,sum(num) as num from reception_num   where date between '2019-05-10' and '2019-05-15'   group by scenic_spot_id
+2019-05-16 13:07:37 | DEBUG | 1014 | 5cdcf0195e074 | 1557983257.562 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '2' AND date between '2019-05-10' and '2019-05-15'   group by ticket_from
+2019-05-16 13:07:37 | DEBUG | 1014 | 5cdcf0195e074 | 1557983257.586 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '1' AND ticket_of = '1' AND date between '2019-05-10' and '2019-05-15'   group by ticket_from
+2019-05-16 13:07:37 | DEBUG | 1014 | 5cdcf0195e074 | 1557983257.588 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '1' AND ticket_of = '2' AND date between '2019-05-10' and '2019-05-15'   group by ticket_from
+2019-05-16 13:07:37 | DEBUG | 1014 | 5cdcf0195e074 | 1557983257.589 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '3' AND ticket_of = '1' AND date between '2019-05-10' and '2019-05-15'   group by ticket_from
+2019-05-16 13:07:37 | DEBUG | 1014 | 5cdcf0195e074 | 1557983257.592 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '3' AND ticket_of = '2' AND date between '2019-05-10' and '2019-05-15'   group by ticket_from
+2019-05-16 13:07:37 | DEBUG | 1014 | 5cdcf0195e074 | 1557983257.605 | select  sum(ticket_num) as ticket_num from ticket_type   where scenic_spot_id = '4' AND date between '2019-05-10' and '2019-05-15'
+2019-05-16 14:41:33 | DEBUG | 4033 | 5cdd061d84866 | 1557988893.547 | select  travel_agency,count(id) as count from visitor_info    group by travel_agency    order by count desc
+2019-05-16 14:41:33 | DEBUG | 4033 | 5cdd061d84866 | 1557988893.547 | select  count(id) as count from visitor_info
+2019-05-16 14:41:33 | DEBUG | 4033 | 5cdd061d84866 | 1557988893.548 | select  travel_agency,count(id) as count from visitor_info   where province = 'Array' AND date between '2018-12-20' and '2019-05-16'   group by travel_agency    order by count desc  limit 3  offset 0
+2019-05-16 14:41:33 | DEBUG | 4033 | 5cdd061d84866 | 1557988893.548 | select  sex,count(id) as count from visitor_info   where province = 'Array' AND date between '2018-12-20' and '2019-05-16'   group by sex
+2019-05-16 14:41:33 | DEBUG | 4033 | 5cdd061d84866 | 1557988893.549 | select  birthday from visitor_info   where province = 'Array' AND date between '2018-12-20' and '2019-05-16'
+2019-05-16 14:41:46 | DEBUG | 1014 | 5cdd062a41f1a | 1557988906.273 | select  travel_agency,count(id) as count from visitor_info    group by travel_agency    order by count desc
+2019-05-16 14:41:46 | DEBUG | 1014 | 5cdd062a41f1a | 1557988906.273 | select  count(id) as count from visitor_info
+2019-05-16 14:41:46 | DEBUG | 1014 | 5cdd062a41f1a | 1557988906.275 | select  travel_agency,count(id) as count from visitor_info   where province = 'Array' AND date between '2018-12-20' and '2019-05-16'   group by travel_agency    order by count desc  limit 3  offset 0
+2019-05-16 14:41:46 | DEBUG | 1014 | 5cdd062a41f1a | 1557988906.276 | select  sex,count(id) as count from visitor_info   where province = 'Array' AND date between '2018-12-20' and '2019-05-16'   group by sex
+2019-05-16 14:41:46 | DEBUG | 1014 | 5cdd062a41f1a | 1557988906.277 | select  birthday from visitor_info   where province = 'Array' AND date between '2018-12-20' and '2019-05-16'
+2019-05-16 14:46:38 | DEBUG | 4033 | 5cdd074e135ec | 1557989198.119 | select  travel_agency,count(id) as count from visitor_info    group by travel_agency    order by count desc
+2019-05-16 14:46:38 | DEBUG | 4033 | 5cdd074e135ec | 1557989198.119 | select  count(id) as count from visitor_info
+2019-05-16 14:46:38 | DEBUG | 4033 | 5cdd074e135ec | 1557989198.120 | select  travel_agency,count(id) as count from visitor_info   where province = 'Array' AND date between '2018-12-20' and '2019-05-16'   group by travel_agency    order by count desc  limit 3  offset 0
+2019-05-16 14:46:38 | DEBUG | 4033 | 5cdd074e135ec | 1557989198.121 | select  sex,count(id) as count from visitor_info   where province = 'Array' AND date between '2018-12-20' and '2019-05-16'   group by sex
+2019-05-16 14:46:38 | DEBUG | 4033 | 5cdd074e135ec | 1557989198.121 | select  birthday from visitor_info   where province = 'Array' AND date between '2018-12-20' and '2019-05-16'
+2019-05-16 14:47:16 | DEBUG | 1014 | 5cdd07749b6ca | 1557989236.638 | select  travel_agency,count(id) as count from visitor_info    group by travel_agency    order by count desc
+2019-05-16 14:47:16 | DEBUG | 1014 | 5cdd07749b6ca | 1557989236.639 | select  count(id) as count from visitor_info
+2019-05-16 14:47:16 | DEBUG | 1014 | 5cdd07749b6ca | 1557989236.879 | execute error: select  travel_agency,count(id) as count from visitor_info   where province in (陕西,宁夏) AND date = '2019-05-16'   group by travel_agency    order by count desc  limit 3  offset 0
+2019-05-16 14:47:16 | DEBUG | 1014 | 5cdd07749b6ca | 1557989236.880 | execute error: select  sex,count(id) as count from visitor_info   where province in '(陕西,宁夏)' AND date = '2019-05-16'   group by sex
+2019-05-16 14:47:16 | DEBUG | 1014 | 5cdd07749b6ca | 1557989236.882 | select  birthday from visitor_info   where province = '(陕西,宁夏)' AND date = '2019-05-16'
+2019-05-16 14:48:11 | DEBUG | 1013 | 5cdd07ab1a11e | 1557989291.109 | select  travel_agency,count(id) as count from visitor_info    group by travel_agency    order by count desc
+2019-05-16 14:48:11 | DEBUG | 1013 | 5cdd07ab1a11e | 1557989291.110 | select  count(id) as count from visitor_info
+2019-05-16 14:48:11 | DEBUG | 1013 | 5cdd07ab1a11e | 1557989291.111 | select  travel_agency,count(id) as count from visitor_info   where province in ('陕西','宁夏') AND date = '2019-05-16'   group by travel_agency    order by count desc  limit 3  offset 0
+2019-05-16 14:48:11 | DEBUG | 1013 | 5cdd07ab1a11e | 1557989291.155 | execute error: select  sex,count(id) as count from visitor_info   where province in '('陕西','宁夏')' AND date = '2019-05-16'   group by sex
+2019-05-16 14:48:11 | DEBUG | 1013 | 5cdd07ab1a11e | 1557989291.155 | execute error: select  birthday from visitor_info   where province = '('陕西','宁夏')' AND date = '2019-05-16'
+2019-05-16 14:49:28 | DEBUG | 4033 | 5cdd07f8c278b | 1557989368.802 | select  travel_agency,count(id) as count from visitor_info    group by travel_agency    order by count desc
+2019-05-16 14:49:28 | DEBUG | 4033 | 5cdd07f8c278b | 1557989368.803 | select  count(id) as count from visitor_info
+2019-05-16 14:49:28 | DEBUG | 4033 | 5cdd07f8c278b | 1557989368.804 | select  travel_agency,count(id) as count from visitor_info   where province in ('陕西','宁夏') AND date = '2019-05-16'   group by travel_agency    order by count desc  limit 3  offset 0
+2019-05-16 14:49:28 | DEBUG | 4033 | 5cdd07f8c278b | 1557989368.805 | select  sex,count(id) as count from visitor_info   where province in ('陕西','宁夏') AND date = '2019-05-16'   group by sex
+2019-05-16 14:49:28 | DEBUG | 4033 | 5cdd07f8c278b | 1557989368.833 | select  birthday from visitor_info   where province in ('陕西','宁夏') AND date = '2019-05-16'
+2019-05-16 14:49:37 | DEBUG | 1014 | 5cdd0801eda21 | 1557989377.977 | select  travel_agency,count(id) as count from visitor_info    group by travel_agency    order by count desc
+2019-05-16 14:49:37 | DEBUG | 1014 | 5cdd0801eda21 | 1557989377.978 | select  count(id) as count from visitor_info
+2019-05-16 14:49:37 | DEBUG | 1014 | 5cdd0801eda21 | 1557989377.978 | execute error: select  travel_agency,count(id) as count from visitor_info   where province in Array AND date between '2018-12-20' and '2019-05-16'   group by travel_agency    order by count desc  limit 3  offset 0
+2019-05-16 14:49:37 | DEBUG | 1014 | 5cdd0801eda21 | 1557989377.978 | execute error: select  sex,count(id) as count from visitor_info   where province in Array AND date between '2018-12-20' and '2019-05-16'   group by sex
+2019-05-16 14:49:37 | DEBUG | 1014 | 5cdd0801eda21 | 1557989377.978 | execute error: select  birthday from visitor_info   where province in Array AND date between '2018-12-20' and '2019-05-16'
+2019-05-16 14:51:01 | DEBUG | 1013 | 5cdd0855ed1a6 | 1557989461.973 | select  travel_agency,count(id) as count from visitor_info    group by travel_agency    order by count desc
+2019-05-16 14:51:01 | DEBUG | 1013 | 5cdd0855ed1a6 | 1557989461.974 | select  count(id) as count from visitor_info
+2019-05-16 14:51:01 | DEBUG | 1013 | 5cdd0855ed1a6 | 1557989461.975 | select  travel_agency,count(id) as count from visitor_info   where province in ('陕西','宁夏') AND date between '2018-12-20' and '2019-05-16'   group by travel_agency    order by count desc  limit 3  offset 0
+2019-05-16 14:51:01 | DEBUG | 1013 | 5cdd0855ed1a6 | 1557989461.976 | select  sex,count(id) as count from visitor_info   where province in ('陕西','宁夏') AND date between '2018-12-20' and '2019-05-16'   group by sex
+2019-05-16 14:51:01 | DEBUG | 1013 | 5cdd0855ed1a6 | 1557989461.977 | select  birthday from visitor_info   where province in ('陕西','宁夏') AND date between '2018-12-20' and '2019-05-16'
+2019-05-16 14:51:13 | DEBUG | 4033 | 5cdd0861c0242 | 1557989473.789 | select  travel_agency,count(id) as count from visitor_info    group by travel_agency    order by count desc
+2019-05-16 14:51:13 | DEBUG | 4033 | 5cdd0861c0242 | 1557989473.790 | select  count(id) as count from visitor_info
+2019-05-16 14:51:13 | DEBUG | 4033 | 5cdd0861c0242 | 1557989473.790 | execute error: select  travel_agency,count(id) as count from visitor_info   where province in ('陕西','宁夏',四川) AND date between '2018-12-20' and '2019-05-16'   group by travel_agency    order by count desc  limit 3  offset 0
+2019-05-16 14:51:13 | DEBUG | 4033 | 5cdd0861c0242 | 1557989473.790 | execute error: select  sex,count(id) as count from visitor_info   where province in ('陕西','宁夏',四川) AND date between '2018-12-20' and '2019-05-16'   group by sex
+2019-05-16 14:51:13 | DEBUG | 4033 | 5cdd0861c0242 | 1557989473.791 | execute error: select  birthday from visitor_info   where province in ('陕西','宁夏',四川) AND date between '2018-12-20' and '2019-05-16'
+2019-05-16 14:51:21 | DEBUG | 1014 | 5cdd0869c73f9 | 1557989481.819 | select  travel_agency,count(id) as count from visitor_info    group by travel_agency    order by count desc
+2019-05-16 14:51:21 | DEBUG | 1014 | 5cdd0869c73f9 | 1557989481.820 | select  count(id) as count from visitor_info
+2019-05-16 14:51:21 | DEBUG | 1014 | 5cdd0869c73f9 | 1557989481.822 | select  travel_agency,count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2018-12-20' and '2019-05-16'   group by travel_agency    order by count desc  limit 3  offset 0
+2019-05-16 14:51:21 | DEBUG | 1014 | 5cdd0869c73f9 | 1557989481.823 | select  sex,count(id) as count from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2018-12-20' and '2019-05-16'   group by sex
+2019-05-16 14:51:21 | DEBUG | 1014 | 5cdd0869c73f9 | 1557989481.824 | select  birthday from visitor_info   where province in ('陕西','宁夏','四川') AND date between '2018-12-20' and '2019-05-16'
+2019-05-16 15:21:09 | DEBUG | 1013 | 5cdd0f653dc7a | 1557991269.343 | select  date,sum(scattered_ticket_num) as scattered_num,sum(group_ticket_num) as group_num from group_scattered_ticket   where date between '2019-05-14' and '2019-05-15'   group by date
+2019-05-16 17:45:28 | DEBUG | 4033 | 5cdd31387e18a | 1557999928.835 | select  date,sum(scattered_ticket_num) as scattered_num,sum(group_ticket_num) as group_num from group_scattered_ticket   where date between '2019-05-14' and '2019-05-15'   group by date
+2019-05-16 17:45:28 | DEBUG | 4033 | 5cdd31387e18a | 1557999928.869 | select  sum(scattered_ticket_num) as scattered_num,
+                sum(group_ticket_num) as group_num from group_scattered_ticket
+2019-05-16 17:46:34 | DEBUG | 1014 | 5cdd317ad0efe | 1557999994.859 | select  date,sum(scattered_ticket_num) as scattered_num,sum(group_ticket_num) as group_num from group_scattered_ticket   where date between '2019-05-14' and '2019-05-15'   group by date
+2019-05-16 17:46:34 | DEBUG | 1014 | 5cdd317ad0efe | 1557999994.859 | select  sum(scattered_ticket_num) as scattered_num,
+                sum(group_ticket_num) as group_num from group_scattered_ticket   where date = '2019-05-16'
+2019-05-16 17:51:37 | DEBUG | 1013 | 5cdd32a9265e6 | 1558000297.159 | select  date,sum(scattered_ticket_num) as scattered_num,sum(group_ticket_num) as group_num from group_scattered_ticket   where date between '2019-05-14' and '2019-05-15'   group by date
+2019-05-16 17:51:37 | DEBUG | 1013 | 5cdd32a9265e6 | 1558000297.160 | select  sum(scattered_ticket_num) as scattered_num,
+                sum(group_ticket_num) as group_num from group_scattered_ticket   where date = '2019-05-16'
+2019-05-16 17:53:53 | DEBUG | 4033 | 5cdd3331a55f8 | 1558000433.681 | select  date,sum(scattered_ticket_num) as scattered_num,sum(group_ticket_num) as group_num from group_scattered_ticket   where date between '2019-05-14' and '2019-05-15'   group by date
+2019-05-16 17:53:53 | DEBUG | 4033 | 5cdd3331a55f8 | 1558000433.681 | select  sum(scattered_ticket_num) as scattered_num,
+                sum(group_ticket_num) as group_num from group_scattered_ticket   where date = '2019-05-16'
+2019-05-16 17:54:19 | DEBUG | 1014 | 5cdd334bb1bde | 1558000459.731 | select  date,sum(scattered_ticket_num) as scattered_num,sum(group_ticket_num) as group_num from group_scattered_ticket   where date between '2019-05-14' and '2019-05-15'   group by date
+2019-05-16 17:54:19 | DEBUG | 1014 | 5cdd334bb1bde | 1558000459.732 | select  sum(scattered_ticket_num) as scattered_num,
+                sum(group_ticket_num) as group_num from group_scattered_ticket   where date = '2019-05-16'
+2019-05-16 17:54:56 | DEBUG | 1013 | 5cdd3370a6e0f | 1558000496.686 | select  date,sum(scattered_ticket_num) as scattered_num,sum(group_ticket_num) as group_num from group_scattered_ticket   where date between '2019-05-14' and '2019-05-15'   group by date
+2019-05-16 17:54:56 | DEBUG | 1013 | 5cdd3370a6e0f | 1558000496.687 | select  sum(scattered_ticket_num) as scattered_num,
+                sum(group_ticket_num) as group_num from group_scattered_ticket
+2019-05-16 17:55:40 | DEBUG | 4033 | 5cdd339c60f0e | 1558000540.399 | select  date,sum(scattered_ticket_num) as scattered_num,sum(group_ticket_num) as group_num from group_scattered_ticket   where date between '2019-05-14' and '2019-05-15'   group by date
+2019-05-16 17:55:40 | DEBUG | 4033 | 5cdd339c60f0e | 1558000540.400 | select  sum(scattered_ticket_num) as scattered_num,
+                sum(group_ticket_num) as group_num from group_scattered_ticket
+2019-05-16 17:56:55 | DEBUG | 1014 | 5cdd33e7beb1b | 1558000615.784 | select  date,sum(scattered_ticket_num) as scattered_num,sum(group_ticket_num) as group_num from group_scattered_ticket   where date between '2019-05-14' and '2019-05-15'   group by date
+2019-05-16 17:56:55 | DEBUG | 1014 | 5cdd33e7beb1b | 1558000615.784 | select  sum(scattered_ticket_num) as scattered_num,
+                sum(group_ticket_num) as group_num from group_scattered_ticket   where date = '2019-05-16'
+2019-05-16 17:57:07 | DEBUG | 1013 | 5cdd33f38289a | 1558000627.539 | select  date,sum(scattered_ticket_num) as scattered_num,sum(group_ticket_num) as group_num from group_scattered_ticket   where date between '2018-05-14' and '2019-05-15'   group by date
+2019-05-16 17:57:07 | DEBUG | 1013 | 5cdd33f38289a | 1558000627.539 | select  sum(scattered_ticket_num) as scattered_num,
+                sum(group_ticket_num) as group_num from group_scattered_ticket   where date = '2019-05-16'
+2019-05-16 17:58:11 | DEBUG | 4033 | 5cdd34335be5b | 1558000691.378 | select  date,sum(scattered_ticket_num) as scattered_num,sum(group_ticket_num) as group_num from group_scattered_ticket   where date between '2019-04-14' and '2019-05-15'   group by date
+2019-05-16 17:58:11 | DEBUG | 4033 | 5cdd34335be5b | 1558000691.379 | select  sum(scattered_ticket_num) as scattered_num,
+                sum(group_ticket_num) as group_num from group_scattered_ticket   where date = '2019-05-16'
+2019-05-16 17:58:49 | DEBUG | 1014 | 5cdd3459d0e3b | 1558000729.858 | select  date,sum(scattered_ticket_num) as scattered_num,sum(group_ticket_num) as group_num from group_scattered_ticket   where date between '2019-04-14' and '2019-05-15'   group by date
+2019-05-16 17:58:49 | DEBUG | 1014 | 5cdd3459d0e3b | 1558000729.859 | select  sum(scattered_ticket_num) as scattered_num,
+                sum(group_ticket_num) as group_num from group_scattered_ticket   where date = '2019-05-16'
+2019-05-16 17:59:14 | DEBUG | 1013 | 5cdd3472d8b29 | 1558000754.891 | select  date,sum(scattered_ticket_num) as scattered_num,sum(group_ticket_num) as group_num from group_scattered_ticket   where date between '2019-05-10' and '2019-05-16'   group by date
+2019-05-16 17:59:14 | DEBUG | 1013 | 5cdd3472d8b29 | 1558000754.891 | select  sum(scattered_ticket_num) as scattered_num,
+                sum(group_ticket_num) as group_num from group_scattered_ticket   where date = '2019-05-16'
+2019-05-16 18:00:13 | DEBUG | 4033 | 5cdd34ad1e308 | 1558000813.125 | select  date,sum(scattered_ticket_num) as scattered_num,sum(group_ticket_num) as group_num from group_scattered_ticket   where date between '2019-05-10' and '2019-05-16'   group by date
+2019-05-16 18:00:13 | DEBUG | 4033 | 5cdd34ad1e308 | 1558000813.125 | select  sum(scattered_ticket_num) as scattered_num,
+                sum(group_ticket_num) as group_num from group_scattered_ticket   where date between '2019-04-14' and '2019-05-15'
+2019-05-16 18:00:28 | DEBUG | 1014 | 5cdd34bc622e5 | 1558000828.404 | select  date,sum(scattered_ticket_num) as scattered_num,sum(group_ticket_num) as group_num from group_scattered_ticket   where date between '2019-05-10' and '2019-05-16'   group by date
+2019-05-16 18:00:28 | DEBUG | 1014 | 5cdd34bc622e5 | 1558000828.405 | select  sum(scattered_ticket_num) as scattered_num,
+                sum(group_ticket_num) as group_num from group_scattered_ticket   where date between '2019-04-14' and '2019-05-15'
+2019-05-16 18:00:58 | DEBUG | 1013 | 5cdd34da94208 | 1558000858.608 | select  date,sum(scattered_ticket_num) as scattered_num,sum(group_ticket_num) as group_num from group_scattered_ticket   where date between '2019-05-10' and '2019-05-16'   group by date
+2019-05-16 18:00:58 | DEBUG | 1013 | 5cdd34da94208 | 1558000858.608 | select  sum(scattered_ticket_num) as scattered_num,
+                sum(group_ticket_num) as group_num from group_scattered_ticket   where date between '2019-05-14' and '2019-05-15'
+2019-05-16 18:07:10 | DEBUG | 4033 | 5cdd364de5e29 | 1558001230.20 | select  date,count(car_number) as count from car_info   where scenic_spot_id = 1 and date between '2019-05-10' and '2019-05-15'   group by date
+2019-05-16 18:07:10 | DEBUG | 4033 | 5cdd364de5e29 | 1558001230.21 | select  date,count(car_number) as count from car_info   where scenic_spot_id = 2 and date between '2019-05-10' and '2019-05-15'   group by date
+2019-05-16 19:35:54 | DEBUG | 1014 | 5cdd4b1a47f9a | 1558006554.535 | select  sum(hotel_occupancy_num) as hotel_occupancy_num from hotel_occupancy   where date ='2019-05-16'
+2019-05-16 19:35:54 | DEBUG | 1014 | 5cdd4b1a47f9a | 1558006554.751 | select  hotel_id,sum(CASE WHEN room_type='1' THEN hotel_occupancy_num ELSE 0 END) as standard_occupancy,
+            sum(CASE WHEN room_type='2' THEN hotel_occupancy_num ELSE 0 END) as kingsize_occupancy,
+            sum(CASE WHEN room_type='3' THEN hotel_occupancy_num ELSE 0 END) as other_occupancy from hotel_occupancy   where date = '2019-05-16'   group by hotel_id
+2019-05-16 19:35:54 | DEBUG | 1014 | 5cdd4b1a47f9a | 1558006554.781 | select  date,sum(hotel_occupancy_num) as occupancy from hotel_occupancy   where date between '2019-05-10' and '2019-05-16'   group by date
+2019-05-16 19:37:51 | DEBUG | 1013 | 5cdd4b8f23b51 | 1558006671.148 | select  sum(hotel_occupancy_num) as hotel_occupancy_num from hotel_occupancy   where date between '2019-05-12' and '2019-05-15'
+2019-05-16 19:37:51 | DEBUG | 1013 | 5cdd4b8f23b51 | 1558006671.214 | select  hotel_id,sum(CASE WHEN room_type='1' THEN hotel_occupancy_num ELSE 0 END) as standard_occupancy,
+            sum(CASE WHEN room_type='2' THEN hotel_occupancy_num ELSE 0 END) as kingsize_occupancy,
+            sum(CASE WHEN room_type='3' THEN hotel_occupancy_num ELSE 0 END) as other_occupancy from hotel_occupancy   where date between '2019-05-12' and '2019-05-15'   group by hotel_id
+2019-05-16 19:37:51 | DEBUG | 1013 | 5cdd4b8f23b51 | 1558006671.215 | select  date,sum(hotel_occupancy_num) as occupancy from hotel_occupancy   where date between '2019-05-10' and '2019-05-16'   group by date
+2019-05-16 20:03:36 | DEBUG | 4033 | 5cdd519855a43 | 1558008216.355 | select  sum(hotel_occupancy_num) as hotel_occupancy_num from hotel_occupancy   where date between '2019-05-12' and '2019-05-15'
+2019-05-16 20:03:36 | DEBUG | 4033 | 5cdd519855a43 | 1558008216.355 | select  hotel_id,sum(CASE WHEN room_type='1' THEN hotel_occupancy_num ELSE 0 END) as standard_occupancy,
+            sum(CASE WHEN room_type='2' THEN hotel_occupancy_num ELSE 0 END) as kingsize_occupancy,
+            sum(CASE WHEN room_type='3' THEN hotel_occupancy_num ELSE 0 END) as other_occupancy from hotel_occupancy   where date between '2019-05-12' and '2019-05-15'   group by hotel_id
+2019-05-16 20:03:36 | DEBUG | 4033 | 5cdd519855a43 | 1558008216.356 | select  date,sum(hotel_occupancy_num) as occupancy from hotel_occupancy   where date between '2019-05-10' and '2019-05-16'   group by date
+2019-05-16 20:03:47 | DEBUG | 1014 | 5cdd51a3ca30e | 1558008227.829 | select  sum(hotel_occupancy_num) as hotel_occupancy_num from hotel_occupancy   where date ='2019-05-16'
+2019-05-16 20:03:47 | DEBUG | 1014 | 5cdd51a3ca30e | 1558008227.829 | select  hotel_id,sum(CASE WHEN room_type='1' THEN hotel_occupancy_num ELSE 0 END) as standard_occupancy,
+            sum(CASE WHEN room_type='2' THEN hotel_occupancy_num ELSE 0 END) as kingsize_occupancy,
+            sum(CASE WHEN room_type='3' THEN hotel_occupancy_num ELSE 0 END) as other_occupancy from hotel_occupancy    group by hotel_id
+2019-05-16 20:03:47 | DEBUG | 1014 | 5cdd51a3ca30e | 1558008227.830 | select  date,sum(hotel_occupancy_num) as occupancy from hotel_occupancy   where date between '2019-05-10' and '2019-05-16'   group by date
+2019-05-16 20:05:23 | DEBUG | 1013 | 5cdd520344c61 | 1558008323.285 | select  sum(hotel_occupancy_num) as hotel_occupancy_num from hotel_occupancy
+2019-05-16 20:05:23 | DEBUG | 1013 | 5cdd520344c61 | 1558008323.331 | select  hotel_id,sum(CASE WHEN room_type='1' THEN hotel_occupancy_num ELSE 0 END) as standard_occupancy,
+            sum(CASE WHEN room_type='2' THEN hotel_occupancy_num ELSE 0 END) as kingsize_occupancy,
+            sum(CASE WHEN room_type='3' THEN hotel_occupancy_num ELSE 0 END) as other_occupancy from hotel_occupancy    group by hotel_id
+2019-05-16 20:05:23 | DEBUG | 1013 | 5cdd520344c61 | 1558008323.332 | select  date,sum(hotel_occupancy_num) as occupancy from hotel_occupancy   where date between '2019-05-10' and '2019-05-16'   group by date
+2019-05-16 20:15:19 | DEBUG | 4033 | 5cdd545710f43 | 1558008919.72 | select  scenic_spot_id,num from reception_num   where date = '2019-05-16'
+2019-05-16 20:15:19 | DEBUG | 4033 | 5cdd545710f43 | 1558008919.174 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '2' AND date = '2019-05-16'   group by ticket_from
+2019-05-16 20:15:19 | DEBUG | 4033 | 5cdd545710f43 | 1558008919.239 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '1' AND ticket_of = '1' AND date = '2019-05-16'   group by ticket_from
+2019-05-16 20:15:19 | DEBUG | 4033 | 5cdd545710f43 | 1558008919.240 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '1' AND ticket_of = '2' AND date = '2019-05-16'   group by ticket_from
+2019-05-16 20:15:19 | DEBUG | 4033 | 5cdd545710f43 | 1558008919.241 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '3' AND ticket_of = '1' AND date = '2019-05-16'   group by ticket_from
+2019-05-16 20:15:19 | DEBUG | 4033 | 5cdd545710f43 | 1558008919.241 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '3' AND ticket_of = '2' AND date = '2019-05-16'   group by ticket_from
+2019-05-16 20:15:19 | DEBUG | 4033 | 5cdd545710f43 | 1558008919.242 | select  sum(ticket_num) as ticket_num from ticket_type   where scenic_spot_id = '4' AND date = '2019-05-16'
+2019-05-16 20:15:33 | DEBUG | 1014 | 5cdd546556d2c | 1558008933.358 | select  scenic_spot_id,sum(num) as num from reception_num   where date between '2019-05-10' and '2019-05-15'   group by scenic_spot_id
+2019-05-16 20:15:33 | DEBUG | 1014 | 5cdd546556d2c | 1558008933.358 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '2' AND date between '2019-05-10' and '2019-05-15'   group by ticket_from
+2019-05-16 20:15:33 | DEBUG | 1014 | 5cdd546556d2c | 1558008933.386 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '1' AND ticket_of = '1' AND date between '2019-05-10' and '2019-05-15'   group by ticket_from
+2019-05-16 20:15:33 | DEBUG | 1014 | 5cdd546556d2c | 1558008933.387 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '1' AND ticket_of = '2' AND date between '2019-05-10' and '2019-05-15'   group by ticket_from
+2019-05-16 20:15:33 | DEBUG | 1014 | 5cdd546556d2c | 1558008933.387 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '3' AND ticket_of = '1' AND date between '2019-05-10' and '2019-05-15'   group by ticket_from
+2019-05-16 20:15:33 | DEBUG | 1014 | 5cdd546556d2c | 1558008933.387 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '3' AND ticket_of = '2' AND date between '2019-05-10' and '2019-05-15'   group by ticket_from
+2019-05-16 20:15:33 | DEBUG | 1014 | 5cdd546556d2c | 1558008933.388 | select  sum(ticket_num) as ticket_num from ticket_type   where scenic_spot_id = '4' AND date between '2019-05-10' and '2019-05-15'
+2019-05-16 20:16:42 | DEBUG | 1013 | 5cdd54aa907d0 | 1558009002.593 | select  scenic_spot_id,num from reception_num   where date = '2019-05-16'
+2019-05-16 20:16:42 | DEBUG | 1013 | 5cdd54aa907d0 | 1558009002.594 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '2' AND date = '2019-05-16'   group by ticket_from
+2019-05-16 20:16:42 | DEBUG | 1013 | 5cdd54aa907d0 | 1558009002.594 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '1' AND ticket_of = '1' AND date = '2019-05-16'   group by ticket_from
+2019-05-16 20:16:42 | DEBUG | 1013 | 5cdd54aa907d0 | 1558009002.595 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '1' AND ticket_of = '2' AND date = '2019-05-16'   group by ticket_from
+2019-05-16 20:16:42 | DEBUG | 1013 | 5cdd54aa907d0 | 1558009002.595 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '3' AND ticket_of = '1' AND date = '2019-05-16'   group by ticket_from
+2019-05-16 20:16:42 | DEBUG | 1013 | 5cdd54aa907d0 | 1558009002.595 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '3' AND ticket_of = '2' AND date = '2019-05-16'   group by ticket_from
+2019-05-16 20:16:42 | DEBUG | 1013 | 5cdd54aa907d0 | 1558009002.596 | select  sum(ticket_num) as ticket_num from ticket_type   where scenic_spot_id = '4' AND date = '2019-05-16'
+2019-05-16 20:17:14 | DEBUG | 4033 | 5cdd54ca73091 | 1558009034.474 | select  scenic_spot_id,sum(num) as num from reception_num   where date between '2019-05-10' and '2019-05-15'   group by scenic_spot_id
+2019-05-16 20:17:14 | DEBUG | 4033 | 5cdd54ca73091 | 1558009034.474 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '2' AND date between '2019-05-10' and '2019-05-15'   group by ticket_from
+2019-05-16 20:17:14 | DEBUG | 4033 | 5cdd54ca73091 | 1558009034.475 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '1' AND ticket_of = '1' AND date between '2019-05-10' and '2019-05-15'   group by ticket_from
+2019-05-16 20:17:14 | DEBUG | 4033 | 5cdd54ca73091 | 1558009034.475 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '1' AND ticket_of = '2' AND date between '2019-05-10' and '2019-05-15'   group by ticket_from
+2019-05-16 20:17:14 | DEBUG | 4033 | 5cdd54ca73091 | 1558009034.476 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '3' AND ticket_of = '1' AND date between '2019-05-10' and '2019-05-15'   group by ticket_from
+2019-05-16 20:17:14 | DEBUG | 4033 | 5cdd54ca73091 | 1558009034.476 | select  ticket_from,sum(case when ticket_type_id='1' THEN ticket_num ELSE 0 END) as student, 
+                    sum(case when ticket_type_id='2' THEN ticket_num ELSE 0 END) as man,
+                    sum(case when ticket_type_id='3' THEN ticket_num ELSE 0 END) as free from ticket_type   where scenic_spot_id = '3' AND ticket_of = '2' AND date between '2019-05-10' and '2019-05-15'   group by ticket_from
+2019-05-16 20:17:14 | DEBUG | 4033 | 5cdd54ca73091 | 1558009034.477 | select  sum(ticket_num) as ticket_num from ticket_type   where scenic_spot_id = '4' AND date between '2019-05-10' and '2019-05-15'

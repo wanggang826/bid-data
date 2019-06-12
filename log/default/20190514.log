@@ -1,0 +1,4 @@
+2019-05-14 15:51:59 | ERROR | 1013 | 5cda739f49fd2 | 1557820319.340 | Yaf Error Msg: Failed opening controller script /var/www/html/big-data/application/controllers/Login.php: No such file or directory
+2019-05-14 15:51:59 | ERROR | 4033 | 5cda739f80c85 | 1557820319.528 | Yaf Error Msg: Failed opening controller script /var/www/html/big-data/application/controllers/Favicon.ico.php: No such file or directory
+2019-05-14 15:53:26 | ERROR | 1013 | 5cda73f6e8288 | 1557820406.961 | Yaf Error Msg: Failed opening controller script /var/www/html/big-data/application/controllers/Public.php: No such file or directory
+2019-05-14 17:06:59 | ERROR | 1013 | 5cda8532f3dc7 | 1557824819.89 | Yaf Error Msg: Failed opening template /var/www/html/big-data/application/views/api/getreceptionnum.html: No such file or directory

@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+    <title>青铜峡大数据平台</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="shortcut icon" href="/public/qingtongxiaicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/public/lib/layui/css/layui.css">
+    <link rel="stylesheet" href="/public/lib/css/font.css">
+    <link rel="stylesheet" href="/public/lib/css/xadmin.css">
+    <script src="/public/lib/layui/layui.js"></script>
+    <script src="/public/lib/js/jquery.min.js"></script>
+</head>
+<body>
+<div class="login-bg" style="width:100%;height:100%;position:absolute;">
+    <div class="login">
+        <div class="message">青铜峡大数据平台</div>
+        <div id="darkbannerwrap"></div>
+
+        <form method="post" class="layui-form" action="">
+            <input type="hidden" name="redirect" value="" />
+            <input name="username" placeholder="用户名"  type="text" lay-verify="required" class="layui-input" id="username" >
+            <hr class="hr15">
+            <input name="password" lay-verify="required" placeholder="密码"  type="password" class="layui-input" id="password">
+            <hr class="hr15">
+
+            <hr class="hr15">
+            <hr class="hr15">
+            <button  class="layui-btn submit" lay-submit lay-filter="login" style="width:100%;" type="button" id="login-submit">登录</button>
+            <hr class="hr20" >
+        </form>
+    </div>
+
+</div>
+<script>
+    layui.use(['layer', 'form'], function(){
+        var layer = layui.layer;
+        $('.submit').click(function(){
+            $.ajax({
+                url: '/login',
+                type: 'POST',
+                dataType: 'json',
+                data: {
+                    'username': $('#username').val(),
+                    'password': $('#password').val(),
+                    'ajax':1
+                },
+                success: function(e) {
+                    console.log(e)
+                    if(e.code == 200) {
+                            window.location.href = '/admin/'+e.data.password;
+                    } else {
+                        layer.msg(e.msg, {icon: 2});
+                    }
+                },
+                error:function(data){console.log(data.responseText)}
+            })
+        });
+    });
+    var send_input = document.getElementById('login-submit');
+    $('#login-submit').onkeydown = function (){
+        if(event.keyCode == 13){
+
+        }
+    }
+</script>
